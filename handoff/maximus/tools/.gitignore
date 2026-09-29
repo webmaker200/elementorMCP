@@ -1,0 +1,11 @@
+# local MCP session / request scratch (may contain auth headers) — never commit
+sid
+_req.json
+_h.txt
+__pycache__/
+# generated per build
+_payload.json
+ids_live.json
+# exported binaries live in the WP Media Library (ids in figma/assets/registry.json)
+figma/assets/*
+!figma/assets/registry.json

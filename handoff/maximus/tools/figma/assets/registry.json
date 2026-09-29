@@ -1,0 +1,331 @@
+{
+ "arrow-black": {
+  "id": 410371,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-arrow-black.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 222
+ },
+ "arrow-green": {
+  "id": 410372,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-arrow-green.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 224
+ },
+ "avatar-1": {
+  "id": 410373,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-avatar-1.webp",
+  "w": 66,
+  "h": 66,
+  "bytes": 1186
+ },
+ "avatar-2": {
+  "id": 410374,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-avatar-2.webp",
+  "w": 66,
+  "h": 66,
+  "bytes": 1504
+ },
+ "avatar-3": {
+  "id": 410375,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-avatar-3.webp",
+  "w": 66,
+  "h": 66,
+  "bytes": 1202
+ },
+ "chart-line": {
+  "id": 410376,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-chart-line.svg",
+  "w": 739,
+  "h": 388,
+  "bytes": 1330
+ },
+ "check-24": {
+  "id": 410377,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-check-24.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 212
+ },
+ "check-28": {
+  "id": 410378,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-check-28.svg",
+  "w": 28,
+  "h": 28,
+  "bytes": 221
+ },
+ "chevron-down": {
+  "id": 410379,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-chevron-down.svg",
+  "w": 16,
+  "h": 16,
+  "bytes": 217
+ },
+ "claims-rule-engine": {
+  "id": 410380,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-claims-rule-engine.webp",
+  "w": 686,
+  "h": 664,
+  "bytes": 11342
+ },
+ "claims-scrubbing": {
+  "id": 410381,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-claims-scrubbing.webp",
+  "w": 686,
+  "h": 664,
+  "bytes": 13568
+ },
+ "claims-status": {
+  "id": 410382,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-claims-status.webp",
+  "w": 686,
+  "h": 664,
+  "bytes": 11438
+ },
+ "claims-workflows": {
+  "id": 410383,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-claims-workflows.webp",
+  "w": 686,
+  "h": 664,
+  "bytes": 12564
+ },
+ "cta-mark": {
+  "id": 410384,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-cta-mark.svg",
+  "w": 631,
+  "h": 648,
+  "bytes": 411
+ },
+ "eligibility-activity": {
+  "id": 410385,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-eligibility-activity.webp",
+  "w": 523,
+  "h": 516,
+  "bytes": 11578
+ },
+ "eligibility-donut": {
+  "id": 410386,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-eligibility-donut.webp",
+  "w": 523,
+  "h": 399,
+  "bytes": 13294
+ },
+ "eligibility-workflow": {
+  "id": 410387,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-eligibility-workflow.webp",
+  "w": 895,
+  "h": 934,
+  "bytes": 35818
+ },
+ "ic-claims-file": {
+  "id": 410388,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-claims-file.svg",
+  "w": 43,
+  "h": 43,
+  "bytes": 1411
+ },
+ "ic-cpu": {
+  "id": 410389,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-cpu.svg",
+  "w": 33,
+  "h": 33,
+  "bytes": 1567
+ },
+ "ic-eye": {
+  "id": 410390,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-eye.svg",
+  "w": 35,
+  "h": 35,
+  "bytes": 453
+ },
+ "ic-hero-cpu": {
+  "id": 410391,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-hero-cpu.svg",
+  "w": 33,
+  "h": 33,
+  "bytes": 1567
+ },
+ "ic-hero-file-plus": {
+  "id": 410392,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-hero-file-plus.svg",
+  "w": 32,
+  "h": 31,
+  "bytes": 1470
+ },
+ "ic-hero-settings": {
+  "id": 410393,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-hero-settings.svg",
+  "w": 31,
+  "h": 31,
+  "bytes": 4564
+ },
+ "ic-link": {
+  "id": 410394,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-link.svg",
+  "w": 34,
+  "h": 34,
+  "bytes": 923
+ },
+ "ic-payments": {
+  "id": 410395,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-payments.svg",
+  "w": 48,
+  "h": 48,
+  "bytes": 992
+ },
+ "ic-pie": {
+  "id": 410396,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-pie.svg",
+  "w": 40,
+  "h": 40,
+  "bytes": 1115
+ },
+ "ic-search": {
+  "id": 410397,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-search.svg",
+  "w": 36,
+  "h": 36,
+  "bytes": 479
+ },
+ "ic-settings": {
+  "id": 410398,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-settings.svg",
+  "w": 34,
+  "h": 34,
+  "bytes": 4501
+ },
+ "ic-shield": {
+  "id": 410399,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-ic-shield.svg",
+  "w": 18,
+  "h": 18,
+  "bytes": 535
+ },
+ "integrations-photo": {
+  "id": 410400,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-integrations-photo.webp",
+  "w": 1236,
+  "h": 1854,
+  "bytes": 54194
+ },
+ "lineart": {
+  "id": 410401,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-lineart.svg",
+  "w": 770,
+  "h": 791,
+  "bytes": 596
+ },
+ "logo-aicpa-soc": {
+  "id": 410402,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-logo-aicpa-soc.webp",
+  "w": 126,
+  "h": 163,
+  "bytes": 3996
+ },
+ "logo-hipaa": {
+  "id": 410403,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-logo-hipaa.svg",
+  "w": 64,
+  "h": 82,
+  "bytes": 14939
+ },
+ "logo-hitrust": {
+  "id": 410404,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-logo-hitrust.svg",
+  "w": 74,
+  "h": 82,
+  "bytes": 30017
+ },
+ "logo-mark": {
+  "id": 410405,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-logo-mark.svg",
+  "w": 29,
+  "h": 29,
+  "bytes": 433
+ },
+ "logo-maximus": {
+  "id": 410406,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-logo-maximus.svg",
+  "w": 245,
+  "h": 44,
+  "bytes": 2905
+ },
+ "logo-pci": {
+  "id": 410407,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-logo-pci.svg",
+  "w": 98,
+  "h": 82,
+  "bytes": 14270
+ },
+ "pv-claims": {
+  "id": 410408,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-pv-claims.svg",
+  "w": 193,
+  "h": 82,
+  "bytes": 2493
+ },
+ "pv-eligibility": {
+  "id": 410409,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-pv-eligibility.svg",
+  "w": 193,
+  "h": 82,
+  "bytes": 1936
+ },
+ "pv-kpis": {
+  "id": 410410,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-pv-kpis.svg",
+  "w": 170,
+  "h": 82,
+  "bytes": 3705
+ },
+ "pv-payments": {
+  "id": 410411,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-pv-payments.svg",
+  "w": 164,
+  "h": 82,
+  "bytes": 3759
+ },
+ "trust-aging": {
+  "id": 410412,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-trust-aging.webp",
+  "w": 679,
+  "h": 475,
+  "bytes": 8504
+ },
+ "trust-claims": {
+  "id": 410413,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-trust-claims.webp",
+  "w": 1424,
+  "h": 1005,
+  "bytes": 38330
+ },
+ "trust-payments": {
+  "id": 410414,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-trust-payments.webp",
+  "w": 679,
+  "h": 475,
+  "bytes": 16074
+ },
+ "watermark": {
+  "id": 410415,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-watermark.webp",
+  "w": 1948,
+  "h": 463,
+  "bytes": 104502
+ },
+ "x-16": {
+  "id": 410416,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-x-16.svg",
+  "w": 16,
+  "h": 16,
+  "bytes": 277
+ },
+ "hero-dashboard": {
+  "id": 410418,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/09/maximus-hero-dashboard-1.webp",
+  "w": 1300,
+  "h": 900,
+  "bytes": 50942
+ }
+}

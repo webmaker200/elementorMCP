@@ -41,6 +41,26 @@ Build the Figma design **"Maximus"** as the WordPress page **"Maximus AI Product
 - Screenshots: `node tools/shot.js <url> <prefix> <width> 1` (Playwright + Chromium preinstalled). Run widths **sequentially** — parallel runs through the proxy drop stylesheets. The site header itself overflows 3px at 430px (not our bug).
 - Figma SVG exports of a node can include the page background rect — prefer the per-vector `svgAssets`/REST `format=svg` of the icon node itself and strip `preserveAspectRatio="none"`, `style`, `id` (see `tools/assets.py`).
 
+## Status (2026-09-29) — BUILT & PUBLISHED
+- Live: https://medcaredemo.online/medcare/maximus-ai-product/ (page 410364, published). 10 sections, 317 V4 elements, one H1, page-local styles only (no global classes/variables/kit/template changes).
+- Verified at 1920/1750/1600/1440/1366/1200/1024/870/430: no horizontal overflow except the known 3px site-header overflow at 430 and the intentionally full-bleed "Maximus" watermark (clipped by the section). At 1920 every section height is within 4px of Figma.
+- Rebuild: `WP_BASIC_AUTH=... python3 tools/deploy_maximus.py` (draft → build-composition replace_children at document root → publish → touch → publish → checks the local CSS contains every style class). Source of truth: `tools/build_maximus.py`.
+- Media: 46 assets uploaded, ids in `tools/figma/assets/registry.json` (hero dashboard = **410418**, a crop of 410369 without its shadow bleed; 410369 is no longer used).
+- Demo form is a V4 `e-form` with **no delivery action** (email/CRM/webhook not configured) — must be connected by the site owner.
+- Content notes: the Reporting pill says "The Problems with Traditional PMS" in Figma (same as section B) — kept as designed. The select option "Eligibility & Benefits" / "Reporting & KPIs" are written with "and" (see gotchas).
+
+## Session gotchas (added 2026-09-29)
+- **Env**: `WP_BASIC_AUTH` was once pasted as `WP_BASIC_AUTH=<b64>`; strip with `export WP_BASIC_AUTH="${WP_BASIC_AUTH#WP_BASIC_AUTH=}"`.
+- **Figma REST images endpoint is rate-limited on the Starter plan** (429 with Retry-After ≈ 4.6 days after ~80 exports). All assets are already exported; `figma/glows.json` caches the glow ellipses so `build_maximus.py` runs without Figma.
+- Figma exports include shadow/blur bleed → `export_assets.py` crops rasters to the node box and resets SVG viewBox / drops drop-shadow filters; shadows are re-created in CSS. Nodes clipped by a parent have *smaller* render bounds — don't crop those.
+- Theme CSS has `p { margin-block-end: 0 !important; }` → paragraph bottom margins are dropped. The builder moves them onto the next sibling as margin-top (`move_paragraph_margins`).
+- Nested V4 containers (`.e-con`) default to `width: 100%` → set `width: auto` on inline groups inside rows and on absolutely positioned boxes.
+- In a column layout a `flex: 0 1 <px>` basis becomes a *height* — reset to `flex: 0 0 auto` at the breakpoint where rows stack.
+- Glows: Figma ellipses are unclipped and bleed across sections. Implemented as a section `&::before` (z-index -1, 600px above/below, `overflow-x: clip; overflow-y: visible` on the section) with a top/bottom mask fade. A 1400px bleed made Chrome drop parts of the layers (white rectangles) — keep 600.
+- `e-form-select` stores option text HTML-escaped and escapes again on render (`&` shows as `&amp;`).
+- `e-form-success-message` / `e-form-error-message` must each contain a child (e.g. `e-paragraph`).
+- Screenshots through the proxy often lose a stylesheet/font; `shot.js`/`vshot.js`/`probe.js` now reload until same-origin CSS and Poppins are loaded.
+
 ## Already done
 - Media uploaded: **410369** `maximus-hero-dashboard.webp` (1496×1094, 48 KB) — hero dashboard 599:2133 @2x.
 - Asset pipeline `tools/assets.py` (download → WebP via Pillow / SVG sanitize → upload, idempotent registry). `pip install pillow` first.
@@ -48,6 +68,5 @@ Build the Figma design **"Maximus"** as the WordPress page **"Maximus AI Product
 - Visual targets for each section: `figma/screens/*.png` (Figma renders, ~0.65–0.73 scale). Full layer geometry: `figma/page-geometry.xml`.
 
 ## Next steps
-1. Verify `FIGMA_TOKEN` (`GET /v1/me`), then pull node JSON for all 10 sections (+ children) and export assets per `SPECS.md` → WebP/SVG → upload.
-2. Build section by section (dry_run first) on the draft page, publish, regenerate CSS.
-3. Screenshot at all 9 widths vs. `figma/screens`, fix, publish, report.
+1. Connect the demo form delivery (email / CRM action) in the Elementor editor.
+2. Optional polish only — the build is complete.

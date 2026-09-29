@@ -1,11 +1,13 @@
 # Maximus — section specs (from Figma, 1920 frame)
 
 Legend: **exact** = from Figma design context; *~est* = measured from renders/sibling components — re-verify via REST API.
+
+> **Superseded (2026-09-29):** the page is built from exact REST values in `tools/build_maximus.py`; `~est` values below are historical.
 Section y values are page coordinates inside frame 599:1630 (header 0–97 is the site header, skip).
 
 ## Global tokens
 - Font Poppins; weights Regular 400 / Medium 500 (SemiBold 600, Bold 700 appear in UI mockups only).
-- **H2 display**: 58px / 82px, letter-spacing −1.16px, #000, 400 (**exact**, sections D/G). Hero H1 uses the same style.
+- **H2 display**: 58px / 82px, letter-spacing −1.16px, #000, 400 (**exact**, sections D/G). Hero H1 is **72px / 88px, letter-spacing −1.44px** (REST, 2026-09-29). All values are now re-extracted via REST and encoded in `tools/build_maximus.py`, which supersedes the estimates below.
 - **Body**: 16px / 32px, #4F4F4F, 400 (**exact**).
 - **Item title**: 24px/32px 500 #000 (G) · 22px/32px 400 #000 (D checklist).
 - **Pill tag "Frame 30"** (**exact**): 248×46 (hero 258×46, E 290×46), bg rgba(255,255,255,0.1), border 1px #9ACAA1, radius 34px, shadow `0 15px 15px 0 rgba(194,194,194,0.1)`, label 12px/1.2 #7D7D7D centered.
