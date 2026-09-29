@@ -1,0 +1,453 @@
+const imgEllipse6 = "https://www.figma.com/api/mcp/asset/c1333a17-beb2-4ad0-bb76-d19aaebaec01.svg";
+const imgEllipse5 = "https://www.figma.com/api/mcp/asset/9163982f-ffa0-4ba0-a0b5-94101ed52587.svg";
+const imgEllipse7 = "https://www.figma.com/api/mcp/asset/b233f52f-8d72-49b4-8e06-f7c6836127be.svg";
+const imgEllipse10 = "https://www.figma.com/api/mcp/asset/e68c8bd5-f521-4d50-9fc6-757f1995cdae.svg";
+const imgEllipse8 = "https://www.figma.com/api/mcp/asset/8df7847f-4e30-40d3-852a-e6297af32087.svg";
+const imgEllipse9 = "https://www.figma.com/api/mcp/asset/946d5fa0-240c-4b6c-bfe8-bec8bc852d1c.svg";
+const imgCheck = "https://www.figma.com/api/mcp/asset/43414be1-6385-4401-a7fa-eb453debf14a.svg";
+const imgLine165 = "https://www.figma.com/api/mcp/asset/60b456f6-38dc-4bcd-a467-e33ab61a5ee8.svg";
+const imgCheckIcon = "https://www.figma.com/api/mcp/asset/f4767e5c-4a47-4804-a154-fff29b4bd208.svg";
+const imgCheckIcon1 = "https://www.figma.com/api/mcp/asset/4b92b13c-f596-44be-a7ec-c3413a74cda9.svg";
+const imgIcon = "https://www.figma.com/api/mcp/asset/24cad499-f11b-433c-a3e4-a3ae541d0899.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/8ea831bc-2da3-41b0-b97a-c1108767236a.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/024692ca-5878-4c13-8be9-275c3bc657a8.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/e4255e80-f987-4bf8-bc93-2e86ace5eb95.svg";
+const imgVector2 = "https://www.figma.com/api/mcp/asset/21ec1a8c-5183-44ca-be81-21c1b882722a.svg";
+const imgVector3 = "https://www.figma.com/api/mcp/asset/2ea463d1-a423-40cf-a96d-40b7ed455caa.svg";
+const imgVector4 = "https://www.figma.com/api/mcp/asset/d9c96c93-464f-4200-af18-998a943558e0.svg";
+const imgVector5 = "https://www.figma.com/api/mcp/asset/6e07b705-e1f5-4b5c-85c0-3e35b886705c.svg";
+const imgVector6 = "https://www.figma.com/api/mcp/asset/97b565f2-28c4-4093-b29e-413ce49f7f6f.svg";
+const imgVector7 = "https://www.figma.com/api/mcp/asset/f2b22787-9d90-4de2-bd6c-c9908363dda2.svg";
+
+export default function Frame437380826() {
+  return (
+    <div className="relative size-full" data-node-id="599:2857">
+      <div className="-translate-x-1/2 absolute flex items-center justify-center left-[calc(50%-113.58px)] size-[1338.839px] top-[-81px]" data-node-id="599:2858">
+        <div className="-rotate-30 flex-none">
+          <div className="relative size-[980.098px]">
+            <div className="absolute inset-[-30.61%]">
+              <img alt="" className="block max-w-none size-full" src={imgEllipse6} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex items-center justify-center left-[calc(50%-891.98px)] size-[1212.049px] top-[260px]" data-node-id="599:2859">
+        <div className="-rotate-30 flex-none">
+          <div className="relative size-[887.281px]">
+            <div className="absolute inset-[-33.81%]">
+              <img alt="" className="block max-w-none size-full" src={imgEllipse5} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute h-[408px] left-[calc(50%+602.41px)] top-[102px] w-[406.81px]" data-node-id="599:2860">
+        <div className="absolute inset-[-87.46%_-87.72%]">
+          <img alt="" className="block max-w-none size-full" src={imgEllipse7} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute h-[408px] left-[calc(50%+691.41px)] top-[476px] w-[406.81px]" data-node-id="599:2861">
+        <div className="absolute inset-[-87.46%_-87.72%]">
+          <img alt="" className="block max-w-none size-full" src={imgEllipse10} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex items-center justify-center left-[calc(50%+409.92px)] size-[719.833px] top-[320px]" data-node-id="599:2862">
+        <div className="-rotate-30 flex-none">
+          <div className="relative size-[526.954px]">
+            <div className="absolute inset-[-74.05%]">
+              <img alt="" className="block max-w-none size-full" src={imgEllipse8} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex items-center justify-center left-[calc(50%+232.95px)] size-[597.909px] top-[46px]" data-node-id="599:2863">
+        <div className="-rotate-30 flex-none">
+          <div className="relative size-[437.7px]">
+            <div className="absolute inset-[-78.62%]">
+              <img alt="" className="block max-w-none size-full" src={imgEllipse9} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] h-[228px] leading-[82px] left-[220px] not-italic text-[58px] text-black top-[142px] tracking-[-1.16px] w-[659px]" data-node-id="599:2864">
+        Verify Coverage Before It Becomes a Revenue Problem.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[220px] not-italic text-[#4f4f4f] text-[16px] top-[402px] w-[633px]" data-node-id="599:2865">
+        Maximus automates patient eligibility and benefits verification, helping teams validate coverage earlier and reduce repetitive front-office work.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[281px] not-italic text-[22px] text-black top-[537px] w-[633px]" data-node-id="599:2866">
+        Automated Eligibility Verification
+      </p>
+      <div className="absolute left-[224px] size-[28px] top-[540px]" data-node-id="599:2867" data-name="check">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCheck} />
+      </div>
+      <div className="absolute left-[224px] size-[28px] top-[636px]" data-node-id="599:2869" data-name="check">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCheck} />
+      </div>
+      <div className="absolute left-[224px] size-[28px] top-[732px]" data-node-id="599:2871" data-name="check">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCheck} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[281px] not-italic text-[22px] text-black top-[632px] w-[633px]" data-node-id="599:2873">
+        Benefits Verification
+      </p>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[281px] not-italic text-[22px] text-black top-[727px] w-[633px]" data-node-id="599:2874">
+        Batch Eligibility
+      </p>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[281px] not-italic text-[#4f4f4f] text-[16px] top-[574px] w-[633px]" data-node-id="599:2875">
+        Reduce manual payer lookups.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[281px] not-italic text-[#4f4f4f] text-[16px] top-[669px] w-[633px]" data-node-id="599:2876">
+        Bring benefit visibility into the patient workflow.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[281px] not-italic text-[#4f4f4f] text-[16px] top-[764px] w-[633px]" data-node-id="599:2877">
+        Verify multiple scheduled patients in one workflow.
+      </p>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-[rgba(255,255,255,0.1)] border border-[#9acaa1] border-solid h-[46px] left-[calc(50%-616px)] rounded-[34px] shadow-[0px_15px_15px_0px_rgba(194,194,194,0.1)] top-[calc(50%-339px)] w-[248px]" data-node-id="599:2878">
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Poppins:Regular'] h-[15px] leading-[1.2] left-[calc(50%+0.5px)] not-italic text-[#7d7d7d] text-[12px] text-center top-[calc(50%-7px)] w-[255px]" data-node-id="599:2879">
+          Start the Revenue Cycle Right
+        </p>
+      </div>
+      <div className="absolute h-0 left-[222px] top-[505px] w-[631px]" data-node-id="599:2880">
+        <div className="absolute inset-[-1px_0_0_0]">
+          <img alt="" className="block max-w-none size-full" src={imgLine165} />
+        </div>
+      </div>
+      <div className="absolute bg-[rgba(255,255,255,0.4)] border-[0.909px] border-[rgba(0,0,0,0.07)] border-solid content-stretch flex flex-col h-[467px] items-start left-[975px] rounded-[18.176px] top-[234px]" data-node-id="599:2881" data-name="MainWorkflowCard">
+        <div className="border-[rgba(0,0,0,0.05)] border-b-[0.909px] border-solid content-stretch flex flex-col items-start pb-[18.176px] pt-[22.72px] px-[22.72px] relative shrink-0 w-full" data-node-id="599:2882" data-name="Container">
+          <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="599:2883" data-name="Container">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[291.739px]" data-node-id="599:2884" data-name="Container">
+              <div className="h-[41.009px] relative shrink-0 w-full" data-node-id="599:2885" data-name="Container">
+                <div className="absolute bg-[rgba(236,253,245,0.2)] content-stretch flex gap-[6.816px] h-[26.128px] items-center left-0 px-[11.36px] py-[4.544px] rounded-[30493782px] top-[3.23px]" data-node-id="599:2886" data-name="Text">
+                  <div className="bg-[#10b981] opacity-70 relative rounded-[30493782px] shrink-0 size-[6.816px]" data-node-id="599:2887" data-name="Text" />
+                  <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[17.04px] not-italic relative shrink-0 text-[#059669] text-[11.36px] tracking-[1.136px] uppercase whitespace-nowrap" data-node-id="599:2888">
+                    Live Workflow
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2889" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[25.56px] not-italic relative shrink-0 text-[#0b1d35] text-[19.594px] whitespace-nowrap" data-node-id="599:2890">
+                  Batch Eligibility
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start pt-[2.272px] relative shrink-0 w-[311.629px]" data-node-id="599:2891" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[19.596px] not-italic relative shrink-0 text-[#90a1b9] text-[13.064px] w-[379.914px]" data-node-id="599:2892">
+                  Verifying scheduled patients before claim submission
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start pt-[2.272px] relative shrink-0" data-node-id="599:2893" data-name="Text">
+              <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[17.892px] not-italic relative shrink-0 text-[#4f4f4f] text-[11.928px] w-[103.415px]" data-node-id="599:2894">
+                Updated 2m ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col h-[267.79px] items-start pb-[13.632px] px-[13.632px] relative shrink-0 w-full" data-node-id="599:2895" data-name="Container">
+          <div className="border-[0.909px] border-[rgba(0,0,0,0)] border-solid content-stretch flex gap-[13.632px] items-center px-[13.632px] py-[11.36px] relative rounded-[13.632px] shrink-0 w-[418.496px]" data-node-id="599:2896" data-name="PatientRow">
+            <div className="content-stretch flex items-center justify-center relative rounded-[30493782px] shrink-0 size-[36.351px]" data-node-id="599:2897" style={{ backgroundImage: "linear-gradient(135deg, rgb(99, 102, 241) 0%, rgb(129, 140, 248) 100%)" }} data-name="Container">
+              <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[18.744px] not-italic relative shrink-0 text-[12.496px] text-white whitespace-nowrap" data-node-id="599:2898">
+                SM
+              </p>
+            </div>
+            <div className="content-stretch flex flex-[212.938_0_0] flex-col items-start min-w-px relative" data-node-id="599:2899" data-name="Container">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2900" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[22.152px] not-italic relative shrink-0 text-[#0b1d35] text-[14.768px] whitespace-nowrap" data-node-id="599:2901">
+                  Sarah M.
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2902" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[18.744px] not-italic relative shrink-0 text-[#90a1b9] text-[12.496px] whitespace-nowrap" data-node-id="599:2903">
+                  Aetna PPO
+                </p>
+              </div>
+            </div>
+            <div className="bg-[rgba(209,250,229,0.2)] content-stretch flex gap-[4.544px] items-center px-[11.36px] py-[4.544px] relative rounded-[30493782px] shrink-0" data-node-id="599:2904" data-name="StatusChip">
+              <div className="relative shrink-0 size-[11.36px]" data-node-id="599:2905" data-name="CheckIcon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCheckIcon} />
+              </div>
+              <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[17.892px] not-italic relative shrink-0 text-[#059669] text-[11.928px] whitespace-nowrap" data-node-id="599:2907">
+                Verified
+              </p>
+            </div>
+          </div>
+          <div className="border-[0.909px] border-[rgba(0,0,0,0)] border-solid content-stretch flex gap-[13.632px] items-center px-[13.632px] py-[11.36px] relative rounded-[13.632px] shrink-0 w-[418.496px]" data-node-id="599:2908" data-name="PatientRow">
+            <div className="content-stretch flex items-center justify-center relative rounded-[30493782px] shrink-0 size-[36.351px]" data-node-id="599:2909" style={{ backgroundImage: "linear-gradient(135deg, rgb(14, 165, 233) 0%, rgb(56, 189, 248) 100%)" }} data-name="Container">
+              <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[18.744px] not-italic relative shrink-0 text-[12.496px] text-white whitespace-nowrap" data-node-id="599:2910">
+                JK
+              </p>
+            </div>
+            <div className="content-stretch flex flex-[212.938_0_0] flex-col items-start min-w-px relative" data-node-id="599:2911" data-name="Container">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2912" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[22.152px] not-italic relative shrink-0 text-[#0b1d35] text-[14.768px] whitespace-nowrap" data-node-id="599:2913">
+                  James K.
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2914" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[18.744px] not-italic relative shrink-0 text-[#90a1b9] text-[12.496px] whitespace-nowrap" data-node-id="599:2915">
+                  Blue Cross HMO
+                </p>
+              </div>
+            </div>
+            <div className="bg-[rgba(209,250,229,0.2)] content-stretch flex gap-[4.544px] items-center px-[11.36px] py-[4.544px] relative rounded-[30493782px] shrink-0" data-node-id="599:2916" data-name="StatusChip">
+              <div className="relative shrink-0 size-[11.36px]" data-node-id="599:2917" data-name="CheckIcon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCheckIcon1} />
+              </div>
+              <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[17.892px] not-italic relative shrink-0 text-[#059669] text-[11.928px] whitespace-nowrap" data-node-id="599:2919">
+                Verified
+              </p>
+            </div>
+          </div>
+          <div className="bg-[rgba(240,253,249,0.2)] border-[#a7f3d0] border-[0.909px] border-solid content-stretch flex gap-[13.632px] items-center px-[13.632px] py-[11.36px] relative rounded-[13.632px] shrink-0 w-[418.496px]" data-node-id="599:2920" data-name="PatientRow">
+            <div className="content-stretch flex items-center justify-center relative rounded-[30493782px] shrink-0 size-[36.351px]" data-node-id="599:2921" style={{ backgroundImage: "linear-gradient(135deg, rgb(16, 185, 129) 0%, rgb(52, 211, 153) 100%)" }} data-name="Container">
+              <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[18.744px] not-italic relative shrink-0 text-[12.496px] text-white whitespace-nowrap" data-node-id="599:2922">
+                LR
+              </p>
+            </div>
+            <div className="content-stretch flex flex-[176.5_0_0] flex-col items-start min-w-px relative" data-node-id="599:2923" data-name="Container">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2924" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[22.152px] not-italic relative shrink-0 text-[#0b1d35] text-[14.768px] whitespace-nowrap" data-node-id="599:2925">
+                  Linda R.
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2926" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[18.744px] not-italic relative shrink-0 text-[#90a1b9] text-[12.496px] whitespace-nowrap" data-node-id="599:2927">
+                  UnitedHealth PPO
+                </p>
+              </div>
+            </div>
+            <div className="bg-[rgba(207,250,254,0.2)] content-stretch flex gap-[4.544px] items-center px-[11.36px] py-[4.544px] relative rounded-[30493782px] shrink-0" data-node-id="599:2928" data-name="StatusChip">
+              <div className="relative shrink-0 size-[11.36px]" data-node-id="599:2929" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+              </div>
+              <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[17.892px] not-italic relative shrink-0 text-[#0891b2] text-[11.928px] whitespace-nowrap" data-node-id="599:2932">
+                Benefits Found
+              </p>
+            </div>
+          </div>
+          <div className="border-[0.909px] border-[rgba(0,0,0,0)] border-solid content-stretch flex gap-[13.632px] items-center px-[13.632px] py-[11.36px] relative rounded-[13.632px] shrink-0 w-[418.496px]" data-node-id="599:2933" data-name="PatientRow">
+            <div className="content-stretch flex items-center justify-center relative rounded-[30493782px] shrink-0 size-[36.351px]" data-node-id="599:2934" style={{ backgroundImage: "linear-gradient(135deg, rgb(245, 158, 11) 0%, rgb(251, 191, 36) 100%)" }} data-name="Container">
+              <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[18.744px] not-italic relative shrink-0 text-[12.496px] text-white whitespace-nowrap" data-node-id="599:2935">
+                MT
+              </p>
+            </div>
+            <div className="content-stretch flex flex-[177.613_0_0] flex-col items-start min-w-px relative" data-node-id="599:2936" data-name="Container">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2937" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[22.152px] not-italic relative shrink-0 text-[#0b1d35] text-[14.768px] whitespace-nowrap" data-node-id="599:2938">
+                  Marcus T.
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2939" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[18.744px] not-italic relative shrink-0 text-[#90a1b9] text-[12.496px] whitespace-nowrap" data-node-id="599:2940">
+                  Cigna HMO
+                </p>
+              </div>
+            </div>
+            <div className="bg-[rgba(254,243,199,0.2)] content-stretch flex gap-[4.544px] items-center px-[11.36px] py-[4.544px] relative rounded-[30493782px] shrink-0" data-node-id="599:2941" data-name="StatusChip">
+              <div className="relative shrink-0 size-[11.36px]" data-node-id="599:2942" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+              </div>
+              <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[17.892px] not-italic relative shrink-0 text-[#b45309] text-[11.928px] whitespace-nowrap" data-node-id="599:2945">
+                Action Needed
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-start pb-[22.72px] pt-[9.088px] px-[22.72px] relative shrink-0 w-full" data-node-id="599:2946" data-name="Container:margin">
+          <div className="border-[rgba(0,0,0,0.06)] border-solid border-t-[0.909px] content-stretch flex items-center justify-between pt-[15.904px] relative shrink-0 w-full" data-node-id="599:2947" data-name="Container">
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="599:2948" data-name="Text">
+              <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[17.892px] not-italic relative shrink-0 text-[#7b8b9e] text-[11.928px] whitespace-nowrap" data-node-id="599:2949">
+                4 patients · Batch #B-2094
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[9.088px] items-center relative shrink-0" data-node-id="599:2950" data-name="Container">
+              <div className="bg-[#c4e3ce] content-stretch flex flex-col h-[6.816px] items-start overflow-clip relative rounded-[30493782px] shrink-0 w-[90.879px]" data-node-id="599:2951" data-name="Container">
+                <div className="bg-gradient-to-r from-[#10b981] h-[6.816px] relative rounded-[30493782px] shrink-0 to-[#06b6d4] w-[68.159px]" data-node-id="599:2952" data-name="Container" />
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="599:2953" data-name="Text">
+                <p className="[word-break:break-word] font-['Poppins:SemiBold'] leading-[18.744px] not-italic relative shrink-0 text-[#096] text-[12.496px] whitespace-nowrap" data-node-id="599:2954">
+                  75%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[rgba(255,255,255,0.4)] border-[0.946px] border-[rgba(0,0,0,0.07)] border-solid content-stretch flex flex-col items-start left-[1435px] p-[23.644px] rounded-[18.915px] top-[234px] w-[261.692px]" data-node-id="599:2955" data-name="CoverageDonutWidget">
+        <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2956" data-name="Container">
+          <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[16.846px] not-italic relative shrink-0 text-[#616c7c] text-[11.231px] tracking-[1.1231px] uppercase whitespace-nowrap" data-node-id="599:2957">
+            Coverage Verified
+          </p>
+        </div>
+        <div className="content-stretch flex gap-[4.531px] items-center pt-[14.186px] relative shrink-0 w-full" data-node-id="599:2958" data-name="Container">
+          <div className="overflow-clip relative shrink-0 size-[113.491px]" data-node-id="599:2959" data-name="Icon">
+            <div className="absolute inset-[11.99%_12.73%_13.01%_12.27%]" data-node-id="599:2960" data-name="Vector">
+              <div className="absolute inset-[-6.94%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector} />
+              </div>
+            </div>
+            <div className="absolute flex inset-[11.99%_12.73%_13.01%_12.27%] items-center justify-center" data-node-id="599:2961" style={{ containerType: "size" }}>
+              <div className="-rotate-90 flex-none h-[100cqw] w-[100cqh]">
+                <div className="relative size-full" data-name="Vector">
+                  <div className="absolute inset-[-6.94%]">
+                    <img alt="" className="block max-w-none size-full" src={imgVector1} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p className="[word-break:break-word] absolute font-['Poppins:Medium'] inset-[29.53%_31.11%_40.51%_29.24%] leading-[normal] not-italic text-[#0b1d35] text-[22.462px] text-center whitespace-nowrap" data-node-id="599:2962">
+              75%
+            </p>
+            <p className="[word-break:break-word] absolute font-['Poppins:Regular'] inset-[56.09%_34.16%_30.69%_33.23%] leading-[normal] not-italic text-[#94a3b8] text-[10.049px] text-center whitespace-nowrap" data-node-id="599:2963">
+              verified
+            </p>
+          </div>
+          <div className="content-stretch flex flex-col gap-[11.822px] items-start relative shrink-0 w-[91.762px]" data-node-id="599:2964" data-name="Container">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2965" data-name="Container">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2966" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[23.053px] not-italic relative shrink-0 text-[#0b1d35] text-[15.369px] w-full" data-node-id="599:2967">
+                  3 of 4 ready
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2968" data-name="Container">
+                <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[18.62px] not-italic relative shrink-0 text-[#90a1b9] text-[12.413px] w-full" data-node-id="599:2969">
+                  for submission
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[7.093px] items-start relative shrink-0 w-full" data-node-id="599:2970" data-name="Container">
+              <div className="content-stretch flex gap-[9.458px] items-center relative shrink-0" data-node-id="599:2971" data-name="Container">
+                <div className="bg-[#10b981] relative rounded-[31734430px] shrink-0 size-[9.458px]" data-node-id="599:2972" data-name="Text" />
+                <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="599:2973" data-name="Text">
+                  <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[0] not-italic relative shrink-0 text-[#62748e] text-[0px] w-[80.434px]" data-node-id="599:2974">
+                    <span className="font-['Poppins:Regular'] leading-[18.62px] text-[12.413px]">{`Verified — `}</span>
+                    <span className="font-['Poppins:Bold'] leading-[18.62px] text-[#314158] text-[12.413px]">3</span>
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[9.458px] items-center relative shrink-0" data-node-id="599:2975" data-name="Container">
+                <div className="bg-[#f59e0b] relative rounded-[31734430px] shrink-0 size-[9.458px]" data-node-id="599:2976" data-name="Text" />
+                <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="599:2977" data-name="Text">
+                  <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[0] not-italic relative shrink-0 text-[#62748e] text-[0px] w-[77.035px]" data-node-id="599:2978">
+                    <span className="font-['Poppins:Regular'] leading-[18.62px] text-[12.413px]">{`Action Needed — `}</span>
+                    <span className="font-['Poppins:Bold'] leading-[18.62px] text-[#314158] text-[12.413px]">1</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[rgba(255,255,255,0.4)] border-[0.946px] border-[rgba(0,0,0,0.07)] border-solid content-stretch flex flex-col items-start left-[1435px] p-[23.644px] rounded-[18.915px] top-[443px] w-[261.692px]" data-node-id="599:2979" data-name="ActivityChartWidget">
+        <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="599:2980" data-name="Container">
+          <p className="[word-break:break-word] font-['Poppins:Medium'] leading-[16.846px] not-italic relative shrink-0 text-[#616c7c] text-[11.231px] tracking-[1.1231px] uppercase whitespace-nowrap" data-node-id="599:2981">
+            Eligibility Checks Today
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col items-start pt-[4.729px] relative shrink-0 w-full" data-node-id="599:2982" data-name="Container:margin">
+          <div className="[word-break:break-word] h-[39.013px] relative shrink-0 w-full whitespace-nowrap" data-node-id="599:2983" data-name="Container">
+            <p className="absolute font-['Poppins:Medium'] leading-[39.013px] left-[13.43px] not-italic text-[#0b1d35] text-[26.008px] top-[0.07px]" data-node-id="599:2984">
+              48
+            </p>
+            <p className="absolute font-['Poppins:SemiBold'] font-semibold leading-[19.506px] left-[52.45px] text-[#00bc7d] text-[13.004px] top-[14.26px]" data-node-id="599:2985" style={{ fontVariationSettings: '"CTGR" 0, "wdth" 100' }}>
+              ↑ +12%
+            </p>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-start pt-[18.915px] relative shrink-0" data-node-id="599:2986" data-name="Icon:margin">
+          <div className="h-[78.025px] relative shrink-0 w-[199.083px]" data-node-id="599:2987" data-name="Icon">
+            <div className="absolute inset-[17.57%_-4.75%_12.03%_8.75%]" data-node-id="599:2988" data-name="Vector">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+            </div>
+            <div className="absolute inset-[17.57%_-4.75%_28.81%_8.75%]" data-node-id="599:2989" data-name="Vector">
+              <div className="absolute inset-[-2.59%_-0.57%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector3} />
+              </div>
+            </div>
+            <div className="absolute inset-[67.4%_90%_25.03%_7.5%]" data-node-id="599:2990" data-name="Vector">
+              <div className="absolute inset-[-13.76%_-16.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector4} />
+              </div>
+            </div>
+            <div className="absolute inset-[56.68%_70.8%_35.75%_26.7%]" data-node-id="599:2991" data-name="Vector">
+              <div className="absolute inset-[-13.76%_-16.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector4} />
+              </div>
+            </div>
+            <div className="absolute inset-[40.59%_51.6%_51.83%_45.9%]" data-node-id="599:2992" data-name="Vector">
+              <div className="absolute inset-[-13.76%_-16.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector4} />
+              </div>
+            </div>
+            <div className="absolute inset-[27.19%_13.2%_65.24%_84.3%]" data-node-id="599:2993" data-name="Vector">
+              <div className="absolute inset-[-13.76%_-16.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector4} />
+              </div>
+            </div>
+            <div className="absolute inset-[37.91%_-6%_54.51%_103.5%]" data-node-id="599:2994" data-name="Vector">
+              <div className="absolute inset-[-13.76%_-16.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector4} />
+              </div>
+            </div>
+            <div className="absolute inset-[10.76%_31.4%_75.61%_64.1%]" data-node-id="599:2995" data-name="Vector">
+              <div className="absolute inset-[-10.2%_-12.11%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector5} />
+              </div>
+            </div>
+            <div className="absolute inset-[-29.06%_10.49%_100.02%_43.41%]" data-node-id="599:2996" data-name="Vector">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector6} />
+            </div>
+            <p className="[word-break:break-word] absolute font-['Poppins:Medium'] inset-[-24.09%_14.85%_106.15%_48.48%] leading-[normal] not-italic text-[9.221px] text-center text-white whitespace-nowrap" data-node-id="599:2997">
+              48 checks · 2PM
+            </p>
+            <div className="absolute inset-[-0.61%_33.65%_89.25%_66.35%]" data-node-id="599:2998" data-name="Vector">
+              <div className="absolute inset-[0_-0.54px]">
+                <img alt="" className="block max-w-none size-full" src={imgVector7} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] absolute font-['Poppins:Regular'] inset-[88.73%_88.23%_-4.11%_6.25%] leading-[normal] not-italic text-[#cbd5e1] text-[8.136px] text-center whitespace-nowrap" data-node-id="599:2999">
+              8A
+            </p>
+            <p className="[word-break:break-word] absolute font-['Poppins:Regular'] inset-[88.73%_69.12%_-4.11%_23.85%] leading-[normal] not-italic text-[#cbd5e1] text-[8.136px] text-center whitespace-nowrap" data-node-id="599:3000">
+              10A
+            </p>
+            <p className="[word-break:break-word] absolute font-['Poppins:Regular'] inset-[88.73%_50.1%_-4.11%_43.87%] leading-[normal] not-italic text-[#cbd5e1] text-[8.136px] text-center whitespace-nowrap" data-node-id="599:3001">
+              12P
+            </p>
+            <p className="[word-break:break-word] absolute font-['Poppins:Regular'] inset-[88.73%_31.13%_-4.11%_63.85%] leading-[normal] not-italic text-[#cbd5e1] text-[8.136px] text-center whitespace-nowrap" data-node-id="599:3002">
+              2P
+            </p>
+            <p className="[word-break:break-word] absolute font-['Poppins:Regular'] inset-[88.73%_11.36%_-4.11%_83.62%] leading-[normal] not-italic text-[#cbd5e1] text-[8.136px] text-center whitespace-nowrap" data-node-id="599:3003">
+              4P
+            </p>
+            <p className="[word-break:break-word] absolute font-['Poppins:Regular'] inset-[88.73%_-7.84%_-4.11%_102.82%] leading-[normal] not-italic text-[#cbd5e1] text-[8.136px] text-center whitespace-nowrap" data-node-id="599:3004">
+              6P
+            </p>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-center pt-[14.186px] relative shrink-0 w-full" data-node-id="599:3005" data-name="Container:margin">
+          <div className="border-[rgba(0,0,0,0.05)] border-solid border-t-[0.946px] content-stretch flex items-center justify-between pt-[14.186px] relative shrink-0 w-full" data-node-id="599:3006" data-name="Container">
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="599:3007" data-name="Text">
+              <p className="[word-break:break-word] font-['Poppins:Regular'] leading-[17.733px] not-italic relative shrink-0 text-[#90a1b9] text-[11.822px] whitespace-nowrap" data-node-id="599:3008">
+                Claims-Ready Patients
+              </p>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="599:3009" data-name="Text">
+              <p className="[word-break:break-word] font-['Poppins:Bold'] leading-[21.28px] not-italic relative shrink-0 text-[#096] text-[14.186px] whitespace-nowrap" data-node-id="599:3010">
+                75%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.
+[Image: source: /root/.claude/projects/-home-user-elementorMCP/dbf312a5-d3f4-5082-b125-48dd8b3c5a04/tool-results/mcp-Figma-blob-1790703171100-kg1bbw.png]

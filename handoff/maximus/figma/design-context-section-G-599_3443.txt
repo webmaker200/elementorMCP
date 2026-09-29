@@ -1,0 +1,123 @@
+const imgFrame1707480008 = "https://www.figma.com/api/mcp/asset/0b25fb3d-0988-4eda-af83-055728a42d1b.png";
+const imgEllipse4 = "https://www.figma.com/api/mcp/asset/3e6fc9fe-81c2-4e75-b685-49145e09ff63.svg";
+const imgEllipse5 = "https://www.figma.com/api/mcp/asset/b3e6a565-c7f3-4eab-b4dc-6842b80d04d9.svg";
+const imgEllipse6 = "https://www.figma.com/api/mcp/asset/b3426731-0b9b-4157-9a2d-242919b39dc5.svg";
+const imgEllipse7 = "https://www.figma.com/api/mcp/asset/a22280a9-b826-4ab1-858b-380d3f6e940a.svg";
+const imgEllipse8 = "https://www.figma.com/api/mcp/asset/34795ab9-f527-4275-a189-bfa7d9d98a38.svg";
+const imgEllipse9 = "https://www.figma.com/api/mcp/asset/dcf3ed54-0e0c-4332-92e7-7989cf02ce19.svg";
+
+export default function Frame437380831() {
+  return (
+    <div className="relative size-full" data-node-id="599:3443">
+      <div className="-translate-x-1/2 absolute h-[1063px] left-[calc(50%+370px)] top-[-23px] w-[1064px]" data-node-id="599:3444">
+        <div className="absolute inset-[-28.22%_-28.2%]">
+          <img alt="" className="block max-w-none size-full" src={imgEllipse4} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex items-center justify-center left-[calc(50%+1015.02px)] size-[1212.049px] top-[-439px]" data-node-id="599:3445">
+        <div className="-scale-y-100 flex-none rotate-30">
+          <div className="relative size-[887.281px]">
+            <div className="absolute inset-[-33.81%]">
+              <img alt="" className="block max-w-none size-full" src={imgEllipse5} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex items-center justify-center left-[calc(50%-633.87px)] size-[1460.263px] top-[-71.98px]" data-node-id="599:3446">
+        <div className="-scale-y-100 flex-none rotate-30">
+          <div className="relative size-[1068.987px]">
+            <div className="absolute inset-[-28.06%]">
+              <img alt="" className="block max-w-none size-full" src={imgEllipse6} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] h-[169px] leading-[82px] left-[1086px] not-italic text-[58px] text-black top-[108px] tracking-[-1.16px] w-[659px]" data-node-id="599:3447">
+        Your PMS Shouldn’t Live on an Island.
+      </p>
+      <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[1086px] not-italic text-[#4f4f4f] text-[16px] top-[277px] w-[633px]" data-node-id="599:3448">
+        Maximus is designed to operate within the modern healthcare technology ecosystem and connect to the systems your organization already relies on.
+      </p>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-[rgba(255,255,255,0.1)] border border-[#9acaa1] border-solid h-[46px] left-[calc(50%+250px)] rounded-[34px] shadow-[0px_15px_15px_0px_rgba(194,194,194,0.1)] top-[calc(50%-352.5px)] w-[248px]" data-node-id="599:3449">
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Poppins:Regular'] h-[15px] leading-[1.2] left-[calc(50%+0.5px)] not-italic text-[#7d7d7d] text-[12px] text-center top-[calc(50%-7px)] w-[255px]" data-node-id="599:3450">
+          Connected by Design
+          <br aria-hidden />
+          <br aria-hidden />
+        </p>
+      </div>
+      <div className="absolute h-[352px] left-[1088px] top-[382px] w-[664px]" data-node-id="599:3451">
+        <div className="absolute bg-[#b8b8b8] h-[342px] left-0 top-0 w-px" data-node-id="599:3452" />
+        <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[31px] not-italic text-[#4f4f4f] text-[16px] top-[32px] w-[633px]" data-node-id="599:3453">
+          Support established healthcare interoperability standards.
+        </p>
+        <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[31px] not-italic text-[#4f4f4f] text-[16px] top-[128px] w-[633px]" data-node-id="599:3454">
+          Enable modern healthcare data exchange and interoperability.
+        </p>
+        <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[31px] not-italic text-[#4f4f4f] text-[16px] top-[224px] w-[633px]" data-node-id="599:3455">
+          Connect Maximus with external applications, platforms, and services.
+        </p>
+        <p className="[word-break:break-word] absolute font-['Poppins:Regular'] leading-[32px] left-[31px] not-italic text-[#4f4f4f] text-[16px] top-[320px] w-[633px]" data-node-id="599:3456">
+          Automate repetitive workflows where direct integration is limited.
+        </p>
+        <p className="[word-break:break-word] absolute font-['Poppins:Medium'] leading-[32px] left-[31px] not-italic text-[24px] text-black top-0 w-[633px]" data-node-id="599:3457">
+          HL7
+        </p>
+        <p className="[word-break:break-word] absolute font-['Poppins:Medium'] leading-[32px] left-[31px] not-italic text-[24px] text-black top-[96px] w-[633px]" data-node-id="599:3458">
+          FHIR
+        </p>
+        <p className="[word-break:break-word] absolute font-['Poppins:Medium'] leading-[32px] left-[31px] not-italic text-[24px] text-black top-[192px] w-[633px]" data-node-id="599:3459">
+          APIs
+        </p>
+        <p className="[word-break:break-word] absolute font-['Poppins:Medium'] leading-[32px] left-[31px] not-italic text-[24px] text-black top-[288px] w-[633px]" data-node-id="599:3460">
+          RPA
+        </p>
+      </div>
+      <div className="absolute border border-[#1171a1] border-solid h-[695px] left-[222px] overflow-clip rounded-[20px] top-[39px] w-[618px]" data-node-id="599:3461">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[20px]">
+          <img alt="" className="absolute h-[133.38%] left-0 max-w-none top-[-27.9%] w-full" src={imgFrame1707480008} />
+        </div>
+        <div className="[word-break:break-word] absolute bg-[rgba(13,54,82,0.52)] h-[171px] leading-[32px] left-[19px] not-italic overflow-clip rounded-[20px] top-[503px] w-[584px]" data-node-id="599:3462">
+          <p className="absolute font-['Poppins:Regular'] left-[36px] text-[#c8edff] text-[16px] top-[86px] w-[501px]" data-node-id="599:3463">
+            EHRs • Payers • Clearinghouses • Labs • Payment systems • Third-party healthcare platforms
+          </p>
+          <p className="absolute font-['Poppins:Medium'] left-[36px] text-[24px] text-white top-[18px] w-[501px]" data-node-id="599:3464">
+            Connect the data. Trigger the workflow. Automate the action.
+          </p>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute h-[343px] left-[calc(50%-262px)] top-[-41px] w-[342px]" data-node-id="599:3465">
+        <div className="absolute inset-[-87.46%_-87.72%]">
+          <img alt="" className="block max-w-none size-full" src={imgEllipse7} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex items-center justify-center left-[calc(50%-390.29px)] size-[553.424px] top-[235px]" data-node-id="599:3466">
+        <div className="-rotate-30 flex-none">
+          <div className="relative size-[405.134px]">
+            <div className="absolute inset-[-74.05%]">
+              <img alt="" className="block max-w-none size-full" src={imgEllipse8} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex items-center justify-center left-[calc(50%-599.38px)] size-[521.232px] top-[-50px]" data-node-id="599:3467">
+        <div className="-rotate-30 flex-none">
+          <div className="relative size-[381.568px]">
+            <div className="absolute inset-[-78.62%]">
+              <img alt="" className="block max-w-none size-full" src={imgEllipse9} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.
+[Image: source: /root/.claude/projects/-home-user-elementorMCP/dbf312a5-d3f4-5082-b125-48dd8b3c5a04/tool-results/mcp-Figma-blob-1790703177400-k3w4xz.png]
