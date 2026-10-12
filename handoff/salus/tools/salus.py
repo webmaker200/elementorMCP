@@ -86,21 +86,27 @@ def image(b, cid, name, css, alt=''):
     return b.el('e-image', cid, cfg={'image': img(name, alt)}, css=css)
 
 
-def circle_arrow(b, cid, arrow):
+def circle_arrow(b, cid, arrow, pinned=False):
     k = image(b, cid + 'i', arrow, 'width: 24px; height: 24px; display: block;')
+    pin = ('position: absolute; inset-inline-end: 9px; inset-block-start: 50%; transform: translateY(-50%); ' if pinned else '')
     return b.el('e-div-block', cid, k, css=('display: flex; align-items: center; justify-content: center; '
                                             'width: 39px; height: 39px; flex-shrink: 0; padding: 8px; '
-                                            'border-radius: 41px; background-color: #FFFFFF;'))
+                                            f'border-radius: 41px; background-color: #FFFFFF; {pin}'))
 
 
-def pill_button(b, cid, text, url, arrow='arrow-blue', css='', text_color='#000000'):
+def pill_button(b, cid, text, url, arrow='arrow-blue', css='', text_color='#000000',
+                hover_bg='rgba(119,179,229,0.36)', hover_shadow='rgba(20,74,224,0.15)', pinned=False):
+    """Figma Button.base. Hover (as on the Maximus page): lighter fill + soft shadow, plus a slight zoom."""
     k = para(b, cid + 't', text, f'font-size: 14px; line-height: 19.6px; font-weight: 500; color: {text_color}; margin: 0px;')
-    k += circle_arrow(b, cid + 'c', arrow)
+    k += circle_arrow(b, cid + 'c', arrow, pinned)
     cfg = {'tag': 'a', 'link': {'destination': url}} if url else {'tag': 'div'}
     base = ('display: flex; flex-direction: row; align-items: center; gap: 14px; height: 56px; width: max-content; flex-shrink: 0; '
             'padding: 0px 9px 0px 26px; border-radius: 61px; border: 1px solid #B8DBD4; '
-            f'background-color: rgba(119,179,229,0.2); {GLASS} text-decoration: none; ')
-    return b.el('e-flexbox', cid, k, cfg=cfg, css=base + css)
+            f'background-color: rgba(119,179,229,0.2); {GLASS} text-decoration: none; '
+            'transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; ')
+    hover = (f' &:hover{{background-color: {hover_bg}; box-shadow: 0px 10px 24px 0px {hover_shadow}; transform: scale(1.04);}}'
+             f' &:focus-visible{{background-color: {hover_bg}; box-shadow: 0px 10px 24px 0px {hover_shadow}; transform: scale(1.04);}}')
+    return b.el('e-flexbox', cid, k, cfg=cfg, css=base + css + hover)
 
 
 # ---------------------------------------------------------------- A. Hero
@@ -126,7 +132,7 @@ def hero(b):
                             "You review and sign. You do not need to find time for patients, you own the entire clock now."),
               ('font-size: 16px; line-height: 32px; color: #4F4F4F; max-width: 595px; margin: 0px 0px 43px 0px; '
                '@media(--tablet){max-width: 680px;} @media(--mobile){font-size: 15px; line-height: 28px; margin: 0px 0px 28px 0px;}'))
-    btns = pill_button(b, 'hero-b1', 'Explore AI Ecosystem', None)
+    btns = pill_button(b, 'hero-b1', 'Explore AI Ecosystem', 'https://medcaremso.com/ai-eco-system/')
     vp = para(b, 'hero-b2t', 'View Pricing', 'font-size: 14px; line-height: 19.6px; font-weight: 500; color: #000000; margin: 0px;')
     vp += image(b, 'hero-b2i', 'arrow-black', 'width: 24px; height: 24px; display: block;')
     btns += b.el('e-flexbox', 'hero-b2', vp, cfg={'tag': 'a', 'link': {'destination': '#pricing'}},
@@ -352,10 +358,12 @@ def pricing(b):
                                       '@media(--laptop){font-size: 52px; line-height: 58px;} @media(--mobile){font-size: 44px; line-height: 50px;}')
         c += para(b, p + 'pp', 'per provider', 'font-size: 16px; line-height: 32px; color: #4F4F4F; margin: 0px 0px 27px 0px;')
         c += para(b, p + 's', summ, 'font-size: 16px; line-height: 32px; color: #4F4F4F; margin: 0px 0px 49px 0px; @media(--laptop){margin: 0px 0px 32px 0px;}')
-        bcss = 'width: 100%; justify-content: center; position: relative; padding: 0px 56px 0px 56px; '
+        bcss = 'width: 100%; justify-content: center; position: relative; padding: 0px 56px 0px 56px; gap: 0px; '
         if pro:
             bcss += 'background-color: #144AE0; border: 1px solid #144AE0;'
-        btn = pill_button(b, p + 'b', 'Get Started', DEMO, 'arrow-pro' if pro else 'arrow-btn', bcss, '#FFFFFF' if pro else '#000000')
+        btn = pill_button(b, p + 'b', 'Get Started', DEMO, 'arrow-pro' if pro else 'arrow-btn', bcss, '#FFFFFF' if pro else '#000000',
+                          hover_bg='#3A68E8' if pro else 'rgba(119,179,229,0.36)', hover_shadow='rgba(20,74,224,0.25)' if pro else 'rgba(20,74,224,0.15)',
+                          pinned=True)
         c += btn
         li = ''
         for j, it in enumerate(items):
@@ -550,7 +558,7 @@ def cta(b):
         '@media(--mobile){gap: 24px 12px;}'))
     btn = pill_button(b, 'sh-btn', 'Request Book a Demo', DEMO, 'arrow-cta',
                       ('border-color: #B8BCDB; background-color: rgba(154,161,202,0.2); margin: 0px 0px 0px auto; position: relative; z-index: 1; '
-                       '@media(--tablet){margin: 0px;}'), '#FFFFFF')
+                       '@media(--tablet){margin: 0px;}'), '#FFFFFF', hover_bg='rgba(255,255,255,0.22)', hover_shadow='rgba(0,20,90,0.3)')
     logo = image(b, 'sh-logo', 'cta-logo', ('position: absolute; width: 423px; height: 543px; max-width: none; inset-inline-end: 58px; '
                                             'inset-block-start: -114px; pointer-events: none; '
                                             '@media(--tablet){inset-inline-end: -60px;} @media(--mobile){width: 260px; height: 334px; inset-block-start: auto; inset-block-end: -120px; inset-inline-end: -70px;}'))
