@@ -1,0 +1,296 @@
+{
+ "arrow-blue": {
+  "id": 410966,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-arrow-blue.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 224
+ },
+ "arrow-black": {
+  "id": 410967,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-arrow-black.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 222
+ },
+ "arrow-cta": {
+  "id": 410968,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-arrow-cta.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 224
+ },
+ "arrow-btn": {
+  "id": 410969,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-arrow-btn.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 224
+ },
+ "arrow-pro": {
+  "id": 410970,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-arrow-pro.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 224
+ },
+ "icon-stt": {
+  "id": 410971,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-stt.svg",
+  "w": 15,
+  "h": 15,
+  "bytes": 538
+ },
+ "icon-bolt": {
+  "id": 410972,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-bolt.svg",
+  "w": 15,
+  "h": 15,
+  "bytes": 227
+ },
+ "icon-voice": {
+  "id": 410973,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-voice.svg",
+  "w": 36,
+  "h": 36,
+  "bytes": 1979
+ },
+ "icon-edit": {
+  "id": 410974,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-edit.svg",
+  "w": 30,
+  "h": 30,
+  "bytes": 1556
+ },
+ "icon-ai": {
+  "id": 410975,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-ai.svg",
+  "w": 32,
+  "h": 32,
+  "bytes": 3221
+ },
+ "icon-shield": {
+  "id": 410976,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-shield.svg",
+  "w": 34,
+  "h": 34,
+  "bytes": 358
+ },
+ "icon-translate": {
+  "id": 410977,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-translate.svg",
+  "w": 34,
+  "h": 34,
+  "bytes": 7145
+ },
+ "icon-settings": {
+  "id": 410978,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-settings.svg",
+  "w": 34,
+  "h": 34,
+  "bytes": 4652
+ },
+ "icon-template": {
+  "id": 410979,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-template.svg",
+  "w": 42,
+  "h": 42,
+  "bytes": 2131
+ },
+ "icon-search": {
+  "id": 410980,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-search.svg",
+  "w": 36,
+  "h": 36,
+  "bytes": 487
+ },
+ "icon-letter": {
+  "id": 410981,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-letter.svg",
+  "w": 38,
+  "h": 38,
+  "bytes": 4885
+ },
+ "icon-checklist": {
+  "id": 410982,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-checklist.svg",
+  "w": 38,
+  "h": 37,
+  "bytes": 2133
+ },
+ "icon-check-gray": {
+  "id": 410983,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-check-gray.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 212
+ },
+ "icon-check-green": {
+  "id": 410984,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-check-green.svg",
+  "w": 22,
+  "h": 22,
+  "bytes": 251
+ },
+ "icon-clock": {
+  "id": 410985,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-clock.svg",
+  "w": 43,
+  "h": 42,
+  "bytes": 488
+ },
+ "icon-git-merge": {
+  "id": 410986,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-git-merge.svg",
+  "w": 42,
+  "h": 42,
+  "bytes": 817
+ },
+ "icon-loader": {
+  "id": 410987,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-loader.svg",
+  "w": 43,
+  "h": 43,
+  "bytes": 1062
+ },
+ "icon-trending-up": {
+  "id": 410988,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-trending-up.svg",
+  "w": 43,
+  "h": 43,
+  "bytes": 376
+ },
+ "icon-maximize": {
+  "id": 410989,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-maximize.svg",
+  "w": 43,
+  "h": 43,
+  "bytes": 592
+ },
+ "icon-shield-blue": {
+  "id": 410990,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-icon-shield-blue.svg",
+  "w": 43,
+  "h": 43,
+  "bytes": 355
+ },
+ "cta-logo": {
+  "id": 410991,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-cta-logo.svg",
+  "w": 423,
+  "h": 543,
+  "bytes": 2567
+ },
+ "avatar-1": {
+  "id": 411017,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-avatar-1-1.webp",
+  "w": 70,
+  "h": 70,
+  "bytes": 1012
+ },
+ "avatar-2": {
+  "id": 411018,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-avatar-2-1.webp",
+  "w": 70,
+  "h": 70,
+  "bytes": 1522
+ },
+ "avatar-3": {
+  "id": 411019,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-avatar-3-1.webp",
+  "w": 70,
+  "h": 70,
+  "bytes": 1042
+ },
+ "bg-addons": {
+  "id": 410995,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-addons.webp",
+  "w": 480,
+  "h": 208,
+  "bytes": 1006
+ },
+ "bg-compare": {
+  "id": 410996,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-compare.webp",
+  "w": 480,
+  "h": 340,
+  "bytes": 1560
+ },
+ "bg-cta": {
+  "id": 410997,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-cta.webp",
+  "w": 480,
+  "h": 266,
+  "bytes": 2026
+ },
+ "bg-does": {
+  "id": 410998,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-does.webp",
+  "w": 480,
+  "h": 255,
+  "bytes": 1234
+ },
+ "bg-hero": {
+  "id": 410999,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-hero.webp",
+  "w": 480,
+  "h": 216,
+  "bytes": 1044
+ },
+ "bg-pricing-panel": {
+  "id": 411023,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-pricing-panel-1.webp",
+  "w": 409,
+  "h": 240,
+  "bytes": 1134
+ },
+ "bg-pricing-pro": {
+  "id": 411001,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-pricing-pro.webp",
+  "w": 130,
+  "h": 209,
+  "bytes": 602
+ },
+ "bg-pricing": {
+  "id": 411002,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-pricing.webp",
+  "w": 480,
+  "h": 352,
+  "bytes": 2350
+ },
+ "bg-see": {
+  "id": 411003,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-see.webp",
+  "w": 480,
+  "h": 311,
+  "bytes": 2084
+ },
+ "bg-why": {
+  "id": 411004,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-bg-why.webp",
+  "w": 480,
+  "h": 259,
+  "bytes": 2018
+ },
+ "dashboard": {
+  "id": 411005,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-dashboard.webp",
+  "w": 558,
+  "h": 334,
+  "bytes": 22290
+ },
+ "see-it-work": {
+  "id": 411006,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-see-it-work.webp",
+  "w": 1107,
+  "h": 499,
+  "bytes": 27890
+ },
+ "watermark": {
+  "id": 411020,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-watermark-1.webp",
+  "w": 1662,
+  "h": 491,
+  "bytes": 85784
+ }
+}
