@@ -115,15 +115,15 @@ def hero(b):
                                          'padding: 0px 15px 0px 11px; border-radius: 31px; border: 1px solid #7EB63E; '
                                          f'background-color: rgba(255,255,255,0.1); {GLASS} margin: 0px 0px 25px 0px; align-self: flex-start; '
                                          '@media(--tablet){align-self: center;}'))
-    k += b.el('e-heading', 'h1', cfg={'tag': 'h1', 'title': "You didn't spend 12 years in training to spend 4 hours writing notes."},
+    k += b.el('e-heading', 'h1', cfg={'tag': 'h1', 'title': 'Give all your time to patients, Salus AI will make the notes'},
               css=(f"{F} font-size: 72px; line-height: 88px; font-weight: 400; letter-spacing: -1.44px; color: #000000; "
                    "max-width: 665px; margin: 0px 0px 23px 0px; "
                    "@media(--laptop){font-size: 60px; line-height: 74px; letter-spacing: -1.2px;} "
                    "@media(--tablet_extra){font-size: 50px; line-height: 62px; letter-spacing: -1px;} "
                    "@media(--tablet){font-size: 46px; line-height: 58px; max-width: 760px;} "
                    "@media(--mobile){font-size: 34px; line-height: 44px; letter-spacing: -0.68px; margin: 0px 0px 16px 0px;}"))
-    k += para(b, 'hero-p', ("Salus listens to every encounter, structures the clinical note, and suggests codes — all before "
-                            "the patient reaches the door. That's 2–4 hours back in your day, every day."),
+    k += para(b, 'hero-p', ("Before the patient reaches the door, Salus AI has already finished the clinical note and suggested the codes. "
+                            "You review and sign. You do not need to find time for patients, you own the entire clock now."),
               ('font-size: 16px; line-height: 32px; color: #4F4F4F; max-width: 595px; margin: 0px 0px 43px 0px; '
                '@media(--tablet){max-width: 680px;} @media(--mobile){font-size: 15px; line-height: 28px; margin: 0px 0px 28px 0px;}'))
     btns = pill_button(b, 'hero-b1', 'Explore AI Ecosystem', None)
@@ -189,8 +189,8 @@ def hero(b):
 # ---------------------------------------------------------------- B. See it work
 def see(b):
     k = pill(b, 'sb-pill', 'See It Work')
-    k += h2(b, 'sb-h2', 'Transcription to structured note in seconds.', 16, mt=33)
-    k += sub(b, 'sb-sub', 'Three different encounters. Watch Salus listen, document, and code each one in real time.', 55, '#4F4F4F', 800)
+    k += h2(b, 'sb-h2', 'Turn entire conversations into note within moments', 16, mt=33)
+    k += sub(b, 'sb-sub', 'From conversation to signed-ready notes, Salus AI structures the SOAP note and lines up the codes for review.', 55, '#4F4F4F', 800)
     k += mockup(b)
     panel = b.el('e-flexbox', 'sb-panel', k, css=(
         'display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 1814px; '
@@ -293,8 +293,9 @@ def tile(b, cid, icon, size, icon_px):
 
 def does(b):
     k = pill(b, 'sc-pill', 'What Salus Does')
-    k += h2(b, 'sc-h2', 'Every encounter, handled. Every code, suggested.')
-    k += sub(b, 'sc-sub', 'No new hardware. No new habits. Salus works silently alongside your existing workflow from day one.', 59)
+    k += h2(b, 'sc-h2', 'Everything Salus AI does, from the first word to the last code')
+    k += sub(b, 'sc-sub', ('No new hardware and nothing to press, Salus AI works during the visit you were already having. Built by billers, coders, '
+                         'and engineers who know what a finished note should carry.'), 59)
     cards = [
         ('icon-voice', 36, 'Ambient Recording', 'Captures every word of the encounter automatically — no button-pressing, no workflow disruption.'),
         ('icon-edit', 30, 'Auto-Generated Notes', 'SOAP, H&P, Telemed, Procedure, Progress, Emergency, and Discharge notes — structured and ready to sign.'),
@@ -390,13 +391,14 @@ def pricing(b):
 # ---------------------------------------------------------------- E. Add-ons
 def addons(b):
     k = pill(b, 'se-pill', 'Available Add-Ons')
-    k += h2(b, 'se-h2', 'Extend your plan with powerful extras.')
-    k += sub(b, 'se-sub', 'Add-ons are available on every plan. Ask your Medcare MSO representative for pricing.', 56)
-    body = 'Build custom clinical note templates using drag & drop and voice commands — tailored to your specialty.'
-    items = [('icon-template', 42, 'Dynamic Template'), ('icon-search', 36, 'Face Sheet Scanner'),
-             ('icon-letter', 38, 'Referral Letter'), ('icon-checklist', 38, 'Follow-up Task / Order')]
+    k += h2(b, 'se-h2', 'Add-ons available on every plan')
+    k += sub(b, 'se-sub', 'Add to any plan. Your MedCare MSO representative quotes pricing for your practice.', 56)
+    items = [('icon-template', 42, 'Dynamic Template', 'Build note templates for your specialty with drag and drop and voice commands, so the note comes out in the structure your practice already uses.'),
+             ('icon-search', 36, 'Face Sheet Scanner', 'Scan the patient face sheet and add the details of insurance demographics into the encounter, so the note starts with the patient record filled in.'),
+             ('icon-letter', 38, 'Referral Letter', 'You can create the referral letter from the encounter note, with the reason and the findings relevant to the patient.'),
+             ('icon-checklist', 38, 'Follow-Up Task/Order', 'Turn the plan section into follow-up tasks and orders, so nothing discussed in the room is left to memory.')]
     g = ''
-    for i, (ic, px, t) in enumerate(items):
+    for i, (ic, px, t, body) in enumerate(items):
         c = tile(b, f'se{i}k', ic, 82, px)
         c += b.el('e-heading', f'se{i}t', cfg={'tag': 'h3', 'title': t}, css=(
             f'{F} font-size: 32px; line-height: 42px; font-weight: 400; color: #000000; text-align: center; max-width: 290px; '
@@ -416,9 +418,9 @@ def addons(b):
 
 # ---------------------------------------------------------------- F. Comparison table
 def compare(b):
-    k = pill(b, 'sf-pill', 'Available Add-Ons')
-    k += h2(b, 'sf-h2', 'Extend your plan with powerful extras.')
-    k += sub(b, 'sf-sub', 'Add-ons are available on every plan. Ask your Medcare MSO representative for pricing.', 85)
+    k = pill(b, 'sf-pill', 'Plan Comparison')
+    k += h2(b, 'sf-h2', 'What Each Plan Includes')
+    k += sub(b, 'sf-sub', 'Feature by feature across Basic, Pro, and Ultimate.', 85)
     Y, N = 'Y', '–'
     rows = [('Ambient recording', Y, Y, Y), ('Automated SOAP notes', Y, Y, Y), ('ICD-10 suggestions', Y, Y, Y),
             ('E/M + CPT coding', N, Y, Y), ('Multi-language support', N, Y, Y), ('Custom templates', N, Y, Y),
@@ -472,15 +474,15 @@ def compare(b):
 # ---------------------------------------------------------------- G. Why Salus
 def why(b):
     k = pill(b, 'sg-pill', 'Why Salus?')
-    k += h2(b, 'sg-h2', 'Built for the way clinicians actually work.')
-    k += sub(b, 'sg-sub', "No ramp-up. No new workflows. Just documentation that's done by the time you reach your next patient.", 69)
+    k += h2(b, 'sg-h2', 'Built the way you work, not the way software does')
+    k += sub(b, 'sg-sub', ('The note is structured and coded by the time the next patient arrives. Here is what that means for you and the practice.'), 69)
     cards = [
-        ('icon-clock', '4 hrs Saved Per Clinician Daily', 'Meaningful time returned to patients — documentation stays done automatically.'),
-        ('icon-git-merge', 'Fewer Errors Reduce documentation Gaps', 'Structured AI notes reduce omissions that lead to claim denials and rejected codes.'),
-        ('icon-loader', 'Zero Disruption No Workflow Changes', 'Ambient capture runs quietly in the background — no new buttons, no new habits.'),
-        ('icon-trending-up', 'Better Coding Improve Coder Efficiency', 'Coding-ready notes every encounter. ICD-10, CPT, SNOMED, LOINC — auto-suggested.'),
-        ('icon-maximize', 'Scales Up Across Your Entire Practice', 'Single-provider to large multi-specialty — tiered plans grow with your practice.'),
-        ('icon-shield-blue', 'HIPAA-First Architecture-Level Compliance', 'PHI redaction, audit trails, zero audio retention — compliance is structural, not optional.'),
+        ('icon-clock', 'Get your time back', 'The documentation is done during the visit, not after the clinic hours'),
+        ('icon-git-merge', 'Lesser gaps in the note', 'Structured notes carry exactly what payers are looking for, which lower the chances of denials.'),
+        ('icon-loader', 'No change to how you see patients', 'Ambient capture runs in the background. No new buttons during the visit.'),
+        ('icon-trending-up', 'Coding-ready on every note', 'ICD-10 and SNOMED suggestions on every plan; CPT and modifiers on Ultimate. Your coders start from a draft, not a blank.'),
+        ('icon-maximize', 'Grows with the practice', 'From one provider to a multi-specialty group on the same platform; tiered plans add languages, speakers, and integrations as you add clinicians.'),
+        ('icon-shield-blue', 'Compliance in the design', 'PHI redaction, a full audit trail, and zero audio retention. These are how the system is built, not settings to switch on.'),
     ]
     g = ''
     for i, (ic, t, p) in enumerate(cards):
@@ -494,14 +496,13 @@ def why(b):
             'display: flex; flex-direction: column; align-items: flex-start; padding: 28px 24px 28px 27px; border-radius: 30px; '
             f'background-color: rgba(255,255,255,0.5); {GLASS} @media(--mobile){{padding: 26px 20px 26px 20px; border-radius: 24px;}}'))
     q = para(b, 'sg-qm', '“', 'font-size: 92px; line-height: 61px; color: #144AE0; margin: 0px 0px 2px 0px;')
-    q += para(b, 'sg-qt', ('Documentation burnout is one of the leading drivers of physician attrition. Salus removes 2–4 hours of daily '
-                           'administrative burden per clinician — without changing how they see patients.'),
+    q += para(b, 'sg-qt', ('Salus AI was built for one thing: the clinician leaves the room with the note written and the codes suggested, '
+                           'and the way they see patients does not change.'),
               'font-size: 18px; line-height: 39px; color: #4F4F4F; max-width: 315px; margin: 0px 0px 39px 0px; @media(--tablet){max-width: none;} @media(--mobile){font-size: 16px; line-height: 32px;}')
     av = para(b, 'sg-av', 'M', 'font-size: 14.5px; line-height: 22px; font-weight: 500; letter-spacing: 0.14px; color: #FFFFFF; margin: 0px; '
                                'display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; '
                                'border-radius: 22px; background-color: #0066FF;')
-    who = para(b, 'sg-an', 'Medcare MSO Clinical Advisory', 'font-size: 16px; line-height: 32px; font-weight: 500; color: #000000; margin: 0px;')
-    who += para(b, 'sg-ar', 'Internal Clinical Outcomes Review · 2026', 'font-size: 14px; line-height: 22px; color: #4F4F4F; margin: 0px;')
+    who = para(b, 'sg-an', 'MedCare MSO, product team', 'font-size: 16px; line-height: 32px; font-weight: 500; color: #000000; margin: 0px;')
     av += b.el('e-div-block', 'sg-aw', who, css='display: flex; flex-direction: column; padding: 0px; min-width: 0px;')
     q += b.el('e-flexbox', 'sg-auth', av, css=('display: flex; flex-direction: row; align-items: flex-start; gap: 19px; padding: 45px 0px 0px 0px; '
                                                'border-style: solid; border-color: #E3E3E3; border-width: 1px 0px 0px 0px; width: 100%;'))
@@ -522,9 +523,8 @@ def why(b):
 # ---------------------------------------------------------------- H. CTA
 def cta(b):
     k = pill(b, 'sh-pill', 'Ready to get started')
-    k += h2(b, 'sh-h2', 'Give your clinicians their time back.', 28, mt=29)
-    k += para(b, 'sh-p', ('Request a demo from your Medcare MSO representative. Onboarding is included with every plan — '
-                          "you'll be documenting smarter in days, not weeks."),
+    k += h2(b, 'sh-h2', 'See Salus AI on one of your own encounters', 28, mt=29)
+    k += para(b, 'sh-p', 'Request a demo from your MedCare MSO representative. Onboarding is included with every plan.',
               'font-size: 16px; line-height: 32px; color: #4F4F4F; text-align: center; max-width: 867px; margin: 0px; '
               '@media(--mobile){font-size: 15px; line-height: 28px;}')
     panel = b.el('e-flexbox', 'sh-panel', k, css=(
