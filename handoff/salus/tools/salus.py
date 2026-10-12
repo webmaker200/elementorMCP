@@ -211,7 +211,7 @@ def mockup(b):
                                         'padding: 0px 0px 0px 13px; flex-shrink: 0; '
                                         'background-image: radial-gradient(circle at 3.5px 50%, #144AE0 3px, rgba(20,74,224,0) 4px);'))
     c = b.el('e-flexbox', 'mk-lhead', head, css='display: flex; flex-direction: row; align-items: center; gap: 10px; padding: 0px; width: 100%;')
-    c += image(b, 'mk-wave', 'wave', 'width: 100%; height: auto; display: block; margin: 22px 0px 0px 0px;',
+    c += image(b, 'mk-wave', 'wave-animated', 'width: 100%; height: auto; display: block; margin: 22px 0px 0px 0px;',
                alt='Live audio waveform')
     bub = ''
     for i, (who, said) in enumerate([('Dr. Reyes', '"Any chest pain or shortness of breath?"'), ('Patient', '"Just the cough, worse at night."')]):

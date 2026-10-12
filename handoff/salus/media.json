@@ -286,13 +286,6 @@
   "h": 491,
   "bytes": 85784
  },
- "wave": {
-  "id": 411028,
-  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-wave.svg",
-  "w": 477,
-  "h": 72,
-  "bytes": 16149
- },
  "icon-doc": {
   "id": 411029,
   "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-doc.svg",
@@ -327,5 +320,12 @@
   "w": 184,
   "h": 181,
   "bytes": 13178
+ },
+ "wave-animated": {
+  "id": 411042,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-wave-animated.svg",
+  "w": 477,
+  "h": 72,
+  "bytes": 9524
  }
 }
