@@ -191,15 +191,95 @@ def see(b):
     k = pill(b, 'sb-pill', 'See It Work')
     k += h2(b, 'sb-h2', 'Transcription to structured note in seconds.', 16, mt=33)
     k += sub(b, 'sb-sub', 'Three different encounters. Watch Salus listen, document, and code each one in real time.', 55, '#4F4F4F', 800)
-    k += image(b, 'sb-img', 'see-it-work', 'width: 100%; max-width: 1476px; height: auto; display: block; border-radius: 30px; '
-                                           '@media(--mobile){border-radius: 16px;}',
-               alt='Salus AI listening to an encounter and producing a structured SOAP note with suggested codes')
+    k += mockup(b)
     panel = b.el('e-flexbox', 'sb-panel', k, css=(
         'display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 1814px; '
         f'padding: 54px 40px 79px 40px; border-radius: 20px; background-color: rgba(255,255,255,0.3); {GLASS} '
         '@media(--laptop){padding: 48px 32px 64px 32px;} @media(--tablet){padding: 40px 24px 48px 24px;} '
         '@media(--mobile){padding: 32px 14px 32px 14px;}'))
     return section(b, 'sb', panel, 'bg-see', 113, 72)
+
+
+# ---------------------------------------------------------------- B mockup (native: listening card + SOAP note card)
+def mockup(b):
+    # left: AI listening card
+    t = para(b, 'mk-lt', 'AI Listening', 'font-size: 18px; line-height: 18px; font-weight: 500; color: #07182D; margin: 0px;')
+    t += para(b, 'mk-ls', 'Ambient capture · encrypted', 'font-size: 12px; line-height: 18px; color: #94A3B8; margin: 0px; padding: 3px 0px 0px 0px;')
+    head = image(b, 'mk-lg', 'logo-mark', 'width: 33px; height: 43px; flex-shrink: 0; display: block;')
+    head += b.el('e-div-block', 'mk-lh', t, css='display: flex; flex-direction: column; padding: 0px; min-width: 0px;')
+    head += para(b, 'mk-live', 'Live', ('font-size: 11px; line-height: 16.5px; font-weight: 600; color: #144AE0; margin: 0px 0px 0px auto; '
+                                        'padding: 0px 0px 0px 13px; flex-shrink: 0; '
+                                        'background-image: radial-gradient(circle at 3.5px 50%, #144AE0 3px, rgba(20,74,224,0) 4px);'))
+    c = b.el('e-flexbox', 'mk-lhead', head, css='display: flex; flex-direction: row; align-items: center; gap: 10px; padding: 0px; width: 100%;')
+    c += image(b, 'mk-wave', 'wave', 'width: 100%; height: auto; display: block; margin: 22px 0px 0px 0px;',
+               alt='Live audio waveform')
+    bub = ''
+    for i, (who, said) in enumerate([('Dr. Reyes', '"Any chest pain or shortness of breath?"'), ('Patient', '"Just the cough, worse at night."')]):
+        x = para(b, f'mk-b{i}w', who, 'font-size: 11px; line-height: 16.5px; font-weight: 700; letter-spacing: 0.11px; color: #144AE0; margin: 0px;')
+        x += para(b, f'mk-b{i}t', said, 'font-size: 12.5px; line-height: 18.8px; color: #475569; margin: 0px; padding: 4px 0px 0px 0px;')
+        bub += b.el('e-div-block', f'mk-b{i}', x, css=('display: flex; flex-direction: column; padding: 10px 14px; border-radius: 12px; '
+                                                       'border: 0.8px solid rgba(0,102,255,0.09); background-color: rgba(0,102,255,0.04);'))
+    c += b.el('e-flexbox', 'mk-bubs', bub, css='display: flex; flex-direction: column; gap: 10px; padding: 20px 0px 0px 0px; width: 100%;')
+    lcard = b.el('e-flexbox', 'mk-lcard', c, css=(
+        'display: flex; flex-direction: column; width: 100%; max-width: 531px; padding: 26px; border-radius: 20px; '
+        'border: 0.8px solid rgba(255,255,255,0.9); background-color: rgba(255,255,255,0.78); '
+        'backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); '
+        'box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.95), 0px 12px 40px 0px rgba(0,102,255,0.1); '
+        '@media(--mobile){padding: 18px;}'))
+    left = b.el('e-flexbox', 'mk-left', lcard, css=(
+        'display: flex; align-items: center; justify-content: center; flex: 1 1 50%; min-width: 0px; padding: 60px 56px 60px 40px; '
+        f"background-color: #FFFFFF; background-image: url('{bgurl('see-left-bg')}'); background-size: cover; background-position: center center; "
+        '@media(--laptop){padding: 48px 48px 48px 32px;} @media(--tablet){flex: 1 1 auto; width: 100%; padding: 40px 24px 72px 24px;} '
+        '@media(--mobile){padding: 24px 12px 64px 12px;}'))
+
+    # right: clinical documentation card
+    tile_ = b.el('e-div-block', 'mk-dk', image(b, 'mk-dki', 'icon-doc', 'width: 24px; height: 24px; display: block;'), css=(
+        'display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; padding: 0px; '
+        'border-radius: 13px; background-color: rgba(0,102,255,0.1);'))
+    t = para(b, 'mk-dt', 'Clinical Documentation', 'font-size: 16px; line-height: 22.5px; font-weight: 500; color: #07182D; margin: 0px;')
+    t += para(b, 'mk-ds', 'SOAP · auto-structured', 'font-size: 12px; line-height: 18px; color: #94A3B8; margin: 0px;')
+    head = tile_ + b.el('e-div-block', 'mk-dh', t, css='display: flex; flex-direction: column; padding: 0px; min-width: 0px; flex: 1 1 auto;')
+    head += para(b, 'mk-ready', 'Ready for review', ('font-size: 11px; line-height: 16.5px; font-weight: 700; color: #0D9E6E; margin: 0px 0px 0px auto; '
+                                                     'padding: 4px 11px; border-radius: 999px; background-color: rgba(112,221,177,0.1); white-space: nowrap; flex-shrink: 0;'))
+    c = b.el('e-flexbox', 'mk-dhead', head, css='display: flex; flex-direction: row; align-items: center; gap: 10px; padding: 0px; width: 100%;')
+    soap = [('Subjective', '52M, 3-day productive cough with nocturnal worsening. No dyspnea or chest pain reported.'),
+            ('Objective', 'Afebrile. Lungs: scattered rhonchi, clears with cough. SpO₂ 98% RA.'),
+            ('Assessment', 'Acute bronchitis, likely viral.'),
+            ('Plan', 'Symptomatic management, hydration, cough suppressant. Return precautions reviewed.')]
+    for i, (lab, txt) in enumerate(soap):
+        x = para(b, f'mk-s{i}l', lab, 'font-size: 11.5px; line-height: 17.2px; font-weight: 500; letter-spacing: 0.46px; color: #0A4BC2; margin: 0px;')
+        x += para(b, f'mk-s{i}t', txt, 'font-size: 13px; line-height: 20.1px; color: #475569; margin: 0px; padding: 4px 0px 0px 0px;')
+        c += b.el('e-div-block', f'mk-s{i}', x, css=(
+            f"display: flex; flex-direction: column; width: 100%; padding: 0px 0px 13px 0px; margin: {20 if i == 0 else 13}px 0px 0px 0px; "
+            'border-style: solid; border-color: rgba(7,24,45,0.08); border-width: 0px 0px 1px 0px;'))
+    c += para(b, 'mk-cl', 'SUGGESTED CODES', 'font-size: 11px; line-height: 16.5px; font-weight: 600; color: #94A3B8; margin: 13px 0px 0px 0px;')
+    chips = ''
+    for i, code in enumerate(['J20.9 · Acute bronchitis', '99214 · E/M', 'ICD-10 verified']):
+        x = image(b, f'mk-c{i}i', 'check-mint', 'width: 13px; height: 13px; flex-shrink: 0; display: block;')
+        x += para(b, f'mk-c{i}t', code, 'font-size: 12px; line-height: 18px; font-weight: 600; color: #0A4BC2; margin: 0px; white-space: nowrap;')
+        chips += b.el('e-flexbox', f'mk-c{i}', x, css=('display: flex; flex-direction: row; align-items: center; gap: 6px; padding: 5px 11px; width: max-content; '
+                                                       'border-radius: 9px; border: 0.8px solid rgba(0,102,255,0.15); background-color: rgba(0,102,255,0.05);'))
+    c += b.el('e-flexbox', 'mk-codes', chips, css='display: flex; flex-direction: row; flex-wrap: wrap; gap: 8px; padding: 8px 0px 0px 0px; width: 100%;')
+    rcard = b.el('e-flexbox', 'mk-rcard', c, css=(
+        'display: flex; flex-direction: column; width: 100%; max-width: 531px; padding: 26px; border-radius: 20px; '
+        'border: 0.8px solid rgba(7,24,45,0.08); background-color: #FFFFFF; position: relative; z-index: 1; '
+        '@media(--mobile){padding: 18px;}'))
+    logo = image(b, 'mk-logo', 'logo-3d', (
+        'width: 92px; height: 91px; display: block; position: absolute; z-index: 3; inset-inline-start: 0px; inset-block-start: 50%; '
+        'transform: translate(-50%, -50%); border-radius: 50%; '
+        'box-shadow: 0px 0px 0px 18px rgba(245,248,255,0.12), 0px 0px 22px 18px rgba(17,43,177,0.1); '
+        '@media(--tablet){inset-inline-start: 50%; inset-block-start: 0px;} '
+        '@media(--mobile){width: 72px; height: 71px; box-shadow: 0px 0px 0px 12px rgba(245,248,255,0.12), 0px 0px 18px 12px rgba(17,43,177,0.1);}'),
+        alt='Salus AI')
+    right = b.el('e-flexbox', 'mk-right', rcard + logo, css=(
+        'display: flex; align-items: center; justify-content: center; flex: 1 1 50%; min-width: 0px; padding: 60px 40px 60px 56px; position: relative; '
+        'background-color: #144AE0; background-image: radial-gradient(circle at 50% 50%, #3A68E8 0%, #144AE0 62%); '
+        '@media(--laptop){padding: 48px 32px 48px 48px;} @media(--tablet){flex: 1 1 auto; width: 100%; padding: 72px 24px 40px 24px;} '
+        '@media(--mobile){padding: 64px 12px 24px 12px;}'))
+    return b.el('e-flexbox', 'mk', left + right, css=(
+        'display: flex; flex-direction: row; align-items: stretch; width: 100%; max-width: 1476px; min-height: 666px; padding: 0px; '
+        'border-radius: 30px; overflow: hidden; '
+        '@media(--laptop){min-height: 0px;} @media(--tablet){flex-direction: column;} @media(--mobile){border-radius: 16px;}'))
 
 
 # ---------------------------------------------------------------- C. What Salus does
