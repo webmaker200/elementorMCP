@@ -1,0 +1,70 @@
+<!-- Coffee page (WP 1827): "Our services" grid. Paste into an Elementor HTML widget
+     placed between the "What we do" (#services) and "Common problems" (#faults) sections.
+     Uses the page's existing --rcf-* colour/font variables. Images are placeholders. -->
+<style>
+.rcf-svc{width:100%;background:var(--rcf-surface,#fff);padding:96px 32px;box-sizing:border-box;font-family:var(--rcf-font,'Plus Jakarta Sans'),sans-serif}
+.rcf-svc.rcf-svc *{box-sizing:border-box;font-family:inherit}
+.rcf-svc__wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:48px}
+.rcf-svc__head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}
+.rcf-svc__eyebrow{margin:0;font-weight:700;font-size:13px;letter-spacing:.12em;line-height:1.4;text-transform:uppercase;color:var(--rcf-copper,#36732F)}
+.rcf-svc__h2{margin:0;font-weight:700;font-size:40px;line-height:1.15;letter-spacing:-.015em;color:var(--rcf-espresso,#15302A)}
+.rcf-svc__lead{margin:0;max-width:640px;font-size:19px;line-height:1.6;color:var(--rcf-muted,#56645F)}
+.rcf-svc__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.rcf-svc__card{display:flex;flex-direction:column;background:var(--rcf-surface,#fff);border:1px solid var(--rcf-border,#DAE4D6);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
+.rcf-svc__card:hover{transform:translateY(-4px);border-color:var(--rcf-copper,#36732F);box-shadow:0 18px 40px -24px rgba(21,48,42,.45)}
+.rcf-svc__img{position:relative;aspect-ratio:4/3;background:var(--rcf-sand,#E7F0E3);display:flex;align-items:center;justify-content:center}
+.rcf-svc__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.rcf-svc__avatar{width:84px;height:84px;border-radius:50%;background:var(--rcf-surface,#fff);display:flex;align-items:center;justify-content:center;color:var(--rcf-copper,#36732F);box-shadow:0 6px 18px -8px rgba(21,48,42,.35)}
+.rcf-svc__avatar svg{width:42px;height:42px}
+.rcf-svc__num{position:absolute;top:14px;left:14px;font-weight:700;font-size:12px;letter-spacing:.08em;color:var(--rcf-copper,#36732F);background:var(--rcf-surface,#fff);border-radius:999px;padding:5px 10px}
+.rcf-svc__body{padding:22px 22px 26px;display:flex;flex-direction:column;gap:10px}
+.rcf-svc__h3{margin:0;font-weight:700;font-size:19px;line-height:1.3;letter-spacing:-.005em;color:var(--rcf-espresso,#15302A)}
+.rcf-svc__p{margin:0;font-size:15px;line-height:1.6;color:var(--rcf-muted,#56645F)}
+@media (max-width:1024px){.rcf-svc__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:767px){.rcf-svc{padding:56px 16px}.rcf-svc__wrap{gap:32px}.rcf-svc__h2{font-size:28px;line-height:1.2}.rcf-svc__lead{font-size:17px}.rcf-svc__grid{gap:16px}.rcf-svc__body{padding:18px 18px 22px}}
+@media (max-width:520px){.rcf-svc__grid{grid-template-columns:1fr}.rcf-svc__img{aspect-ratio:16/9}}
+</style>
+<section class="rcf-svc" id="our-services">
+  <div class="rcf-svc__wrap">
+    <div class="rcf-svc__head">
+      <p class="rcf-svc__eyebrow">Our services</p>
+      <h2 class="rcf-svc__h2">Everything your coffee machine needs</h2>
+      <p class="rcf-svc__lead">From a quick descale to a full commercial rebuild, our technicians handle every type of coffee machine, on site, anywhere in Dubai.</p>
+    </div>
+    <div class="rcf-svc__grid">
+<!-- To add a photo later: put <img src="..." alt="..."> inside .rcf-svc__img (it covers the placeholder). -->
+      <article class="rcf-svc__card">
+        <div class="rcf-svc__img"><span class="rcf-svc__num">01</span><span class="rcf-svc__avatar"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="6" width="30" height="10" rx="2"/><path d="M13 16v24h22V16"/><path d="M19 22h10v4a5 5 0 0 1-10 0z"/><path d="M29 23h2a2 2 0 0 1 0 4h-2"/><path d="M15 40h18"/></svg></span></div>
+        <div class="rcf-svc__body"><h3 class="rcf-svc__h3">Espresso Machine Repair</h3><p class="rcf-svc__p">Single and dual-boiler machines that won't heat, pump or hold pressure, diagnosed and fixed properly.</p></div>
+      </article>
+      <article class="rcf-svc__card">
+        <div class="rcf-svc__img"><span class="rcf-svc__num">02</span><span class="rcf-svc__avatar"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="5" width="28" height="38" rx="3"/><rect x="15" y="10" width="18" height="7" rx="1.5"/><path d="M20 26h8v6h-8z"/><path d="M14 38h20"/><circle cx="35" cy="22" r="0.5"/></svg></span></div>
+        <div class="rcf-svc__body"><h3 class="rcf-svc__h3">Bean-to-Cup Machine Repair</h3><p class="rcf-svc__p">Brew unit, grinder, milk system and error-code faults on fully automatic home and office machines.</p></div>
+      </article>
+      <article class="rcf-svc__card">
+        <div class="rcf-svc__img"><span class="rcf-svc__num">03</span><span class="rcf-svc__avatar"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6h20l2 10H12z"/><path d="M14 16v26h20V16"/><path d="M20 26h8v5a4 4 0 0 1-8 0z"/><path d="M18 42h12"/></svg></span></div>
+        <div class="rcf-svc__body"><h3 class="rcf-svc__h3">Capsule Machine Repair</h3><p class="rcf-svc__p">Nespresso and other pod machines that leak, won't pierce the capsule or blink instead of brewing.</p></div>
+      </article>
+      <article class="rcf-svc__card">
+        <div class="rcf-svc__img"><span class="rcf-svc__num">04</span><span class="rcf-svc__avatar"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="40" height="16" rx="2"/><path d="M8 26v14h32V26"/><path d="M15 26v5M33 26v5"/><circle cx="24" cy="18" r="3"/><path d="M12 36h6M30 36h6"/></svg></span></div>
+        <div class="rcf-svc__body"><h3 class="rcf-svc__h3">Commercial Machine Repair</h3><p class="rcf-svc__p">Fast on-site repairs for multi-group café and restaurant machines, so service gets back on track.</p></div>
+      </article>
+      <article class="rcf-svc__card">
+        <div class="rcf-svc__img"><span class="rcf-svc__num">05</span><span class="rcf-svc__avatar"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c6 8 11 14 11 21a11 11 0 0 1-22 0c0-7 5-13 11-21z"/><path d="M19 28a5 5 0 0 0 5 5"/></svg></span></div>
+        <div class="rcf-svc__body"><h3 class="rcf-svc__h3">Descaling &amp; Deep Cleaning</h3><p class="rcf-svc__p">Scale and old coffee oils removed from boilers, group heads and steam wands to bring the flavour back.</p></div>
+      </article>
+      <article class="rcf-svc__card">
+        <div class="rcf-svc__img"><span class="rcf-svc__num">06</span><span class="rcf-svc__avatar"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 5h16l-3 10H19z"/><rect x="13" y="15" width="22" height="12" rx="2"/><path d="M16 27l2 10h12l2-10"/><path d="M14 42h20"/></svg></span></div>
+        <div class="rcf-svc__body"><h3 class="rcf-svc__h3">Grinder Repair &amp; Servicing</h3><p class="rcf-svc__p">Worn burrs, jams and inconsistent grind fixed and calibrated for a better extraction every time.</p></div>
+      </article>
+      <article class="rcf-svc__card">
+        <div class="rcf-svc__img"><span class="rcf-svc__num">07</span><span class="rcf-svc__avatar"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="34" height="31" rx="3"/><path d="M7 19h34M16 6v8M32 6v8"/><path d="M17 30l5 5 9-10"/></svg></span></div>
+        <div class="rcf-svc__body"><h3 class="rcf-svc__h3">Preventive Maintenance</h3><p class="rcf-svc__p">Scheduled visits for gaskets, screens, pressure and temperature checks before small issues become breakdowns.</p></div>
+      </article>
+      <article class="rcf-svc__card">
+        <div class="rcf-svc__img"><span class="rcf-svc__num">08</span><span class="rcf-svc__avatar"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11.3 11.3l4.2 4.2M32.5 32.5l4.2 4.2M11.3 36.7l4.2-4.2M32.5 15.5l4.2-4.2"/></svg></span></div>
+        <div class="rcf-svc__body"><h3 class="rcf-svc__h3">Genuine Spare Parts</h3><p class="rcf-svc__p">Original seals, pumps, heating elements and brew units sourced and fitted for lasting repairs.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
