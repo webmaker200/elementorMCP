@@ -11,7 +11,18 @@ PID = 411126
 MEDIA = json.load(open('chal/media.json'))
 S.MEDIA = MEDIA  # helpers resolve media ids/urls through salus.MEDIA
 F, GLASS, SH = S.F, S.GLASS, S.SH
-para, image, pill, h2, sub, section, tile = S.para, S.image, S.pill, S.h2, S.sub, S.section, S.tile
+para, image, pill, h2, sub, tile = S.para, S.image, S.pill, S.h2, S.sub, S.tile
+
+
+def section(b, cid, kids, bg, pt=None, pb=None, attrs=None):
+    """Site-standard section spacing comes from the global class parent-container (3%/10%, 3%/5%, mobile 7%/5%)."""
+    css = ("display: flex; flex-direction: column; align-items: center; gap: 0px; width: 100%; background-color: #ffffff; "
+           f"background-image: url('{S.bgurl(bg)}'); background-size: 100% 100%; background-repeat: no-repeat; overflow: hidden; position: relative; "
+           "@media(--mobile_extra){gap: 0px;}")
+    cfg = {'tag': 'section'}
+    if attrs:
+        cfg['attributes'] = attrs
+    return b.el('e-flexbox', cid, kids, cfg=cfg, css=css, cls=['parent-container'])
 DEMO = 'https://medcaremso.com/request-demo/?utm_source=challenges-single-page'
 BLUE = '#1171A1'
 CARD = f'background-color: rgba(255,255,255,0.1); border-radius: 20px; {SH} {GLASS}'
