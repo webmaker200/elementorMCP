@@ -120,10 +120,10 @@ def hero(b):
                                          'padding: 4px 26px 4px 9px; border-radius: 31px; border: 1px solid #7EB63E; margin: 0px 0px 25px 0px; '
                                          '@media(--tablet_extra){align-self: center;} @media(--mobile){padding: 4px 14px 4px 9px;}'))
     k += b.el('e-heading', 'h1', cfg={'tag': 'h1', 'title': 'Stop losing revenue to <span>claim denials</span> you could have prevented'}, css=(
-        f'{F} font-size: 58px; line-height: 67px; font-weight: 400; color: #000000; max-width: 660px; margin: 0px 0px 24px 0px; '
-        '& span{color: #1171A1; background-color: #F2F9FF; border-radius: 15px; padding: 0px 9px; -webkit-box-decoration-break: clone; box-decoration-break: clone;} '
-        '@media(--laptop){font-size: 50px; line-height: 60px;} @media(--tablet_extra){max-width: 760px;} '
-        '@media(--tablet){font-size: 44px; line-height: 54px;} @media(--mobile){font-size: 34px; line-height: 44px;}'))
+        f'{F} font-size: 58px; line-height: 80px; font-weight: 400; color: #000000; max-width: 660px; margin: 0px 0px 24px 0px; '
+        '& span{color: #1171A1; background-color: #F2F9FF; border-radius: 15px; padding: 2px 9px; -webkit-box-decoration-break: clone; box-decoration-break: clone;} '
+        '@media(--laptop){font-size: 50px; line-height: 70px;} @media(--tablet_extra){max-width: 760px;} '
+        '@media(--tablet){font-size: 44px; line-height: 62px;} @media(--mobile){font-size: 34px; line-height: 50px;}'))
     k += para(b, 'hero-p', ('Every denied claim is money you already earned — stuck in rework or written off for good. MedCare MSO catches '
                             'denials before submission and wins back the ones that slip through.'),
               'font-size: 16px; line-height: 32px; color: #4F4F4F; max-width: 660px; margin: 0px 0px 21px 0px; @media(--mobile){font-size: 15px; line-height: 28px;}')
