@@ -1,0 +1,288 @@
+{
+ "arrow-black": {
+  "id": 411127,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-arrow-black.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 844
+ },
+ "arrow-btn": {
+  "id": 411128,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-arrow-btn.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 844
+ },
+ "arrow-cta": {
+  "id": 411129,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-arrow-cta.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 844
+ },
+ "arrow-white": {
+  "id": 411130,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-arrow-white.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 844
+ },
+ "chart": {
+  "id": 411131,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-chart.svg",
+  "w": 238,
+  "h": 185,
+  "bytes": 10378
+ },
+ "icon-calendar": {
+  "id": 411132,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-calendar.svg",
+  "w": 13,
+  "h": 13,
+  "bytes": 2844
+ },
+ "icon-check-sm": {
+  "id": 411133,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-check-sm.svg",
+  "w": 9,
+  "h": 9,
+  "bytes": 739
+ },
+ "icon-chevron-down": {
+  "id": 411134,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-chevron-down.svg",
+  "w": 10,
+  "h": 10,
+  "bytes": 828
+ },
+ "icon-chevron-right": {
+  "id": 411135,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-chevron-right.svg",
+  "w": 12,
+  "h": 12,
+  "bytes": 823
+ },
+ "icon-clock-blue": {
+  "id": 411136,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-clock-blue.svg",
+  "w": 34,
+  "h": 33,
+  "bytes": 1321
+ },
+ "icon-clock": {
+  "id": 411137,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-clock.svg",
+  "w": 43,
+  "h": 42,
+  "bytes": 1184
+ },
+ "icon-dollar": {
+  "id": 411138,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-dollar.svg",
+  "w": 29,
+  "h": 29,
+  "bytes": 2686
+ },
+ "icon-edit": {
+  "id": 411139,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-edit.svg",
+  "w": 42,
+  "h": 42,
+  "bytes": 3154
+ },
+ "icon-file-plus": {
+  "id": 411140,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-file-plus.svg",
+  "w": 43,
+  "h": 43,
+  "bytes": 3612
+ },
+ "icon-flag": {
+  "id": 411141,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-flag.svg",
+  "w": 43,
+  "h": 42,
+  "bytes": 5496
+ },
+ "icon-folder": {
+  "id": 411142,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-folder.svg",
+  "w": 29,
+  "h": 30,
+  "bytes": 2847
+ },
+ "icon-payments": {
+  "id": 411143,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-payments.svg",
+  "w": 48,
+  "h": 48,
+  "bytes": 2520
+ },
+ "icon-pie": {
+  "id": 411144,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-pie.svg",
+  "w": 40,
+  "h": 40,
+  "bytes": 3480
+ },
+ "icon-pill": {
+  "id": 411145,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-pill.svg",
+  "w": 12,
+  "h": 12,
+  "bytes": 1352
+ },
+ "icon-plus": {
+  "id": 411146,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-plus.svg",
+  "w": 42,
+  "h": 42,
+  "bytes": 1062
+ },
+ "icon-row1": {
+  "id": 411147,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-row1.svg",
+  "w": 17,
+  "h": 17,
+  "bytes": 3829
+ },
+ "icon-row2": {
+  "id": 411148,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-row2.svg",
+  "w": 17,
+  "h": 17,
+  "bytes": 3898
+ },
+ "icon-row3": {
+  "id": 411149,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-row3.svg",
+  "w": 17,
+  "h": 17,
+  "bytes": 3874
+ },
+ "icon-row4": {
+  "id": 411150,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-row4.svg",
+  "w": 17,
+  "h": 17,
+  "bytes": 2417
+ },
+ "icon-search": {
+  "id": 411151,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-search.svg",
+  "w": 36,
+  "h": 36,
+  "bytes": 1011
+ },
+ "icon-target": {
+  "id": 411152,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-target.svg",
+  "w": 16,
+  "h": 16,
+  "bytes": 2081
+ },
+ "icon-trend": {
+  "id": 411153,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-trend.svg",
+  "w": 14,
+  "h": 14,
+  "bytes": 966
+ },
+ "icon-up-red": {
+  "id": 411154,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-up-red.svg",
+  "w": 10,
+  "h": 10,
+  "bytes": 1096
+ },
+ "icon-x": {
+  "id": 411155,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-x.svg",
+  "w": 30,
+  "h": 30,
+  "bytes": 1036
+ },
+ "banner-case": {
+  "id": 411156,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-banner-case.webp",
+  "w": 738,
+  "h": 158,
+  "bytes": 1168
+ },
+ "banner-cta": {
+  "id": 411157,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-banner-cta.webp",
+  "w": 738,
+  "h": 168,
+  "bytes": 1232
+ },
+ "bg-cause": {
+  "id": 411158,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-bg-cause.webp",
+  "w": 480,
+  "h": 219,
+  "bytes": 1006
+ },
+ "bg-cost": {
+  "id": 411159,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-bg-cost.webp",
+  "w": 480,
+  "h": 292,
+  "bytes": 1276
+ },
+ "bg-cta": {
+  "id": 411160,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-bg-cta.webp",
+  "w": 480,
+  "h": 159,
+  "bytes": 652
+ },
+ "bg-faq": {
+  "id": 411161,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-bg-faq.webp",
+  "w": 480,
+  "h": 209,
+  "bytes": 1002
+ },
+ "bg-fix": {
+  "id": 411162,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-bg-fix.webp",
+  "w": 480,
+  "h": 283,
+  "bytes": 1972
+ },
+ "bg-hero": {
+  "id": 411163,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-bg-hero.webp",
+  "w": 480,
+  "h": 187,
+  "bytes": 1040
+ },
+ "avatar-1": {
+  "id": 411017,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-avatar-1-1.webp",
+  "w": 70,
+  "h": 70,
+  "bytes": 1012
+ },
+ "avatar-2": {
+  "id": 411018,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-avatar-2-1.webp",
+  "w": 70,
+  "h": 70,
+  "bytes": 1522
+ },
+ "avatar-3": {
+  "id": 411019,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/salus-avatar-3-1.webp",
+  "w": 70,
+  "h": 70,
+  "bytes": 1042
+ },
+ "icon-faq": {
+  "id": 411167,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/chal-icon-faq.svg",
+  "w": 42,
+  "h": 42
+ }
+}

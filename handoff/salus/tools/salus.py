@@ -18,7 +18,7 @@ SH = 'box-shadow: 0px 15px 15px 0px rgba(194,194,194,0.1);'
 def pfix(css):
     """Site CSS has p{margin-block-end:0 !important}; express paragraph bottom spacing as padding."""
     assert 'border' not in css or 'margin: 0px;' in css or not re.search(r'margin: \S+ \S+ (?!0px)\S+ \S+;', css), css
-    return re.sub(r'margin: (\S+) (\S+) (\S+) (\S+);', lambda m: f'margin: {m[1]} {m[2]} 0px {m[4]}; padding-block-end: {m[3]};' if m[3] != '0px' else m[0], css)
+    return re.sub(r'margin: ([^\s;]+) ([^\s;]+) ([^\s;]+) ([^\s;]+);', lambda m: f'margin: {m[1]} {m[2]} 0px {m[4]}; padding-block-end: {m[3]};' if m[3] != '0px' else m[0], css)
 
 
 def mid(n):
