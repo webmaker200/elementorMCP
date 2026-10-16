@@ -158,6 +158,7 @@ def cost(b):
     k = b.el('e-flexbox', 'sb-short', t, css=(f'display: flex; flex-direction: column; width: 100%; max-width: 1475px; padding: 44px 111px 49px 111px; {CARD} '
                                               '@media(--laptop){padding: 40px 64px;} @media(--tablet){padding: 32px 32px;} @media(--mobile){padding: 26px 20px;}'))
     k += pill(b, 'sb-pill', 'What it\'s costing you')
+    b.style['sb-pill'] += ' margin: 78px 0px 0px 0px; @media(--laptop){margin: 64px 0px 0px 0px;} @media(--tablet){margin: 52px 0px 0px 0px;} @media(--mobile){margin: 40px 0px 0px 0px;}'
     k += h2(b, 'sb-h2', "Denials aren't a billing nuisance — they're a silent revenue leak", 10, 1180, mt=23)
     k += sub(b, 'sb-sub', ('Most practices treat denials as routine rework. But every denied claim carries a cost to appeal, a delay to your cash flow, '
                            'and a real chance the revenue is never recovered at all.'), 59, '#4F4F4F', 870)
