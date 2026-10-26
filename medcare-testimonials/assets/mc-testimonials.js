@@ -1,5 +1,5 @@
 /**
- * MedCare Testimonials: two synced Swiper tracks (photos + quotes).
+ * MedCare Testimonials: two synced, infinite Swiper tracks (photos + quotes).
  * Uses the Swiper 8 bundle Elementor registers as "swiper". Without it the
  * section stays in its static first-slide layout, which is identical to the
  * pre-JS render.
@@ -9,6 +9,11 @@
 
 	var reduceMotion = window.matchMedia && window.matchMedia( '(prefers-reduced-motion: reduce)' ).matches;
 
+	// Narrowest photo slot in the CSS (tablet: 165px slide + 10px gap).
+	var MIN_SLOT = 175;
+	// Widest photo slot (desktop: 312px slide + 10px gap).
+	var MAX_SLOT = 322;
+
 	function init( section ) {
 		if ( section.mcTst || typeof window.Swiper !== 'function' ) {
 			return;
@@ -17,72 +22,81 @@
 
 		var mediaEl = section.querySelector( '.mc-tst__media' );
 		var quotesEl = section.querySelector( '.mc-tst__quotes' );
+		var photoTrack = mediaEl.querySelector( '.mc-tst__track' );
 		var dots = section.querySelectorAll( '.mc-tst__dot' );
 		var count = section.querySelectorAll( '.mc-tst__card' ).length;
 		var speed = reduceMotion ? 0 : 1000;
 		var syncing = false;
 
-		// Loop only when there are more items than the photo track can show at once.
-		var slot = section.querySelector( '.mc-tst__photo' ).getBoundingClientRect().width + 10;
-		var loop = count > Math.ceil( mediaEl.clientWidth / slot );
+		// Infinite loop at every width: with few testimonials, repeat the photo set
+		// until one pass is wider than any screen, so the loop never shows a gap.
+		var originals = Array.prototype.slice.call( photoTrack.children );
+		var widest = Math.max( window.screen ? window.screen.width : 0, window.innerWidth, mediaEl.clientWidth ) + MAX_SLOT;
+		var sets = Math.max( 1, Math.ceil( widest / ( count * MIN_SLOT ) ) );
+		for ( var s = 1; s < sets; s++ ) {
+			originals.forEach( function ( el ) {
+				var copy = el.cloneNode( true );
+				copy.classList.remove( 'is-active' );
+				photoTrack.appendChild( copy );
+			} );
+		}
+		var total = count * sets;
 
-		var common = {
+		var photos = new window.Swiper( mediaEl, {
 			wrapperClass: 'mc-tst__track',
 			slideClass: 'mc-tst__slide',
-			loop: loop,
-			loopedSlides: count,
-			speed: speed,
-			grabCursor: true,
-			watchSlidesProgress: true
-		};
-
-		var autoplay = { delay: 5000, disableOnInteraction: false };
-
-		var photos = new window.Swiper( mediaEl, Object.assign( {}, common, {
+			loop: true,
+			loopedSlides: total,
 			slidesPerView: 'auto',
 			spaceBetween: 0, // The 10px gap is a CSS margin, so the static layout and Swiper's grid match.
-			// When every photo already fits, the photo track cannot move; the quote track autoplays instead.
-			autoplay: reduceMotion || ! loop ? false : autoplay
-		} ) );
+			speed: speed,
+			grabCursor: true,
+			watchSlidesProgress: true,
+			autoplay: reduceMotion ? false : { delay: 5000, disableOnInteraction: false }
+		} );
 
-		var quotes = new window.Swiper( quotesEl, Object.assign( {}, common, {
+		var quotes = new window.Swiper( quotesEl, {
+			wrapperClass: 'mc-tst__track',
+			slideClass: 'mc-tst__slide',
+			loop: true,
+			loopedSlides: count,
 			slidesPerView: 1,
 			spaceBetween: 30,
-			rewind: ! loop,
-			autoplay: reduceMotion || loop ? false : autoplay,
-			autoHeight: false,
+			speed: speed,
+			grabCursor: true,
 			a11y: {
 				enabled: true,
 				containerMessage: section.querySelector( '.mc-tst__title' ).textContent,
 				slideLabelMessage: '{{index}} / {{slidesLength}}'
 			}
-		} ) );
+		} );
 
-		// Move the follower one step in the same direction when possible, so the
-		// last -> first wrap animates forward instead of rewinding.
-		function follow( follower, target ) {
-			var current = follower.realIndex;
-			if ( current === target ) {
+		// Testimonial number (0..count-1) currently shown.
+		function current() {
+			return photos.realIndex % count;
+		}
+
+		// Move a track to testimonial `target`. One step uses next/prev so the
+		// last -> first wrap keeps moving forward; bigger jumps go forward too.
+		function move( swiper, size, target ) {
+			var here = swiper.realIndex;
+			if ( here % count === target ) {
 				return;
 			}
-			if ( ! loop ) {
-				follower.slideTo( target );
-			} else if ( target === ( current + 1 ) % count ) {
-				follower.slideNext();
-			} else if ( target === ( current - 1 + count ) % count ) {
-				follower.slidePrev();
+			if ( ( here + 1 ) % count === target ) {
+				swiper.slideNext();
+			} else if ( ( here - 1 + count ) % count === target ) {
+				swiper.slidePrev();
 			} else {
-				follower.slideToLoop( target );
+				swiper.slideToLoop( ( here + ( ( target - ( here % count ) + count ) % count ) ) % size );
 			}
 		}
 
-		// The photo track leads while looping; otherwise it is locked and the quote track leads.
-		var lead = loop ? photos : quotes;
-
 		function update() {
-			var index = lead.realIndex;
+			var index = current();
+			// Enlarge the active photo (Swiper's slide index; loop duplicates share it).
 			section.querySelectorAll( '.mc-tst__photo' ).forEach( function ( el ) {
-				el.classList.toggle( 'is-active', +el.getAttribute( 'data-index' ) === index );
+				el.classList.toggle( 'is-active', +el.getAttribute( 'data-swiper-slide-index' ) === photos.realIndex );
 			} );
 			dots.forEach( function ( dot, i ) {
 				if ( i === index ) {
@@ -97,53 +111,47 @@
 			} );
 		}
 
-		function link( leader, other ) {
-			leader.on( 'slideChange', function () {
-				if ( syncing ) {
-					return;
-				}
+		// Whichever track changes (arrows, dots, swipe, autoplay), the other follows at once.
+		photos.on( 'slideChange', function () {
+			update();
+			if ( ! syncing ) {
 				syncing = true;
-				follow( other, leader.realIndex );
+				move( quotes, count, current() );
 				syncing = false;
-			} );
-		}
-		link( photos, quotes );
-		link( quotes, photos );
-		lead.on( 'slideChange', update );
+			}
+		} );
+		quotes.on( 'slideChange', function () {
+			if ( ! syncing ) {
+				syncing = true;
+				move( photos, total, quotes.realIndex );
+				syncing = false;
+			}
+		} );
 		quotes.on( 'slideChangeTransitionEnd', update );
 
-		function go( index ) {
-			if ( loop ) {
-				photos.slideToLoop( index );
-			} else {
-				quotes.slideTo( index );
-			}
-		}
-
 		section.querySelector( '.mc-tst__next' ).addEventListener( 'click', function () {
-			lead.slideNext();
+			photos.slideNext();
 		} );
 		section.querySelector( '.mc-tst__prev' ).addEventListener( 'click', function () {
-			lead.slidePrev();
+			photos.slidePrev();
 		} );
 		dots.forEach( function ( dot ) {
 			dot.addEventListener( 'click', function () {
-				go( +dot.getAttribute( 'data-index' ) );
+				move( photos, total, +dot.getAttribute( 'data-index' ) );
 			} );
 		} );
 
-		// Pause autoplay on hover and while anything in the section has focus.
-		var auto = loop ? photos : quotes;
-		if ( auto.params.autoplay && auto.params.autoplay.enabled ) {
+		// Pause autoplay on hover and on keyboard focus.
+		if ( photos.params.autoplay && photos.params.autoplay.enabled ) {
 			var hovered = false;
 			var focused = false;
 			var live = quotesEl.querySelector( '.mc-tst__track' );
 			var sync = function () {
 				if ( hovered || focused ) {
-					auto.autoplay.stop();
+					photos.autoplay.stop();
 					live.setAttribute( 'aria-live', 'polite' );
 				} else {
-					auto.autoplay.start();
+					photos.autoplay.start();
 					live.setAttribute( 'aria-live', 'off' );
 				}
 			};
