@@ -111,11 +111,11 @@ function mc_tst_register_fields() {
 					'name'          => 'mc_cta_type',
 					'type'          => 'select',
 					'choices'       => array(
+						'more'  => __( 'Read More (links to the Testimonials page)', 'medcare-testimonials' ),
+						'video' => __( 'Watch Story (plays a video in a lightbox)', 'medcare-testimonials' ),
 						'none'  => __( 'No button', 'medcare-testimonials' ),
-						'popup' => __( 'Open an Elementor popup (Read More)', 'medcare-testimonials' ),
-						'video' => __( 'Play a video in a lightbox (Watch Story)', 'medcare-testimonials' ),
 					),
-					'default_value' => 'none',
+					'default_value' => 'more',
 					'return_format' => 'value',
 					'wrapper'       => array( 'width' => '50' ),
 				),
@@ -137,17 +137,6 @@ function mc_tst_register_fields() {
 					),
 				),
 				array(
-					'key'               => 'field_mc_popup_id',
-					'label'             => __( 'Popup', 'medcare-testimonials' ),
-					'name'              => 'mc_popup_id',
-					'type'              => 'post_object',
-					'post_type'         => array( 'elementor_library' ),
-					'return_format'     => 'id',
-					'allow_null'        => 1,
-					'ui'                => 1,
-					'conditional_logic' => $cta_is( 'popup' ),
-				),
-				array(
 					'key'               => 'field_mc_video_url',
 					'label'             => __( 'Video URL', 'medcare-testimonials' ),
 					'name'              => 'mc_video_url',
@@ -158,20 +147,6 @@ function mc_tst_register_fields() {
 			),
 		)
 	);
-}
-
-add_filter( 'acf/fields/post_object/query/key=field_mc_popup_id', 'mc_tst_popup_query' );
-
-/**
- * Only list Elementor popups in the Popup field.
- *
- * @param array $args WP_Query args.
- * @return array
- */
-function mc_tst_popup_query( $args ) {
-	$args['meta_key']   = '_elementor_template_type'; // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
-	$args['meta_value'] = 'popup'; // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value
-	return $args;
 }
 
 add_action( 'admin_notices', 'mc_tst_acf_notice' );

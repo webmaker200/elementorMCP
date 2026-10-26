@@ -13,12 +13,13 @@ Elementor's bundled Swiper 8 (handle "swiper").
 == Usage ==
 
 Place a Shortcode widget containing [mc_testimonials] where the section should appear.
-Optional: [mc_testimonials limit="5"] shows only the first 5.
+Shows the first 5 testimonials by default. Options: [mc_testimonials limit="8"] and
+[mc_testimonials more_url="https://example.com/testimonial/"] (default: the page with slug "testimonial").
 
 == Editing testimonials ==
 
 * Add: Testimonials > Add New. Title = person's name. Fill Quote and Photo (required), plus Headline,
-  Role, Organization, optional company logo and the button (Elementor popup or video).
+  Role, Organization, optional company logo and the button ("Read More" links to the Testimonials page, or a "Watch Story" video).
 * Edit: change any field and Update. Both carousels update together.
 * Reorder: set "Order" in the Page Attributes box (lower = earlier). The list screen shows the order.
 * Hide: switch to Draft or move to Trash.
