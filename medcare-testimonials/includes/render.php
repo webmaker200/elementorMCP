@@ -65,55 +65,9 @@ function mc_tst_get_items( $limit = 0 ) {
 			'org'       => (string) get_post_meta( $post->ID, 'mc_organization', true ),
 			'image'     => $image,
 			'logo'      => (int) get_post_meta( $post->ID, 'mc_logo', true ),
-			'cta_type'  => (string) get_post_meta( $post->ID, 'mc_cta_type', true ),
-			'cta_label' => (string) get_post_meta( $post->ID, 'mc_cta_label', true ),
-			'video_url' => (string) get_post_meta( $post->ID, 'mc_video_url', true ),
 		);
 	}
 	return $items;
-}
-
-/**
- * URL of the Testimonials page used by every "Read More" button.
- *
- * @return string
- */
-function mc_tst_more_url() {
-	$page = get_page_by_path( 'testimonial' );
-	$url  = $page ? get_permalink( $page ) : home_url( '/testimonial/' );
-	return (string) apply_filters( 'mc_testimonials_more_url', $url );
-}
-
-/**
- * Button for a testimonial: "Read More" (Testimonials page) or "Watch Story" (Elementor video lightbox).
- *
- * @param array  $item     Testimonial.
- * @param string $more_url Testimonials page URL.
- * @return array{0:string,1:string} [href, label] or empty strings.
- */
-function mc_tst_cta( $item, $more_url ) {
-	$type = '' !== $item['cta_type'] ? $item['cta_type'] : 'more';
-	if ( 'video' === $type && '' !== $item['video_url'] ) {
-		$url = $item['video_url'];
-		if ( preg_match( '~(youtube\.com|youtu\.be)~i', $url ) ) {
-			$video_type = 'youtube';
-		} elseif ( preg_match( '~vimeo\.com~i', $url ) ) {
-			$video_type = 'vimeo';
-		} else {
-			$video_type = 'hosted';
-		}
-		$settings = array(
-			'type'      => 'video',
-			'videoType' => $video_type,
-			'url'       => $url,
-		);
-		$href     = '#elementor-action:action=lightbox&settings=' . base64_encode( wp_json_encode( $settings ) ); // phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode
-		return array( $href, '' !== $item['cta_label'] ? $item['cta_label'] : __( 'Watch Story', 'medcare-testimonials' ) );
-	}
-	if ( 'none' !== $type && '' !== $more_url ) {
-		return array( $more_url, '' !== $item['cta_label'] ? $item['cta_label'] : __( 'Read More', 'medcare-testimonials' ) );
-	}
-	return array( '', '' );
 }
 
 /**
@@ -141,8 +95,8 @@ function mc_tst_shortcode( $atts ) {
 
 	$atts  = shortcode_atts(
 		array(
-			'limit'    => 5,
-			'more_url' => '',
+			'limit'    => mc_tst_setting( 'count' ),
+			'more_url' => mc_tst_more_url(),
 		),
 		$atts,
 		'mc_testimonials'
@@ -159,7 +113,8 @@ function mc_tst_shortcode( $atts ) {
 	$uploads = wp_get_upload_dir();
 	$bg_url  = apply_filters( 'mc_testimonials_bg_url', $uploads['baseurl'] . '/2024/03/testimonial-bg-circle.svg' );
 	$multi   = $count > 1;
-	$more    = '' !== $atts['more_url'] ? $atts['more_url'] : mc_tst_more_url();
+	$more    = (string) $atts['more_url'];
+	$label   = __( 'Read More', 'medcare-testimonials' );
 
 	if ( $multi ) {
 		wp_enqueue_script( 'mc-testimonials' );
@@ -204,8 +159,7 @@ function mc_tst_shortcode( $atts ) {
 			<div class="mc-tst__track">
 			<?php
 			foreach ( $items as $i => $item ) :
-				list( $href, $label ) = mc_tst_cta( $item, $more );
-				$meta                 = implode( ', ', array_filter( array( trim( $item['role'] ), trim( $item['org'] ) ), 'strlen' ) );
+				$meta = implode( ', ', array_filter( array( trim( $item['role'] ), trim( $item['org'] ) ), 'strlen' ) );
 				?>
 				<figure class="mc-tst__slide mc-tst__card" data-index="<?php echo esc_attr( $i ); ?>">
 					<svg class="mc-tst__mark" viewBox="0 0 61 52" aria-hidden="true" focusable="false"><use href="#<?php echo esc_attr( $uid ); ?>-mark"/></svg>
@@ -218,8 +172,8 @@ function mc_tst_shortcode( $atts ) {
 						<?php if ( '' !== $meta ) : ?>
 							<span class="mc-tst__role"><?php echo esc_html( $meta ); ?></span>
 						<?php endif; ?>
-						<?php if ( '' !== $href ) : ?>
-							<a class="mc-tst__cta" href="<?php echo 0 === strpos( $href, '#' ) ? esc_attr( $href ) : esc_url( $href ); ?>"><?php echo esc_html( $label ); ?><span class="mc-tst__sr"> <?php echo esc_html( sprintf( /* translators: %s: person's name */ __( 'from %s', 'medcare-testimonials' ), $item['name'] ) ); ?></span></a>
+						<?php if ( '' !== $more ) : ?>
+							<a class="mc-tst__cta" href="<?php echo esc_url( $more ); ?>"><?php echo esc_html( $label ); ?><span class="mc-tst__sr"> <?php echo esc_html( sprintf( /* translators: %s: person's name */ __( 'from %s', 'medcare-testimonials' ), $item['name'] ) ); ?></span></a>
 						<?php endif; ?>
 						<?php
 						if ( $item['logo'] ) {

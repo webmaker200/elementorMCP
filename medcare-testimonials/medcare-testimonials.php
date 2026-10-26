@@ -25,6 +25,7 @@ require_once MC_TST_DIR . 'includes/fields.php';
 require_once MC_TST_DIR . 'includes/render.php';
 require_once MC_TST_DIR . 'includes/cache.php';
 require_once MC_TST_DIR . 'includes/admin.php';
+require_once MC_TST_DIR . 'includes/settings.php';
 require_once MC_TST_DIR . 'includes/seed.php';
 
 register_activation_hook( __FILE__, 'mc_tst_activate' );

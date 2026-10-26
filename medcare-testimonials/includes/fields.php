@@ -17,18 +17,6 @@ function mc_tst_register_fields() {
 		return;
 	}
 
-	$cta_is = static function ( $value ) {
-		return array(
-			array(
-				array(
-					'field'    => 'field_mc_cta_type',
-					'operator' => '==',
-					'value'    => $value,
-				),
-			),
-		);
-	};
-
 	acf_add_local_field_group(
 		array(
 			'key'                   => 'group_mc_testimonial',
@@ -104,45 +92,6 @@ function mc_tst_register_fields() {
 					'mime_types'    => 'svg,png,webp,jpg,jpeg',
 					'instructions'  => __( 'Shown under the button.', 'medcare-testimonials' ),
 					'wrapper'       => array( 'width' => '50' ),
-				),
-				array(
-					'key'           => 'field_mc_cta_type',
-					'label'         => __( 'Button', 'medcare-testimonials' ),
-					'name'          => 'mc_cta_type',
-					'type'          => 'select',
-					'choices'       => array(
-						'more'  => __( 'Read More (links to the Testimonials page)', 'medcare-testimonials' ),
-						'video' => __( 'Watch Story (plays a video in a lightbox)', 'medcare-testimonials' ),
-						'none'  => __( 'No button', 'medcare-testimonials' ),
-					),
-					'default_value' => 'more',
-					'return_format' => 'value',
-					'wrapper'       => array( 'width' => '50' ),
-				),
-				array(
-					'key'               => 'field_mc_cta_label',
-					'label'             => __( 'Button text', 'medcare-testimonials' ),
-					'name'              => 'mc_cta_label',
-					'type'              => 'text',
-					'instructions'      => __( 'Leave empty for "Read More" / "Watch Story".', 'medcare-testimonials' ),
-					'wrapper'           => array( 'width' => '50' ),
-					'conditional_logic' => array(
-						array(
-							array(
-								'field'    => 'field_mc_cta_type',
-								'operator' => '!=',
-								'value'    => 'none',
-							),
-						),
-					),
-				),
-				array(
-					'key'               => 'field_mc_video_url',
-					'label'             => __( 'Video URL', 'medcare-testimonials' ),
-					'name'              => 'mc_video_url',
-					'type'              => 'url',
-					'instructions'      => __( 'Vimeo, YouTube or a Media Library .mp4 URL.', 'medcare-testimonials' ),
-					'conditional_logic' => $cta_is( 'video' ),
 				),
 			),
 		)

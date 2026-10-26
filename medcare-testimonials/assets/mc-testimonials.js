@@ -36,17 +36,20 @@
 			watchSlidesProgress: true
 		};
 
+		var autoplay = { delay: 5000, disableOnInteraction: false };
+
 		var photos = new window.Swiper( mediaEl, Object.assign( {}, common, {
 			slidesPerView: 'auto',
 			spaceBetween: 0, // The 10px gap is a CSS margin, so the static layout and Swiper's grid match.
-			// When every photo already fits, the photo track cannot move, so it has no autoplay.
-			autoplay: reduceMotion || ! loop ? false : { delay: 5000, disableOnInteraction: false }
+			// When every photo already fits, the photo track cannot move; the quote track autoplays instead.
+			autoplay: reduceMotion || ! loop ? false : autoplay
 		} ) );
 
 		var quotes = new window.Swiper( quotesEl, Object.assign( {}, common, {
 			slidesPerView: 1,
 			spaceBetween: 30,
 			rewind: ! loop,
+			autoplay: reduceMotion || loop ? false : autoplay,
 			autoHeight: false,
 			a11y: {
 				enabled: true,
@@ -130,16 +133,17 @@
 		} );
 
 		// Pause autoplay on hover and while anything in the section has focus.
-		if ( photos.autoplay && photos.params.autoplay.enabled ) {
+		var auto = loop ? photos : quotes;
+		if ( auto.params.autoplay && auto.params.autoplay.enabled ) {
 			var hovered = false;
 			var focused = false;
 			var live = quotesEl.querySelector( '.mc-tst__track' );
 			var sync = function () {
 				if ( hovered || focused ) {
-					photos.autoplay.stop();
+					auto.autoplay.stop();
 					live.setAttribute( 'aria-live', 'polite' );
 				} else {
-					photos.autoplay.start();
+					auto.autoplay.start();
 					live.setAttribute( 'aria-live', 'off' );
 				}
 			};
@@ -151,9 +155,16 @@
 				hovered = false;
 				sync();
 			} );
-			section.addEventListener( 'focusin', function () {
-				focused = true;
-				sync();
+			// Keyboard focus only: mouse clicks also focus buttons but should not stop autoplay.
+			section.addEventListener( 'focusin', function ( e ) {
+				var keyboard = true;
+				try {
+					keyboard = e.target.matches( ':focus-visible' );
+				} catch ( err ) {}
+				if ( keyboard ) {
+					focused = true;
+					sync();
+				}
 			} );
 			section.addEventListener( 'focusout', function ( e ) {
 				if ( ! section.contains( e.relatedTarget ) ) {

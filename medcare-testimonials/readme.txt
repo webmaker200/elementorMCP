@@ -13,16 +13,17 @@ Elementor's bundled Swiper 8 (handle "swiper").
 == Usage ==
 
 Place a Shortcode widget containing [mc_testimonials] where the section should appear.
-Shows the first 5 testimonials by default. Options: [mc_testimonials limit="8"] and
-[mc_testimonials more_url="https://example.com/testimonial/"] (default: the page with slug "testimonial").
+How many testimonials show and where "Read More" goes are set in Testimonials > Settings
+(default: 5, and the page with slug "testimonial"). A shortcode can override both:
+[mc_testimonials limit="8" more_url="https://example.com/testimonial/"]
 
 == Editing testimonials ==
 
 * Add: Testimonials > Add New. Title = person's name. Fill Quote and Photo (required), plus Headline,
-  Role, Organization, optional company logo and the button ("Read More" links to the Testimonials page, or a "Watch Story" video).
+  Role, Organization and an optional company logo. Every slide gets a "Read More" button.
 * Edit: change any field and Update. Both carousels update together.
 * Reorder: set "Order" in the Page Attributes box (lower = earlier). The list screen shows the order.
-* Hide: switch to Draft or move to Trash.
+* Hide: switch to Draft or move to Trash. Only the first N (Settings) published ones show.
 * Photo alt text comes from the Media Library; if empty, the person's name is used.
 
 After editing, WP Rocket's cache is cleared automatically when WP Rocket is active. If another page
