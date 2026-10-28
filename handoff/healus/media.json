@@ -1,0 +1,128 @@
+{
+ "healus-arrow-teal": {
+  "id": 411264,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-arrow-teal.svg",
+  "w": 24,
+  "h": 24,
+  "bytes": 839
+ },
+ "healus-avatar-1": {
+  "id": 411265,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-avatar-1.webp",
+  "w": 70,
+  "h": 70,
+  "bytes": 668
+ },
+ "healus-avatar-2": {
+  "id": 411266,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-avatar-2.webp",
+  "w": 70,
+  "h": 70,
+  "bytes": 1002
+ },
+ "healus-avatar-3": {
+  "id": 411267,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-avatar-3.webp",
+  "w": 70,
+  "h": 70,
+  "bytes": 728
+ },
+ "healus-faq-toggle": {
+  "id": 411268,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-faq-toggle.svg",
+  "w": 34,
+  "h": 34,
+  "bytes": 320
+ },
+ "healus-hero-dashboard": {
+  "id": 411269,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-hero-dashboard.webp",
+  "w": 1500,
+  "h": 902,
+  "bytes": 61608
+ },
+ "healus-icon-contact": {
+  "id": 411270,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-icon-contact.webp",
+  "w": 92,
+  "h": 92,
+  "bytes": 2318
+ },
+ "healus-icon-lab": {
+  "id": 411271,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-icon-lab.webp",
+  "w": 68,
+  "h": 75,
+  "bytes": 1524
+ },
+ "healus-icon-note": {
+  "id": 411272,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-icon-note.webp",
+  "w": 71,
+  "h": 75,
+  "bytes": 1340
+ },
+ "healus-icon-rx": {
+  "id": 411273,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-icon-rx.webp",
+  "w": 72,
+  "h": 72,
+  "bytes": 1394
+ },
+ "healus-icon-shield": {
+  "id": 411274,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-icon-shield.webp",
+  "w": 63,
+  "h": 74,
+  "bytes": 1512
+ },
+ "healus-logo": {
+  "id": 411275,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-logo.webp",
+  "w": 388,
+  "h": 97,
+  "bytes": 13396
+ },
+ "healus-mark-cta": {
+  "id": 411276,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-mark-cta.svg",
+  "w": 457,
+  "h": 457,
+  "bytes": 4806
+ },
+ "healus-mark-form": {
+  "id": 411277,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-mark-form.svg",
+  "w": 544,
+  "h": 544,
+  "bytes": 4821
+ },
+ "healus-physician-desk": {
+  "id": 411278,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-physician-desk.webp",
+  "w": 772,
+  "h": 799,
+  "bytes": 32078
+ },
+ "healus-progress-note": {
+  "id": 411279,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-progress-note.webp",
+  "w": 1140,
+  "h": 866,
+  "bytes": 49094
+ },
+ "healus-specialty-template": {
+  "id": 411280,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-specialty-template.webp",
+  "w": 1338,
+  "h": 883,
+  "bytes": 54328
+ },
+ "healus-select-chevron": {
+  "id": 411294,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/10/healus-select-chevron.svg",
+  "w": 14,
+  "h": 14,
+  "bytes": 215
+ }
+}
