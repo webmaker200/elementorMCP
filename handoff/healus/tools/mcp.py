@@ -2,7 +2,16 @@
 import json, os, subprocess, time
 URL = 'https://medcaredemo.online/medcare/wp-json/elementor/mcp/'
 API = 'https://medcaredemo.online/medcare/wp-json/'
-AUTH = 'Authorization: ' + json.load(open(os.path.expanduser('~/.claude.json')))['mcpServers']['medcare-mso-elementor']['headers']['Authorization']
+def _auth():
+    try:
+        return json.load(open(os.path.expanduser('~/.claude.json')))['mcpServers']['medcare-mso-elementor']['headers']['Authorization']
+    except Exception:  # fall back to the environment secret (base64 user:app-password)
+        v = os.environ['WP_BASIC_AUTH']
+        v = v.split('=', 1)[1] if v.startswith('WP_BASIC_AUTH=') else v
+        return v if v.startswith('Basic ') else 'Basic ' + v
+
+
+AUTH = 'Authorization: ' + _auth()
 _sid = [None]
 
 
