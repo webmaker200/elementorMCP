@@ -30,8 +30,7 @@ through the Elementor MCP so Elementor regenerates the page CSS.
 | FAQ (5) | TX e7635f0 |
 | Give Your Team More Time … CTA | TX b7c86b8 |
 
-## Pending images
-- Hero background is still the New York banner (387370) — no New Mexico hero in the Media Library.
-  Upload one and add `"hero": {"id": <id>, "url": "<url>"}` to `media.json`, then rebuild.
-- City cards still show the Texas photos. Upload `<City>-NM.webp` files (e.g. `Las-Cruces-NM.webp`), add them to
-  `media.json` as `{"<City>-NM.webp": {"id": …, "url": …}}`, then rebuild — the builder swaps them in by name.
+## Images
+- Hero background: 411395 `New-Mexico-Hero-Banner-1920x900-1.webp` (`media.json` → `hero`).
+- City cards: 411399–411408 `<city>-new-mexico.webp` (1024×1024, all < 100 KB), alt text "<City>, New Mexico".
+- Featured image: 411390 `New-Mexico-State-Card-328x333-1.webp`.
