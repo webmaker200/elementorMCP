@@ -20,7 +20,9 @@ Skipped (not in the doc): California case study (d60a587) and Google Map embed (
 
 ## Media
 - 411366 `icon-number07.svg` (new, matches 01–06), 411367 `icon-source-doc.svg` (new section source note).
-- City cards still use the **California city photos** (same placeholder approach as the Alabama page) — no SC city photos exist in the Media Library.
+- City cards: 411379–411388 `<City>-SC.webp` (all < 100 KB, alt "<City>, South Carolina"). Columbia, Charleston, Greenville and
+  Spartanburg are 200×200 (only Canva's preview size was downloadable); the other six are 520–600px, re-encoded from the owner's
+  uploads 411373–411378 (`south-carolina-cities-images*.webp`, 360–640 KB, now unused).
 
 ## Notes for the owner
 - Form email subject changed to "… Medical Billing South Carolina"; everything else in the form is as on California.

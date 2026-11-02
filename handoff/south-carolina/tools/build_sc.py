@@ -449,11 +449,13 @@ def build(ca):
     cta = payers['elements'].pop()
     assert cta['id'] == 'b27b9a5'
 
-    # cities (California photos stay as placeholders, as on the Alabama page)
+    # cities: South Carolina photos (media.json, <100 KB WebP each; alt text set on the attachments)
+    media = json.load(open(os.path.join(HERE, '..', 'media.json')))
     cgrid = find(sections['245b176'], '1293631')
     for card, name in zip(cgrid['elements'], CITIES):
-        p = card['elements'][1]
+        img, p = card['elements']
         p['settings']['paragraph']['value'] = name
+        img['settings']['image']['value']['src']['value']['id']['value'] = media[name.replace(' ', '-') + '-SC.webp']['id']
 
     # FAQ: 6 -> 7 items
     acc = find(sections['d303d44'], '912f39b')
