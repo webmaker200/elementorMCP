@@ -12,7 +12,7 @@ Rebuild: `python3 tools/build_ky.py && python3 tools/deploy_ky.py`.
 Changes vs California: laws grid 5 → 6 cards (all half width), payers 4 cards, claims-review CTA moved under the new
 section, case study and Google Map left out (not in the doc), testimonials shortcode kept as on every state page.
 
-## Pending images
-- Hero background: still California's (376853). Add `"hero": {"id": …, "url": …}` to `media.json` and rebuild.
-- City cards: California photos. Add `"<City>-KY.webp": {"id": …, "url": …}` entries to `media.json` and rebuild.
-- Featured image: not set (set it on the post: `featured_media`).
+## Images
+- Hero background: 411413 `Kentucky-Hero-Banner-1920x900-1.webp` (`media.json` → `hero`).
+- City cards: 411415–411424 `<city>-kentucky.webp` (1024×1024, all < 100 KB), alt text "<City>, Kentucky".
+- Featured image: 411414 `Kentucky-State-Card-328x333-1.webp`.
