@@ -63,6 +63,9 @@ def rest(method, path, body=None, auth=True):
     for i in range(6):
         r = subprocess.run(cmd, capture_output=True, text=True)
         if r.returncode == 0 and r.stdout.strip():
-            return json.loads(r.stdout)
+            try:
+                return json.loads(r.stdout)
+            except ValueError:  # truncated body through the proxy: retry
+                pass
         time.sleep(2 * (i + 1))
     raise RuntimeError(r.stderr)
