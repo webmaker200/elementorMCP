@@ -82,5 +82,17 @@
  "sophus-acc-plus": {
   "id": 411522,
   "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/sophus-acc-plus.svg"
+ },
+ "sophus-glow-blue-sm": {
+  "id": 411530,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/sophus-glow-blue-sm.webp"
+ },
+ "sophus-glow-green-sm": {
+  "id": 411531,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/sophus-glow-green-sm.webp"
+ },
+ "sophus-glow-yellow-sm": {
+  "id": 411532,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/sophus-glow-yellow-sm.webp"
  }
 }

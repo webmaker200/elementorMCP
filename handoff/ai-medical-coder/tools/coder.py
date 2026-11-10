@@ -199,14 +199,14 @@ def hero():
     top = col('h-top', k, css='align-items: center; width: 100%; text-align: center;')
 
     # view switch: V4 tabs; selected / hover / keyboard focus states on each tab button
-    tab_css = (f'{F} display: inline-flex; align-items: center; padding: 8px 16px; border: 0px; border-radius: 999px; font-size: 13px; '
+    tab_css = (f'{F} display: inline-flex; align-items: center; justify-content: center; text-align: center; padding: 8px 16px; border: 0px; border-radius: 999px; font-size: 13px; '
                f'font-weight: 500; line-height: 1.5; color: {SLATE}; background-color: transparent; cursor: pointer; white-space: nowrap; '
                'transition: background-color 0.18s cubic-bezier(0.2,0,0,1), color 0.12s ease, box-shadow 0.12s ease; '
                f'&:hover{{background-color: rgba(255,255,255,0.75); color: {INK};}} '
                f'&[aria-selected="true"]{{background-color: #FFFFFF; color: {INK}; '
                'box-shadow: 0px 1px 2px 0px rgba(2,40,66,0.08), 0px 0px 0px 1px rgba(3,103,161,0.10);} '
                '&:focus-visible{outline: none; box-shadow: 0px 0px 0px 3px rgba(3,103,161,0.30);}')
-    tabs = ''.join(b.el('e-tab', f'hv-t{i}', p(f'hv-t{i}l', name, css='margin: 0px; font: inherit; color: inherit;'), css=tab_css)
+    tabs = ''.join(b.el('e-tab', f'hv-t{i}', p(f'hv-t{i}l', name, css='width: 100%; margin: 0px; font: inherit; color: inherit; text-align: center;'), css=tab_css)
                    for i, name in enumerate(('Coder view', 'Manager view')))
     menu = b.el('e-tabs-menu', 'hv-menu', tabs, css=(
         'display: inline-flex; flex-direction: row; gap: 2px; width: max-content; max-width: 100%; margin: 0px auto; padding: 5px; '
@@ -223,7 +223,7 @@ def hero():
     t = b.el('e-tabs', 'hv', menu + area, cfg={'default-active-tab': 0}, css=(
         'display: flex; flex-direction: column; align-items: center; gap: 0px; width: 100%; padding: 0px; margin-block-start: 48px; '
         'background-image: radial-gradient(42% 46% at 50% 55%, rgba(169,70,244,0.30) 0%, rgba(207,138,253,0.16) 48%, rgba(207,138,253,0) 74%);'))
-    return section('s1', top + t, css=f'background-image: {GLOW_YELLOW}, {GLOW_BLUE};')
+    return section('s1', top + t)
 
 
 # ================================================================ 2. KPI strip
@@ -287,7 +287,7 @@ def how():
               css='display: flex; flex-direction: column; gap: 0px; width: 100%; padding: 0px; margin-block-start: 28px; '
                   'border-top: 1px solid rgba(3,103,161,0.12);')
     right = col('w-r', r, cls=['w-45'])
-    return section('s3', row('w-row', left + right), anchor='how', css=f'background-image: {GLOW_BLUE};')
+    return section('s3', row('w-row', left + right), anchor='how')
 
 
 # ================================================================ 4. Speed
@@ -320,10 +320,13 @@ def speed():
                 else f'{F} font-size: 13px; font-weight: 500; color: {PURPLE_D}; ')
         middle = ' @media(--mobile){display: none;}' if i in (1, 4) else ''
         c += p(f'sp-c{i}', label, css=look + 'line-height: 1.5; margin: 0px; ' + pos + ' ' + chip + middle)
-    lines = box('sp-lines', c, css=(
+    bleed = box('sp-bleed', '', css=(
+        'position: absolute; top: 0px; bottom: 0px; left: 50%; width: 100vw; transform: translateX(-50%); padding: 0px; pointer-events: none; '
+        f"background-image: url('{MEDIA['sophus-speed-lines']['url']}'); background-repeat: no-repeat; background-size: 100% 100%; background-position: center center;"))
+    lines = box('sp-lines', bleed + c, css=(
         'position: relative; width: 100%; height: 360px; padding: 0px; margin-block-start: 0px; '
-        f"background-image: url('{MEDIA['sophus-speed-lines']['url']}'), radial-gradient(22% 46% at 50% 50%, rgba(169,70,244,0.20) 0%, rgba(169,70,244,0) 75%); "
-        'background-repeat: no-repeat, no-repeat; background-size: 100% 100%, 100% 100%; background-position: center center, center center; '
+        'background-image: radial-gradient(22% 46% at 50% 50%, rgba(169,70,244,0.20) 0%, rgba(169,70,244,0) 75%); '
+        'background-repeat: no-repeat; background-size: 100% 100%; background-position: center center; '
         '@media(--tablet){height: 300px;} @media(--mobile){height: 220px;}'))
     big = p('sp-num', '0:32', css=text(236, 0.9, INK, 500, '-0.06em', (
         'font-variant-numeric: tabular-nums; text-align: center; '
@@ -331,7 +334,7 @@ def speed():
     big += p('sp-cap', 'Average coding time per claim, down from 2:30', cls=['global-text'], css=f'margin: 14px 0px 0px 0px; font-size: 15px; color: {SLATE}; text-align: center;')
     big += p('sp-note', 'Our figures, from one anonymous Sophus deployment', css=text(12.5, 1.5, MUTED, extra='margin-block-start: 4px; text-align: center;'))
     bottom = col('sp-bot', big, css='align-items: center; width: 100%; margin-block-start: -12px;')
-    return section('s4', top + lines + bottom, css=f'overflow: hidden; background-image: {GLOW_GREEN};')
+    return section('s4', top + lines + bottom, css='overflow: hidden;')
 
 
 # ================================================================ 5. Manager band
@@ -409,7 +412,7 @@ def seats():
     t = b.el('e-tabs', 'st', menu + area, cfg={'default-active-tab': 0}, css=(
         f'display: flex; flex-direction: column; gap: 0px; width: 100%; margin-block-start: 40px; padding: 10px; border-radius: 24px; {GLASS} '
         '@media(--mobile){padding: 8px; border-radius: 18px;}'))
-    return section('s6', top + t, css=f'background-image: {GLOW_YELLOW};')
+    return section('s6', box('st-wrap', top + t, css='display: flex; flex-direction: column; width: 100%; max-width: 1160px; margin: 0px auto; padding: 0px;'))
 
 
 # ================================================================ 7. Performance widgets
@@ -463,7 +466,7 @@ def performance():
                css=('display: flex; flex-direction: row; align-items: center; gap: 10px; width: max-content; max-width: 100%; margin-block-start: 28px; '
                     'padding: 5px 16px 5px 5px; border-radius: 999px; background-color: rgba(255,255,255,0.55); box-shadow: 0px 0px 0px 1px rgba(3,103,161,0.10); '
                     '@media(--mobile){padding: 8px 14px; border-radius: 16px; flex-wrap: wrap; justify-content: center;}'))
-    return section('s7', top + g + tag, css=f'background-image: {GLOW_BLUE}, {GLOW_GREEN};')
+    return section('s7', top + g + tag)
 
 
 # ================================================================ 8. Marquee + floating cards
@@ -535,7 +538,7 @@ def testimonials():
         f'{F} display: inline-flex; padding: 0px; margin-block-start: 28px; font-size: 17px; font-weight: 500; line-height: 1.5; color: {BLUE}; '
         f'background-color: transparent; border: 0px; text-decoration: none; transition: color 0.15s ease; &:hover{{color: {BLUE_H}; text-decoration: underline;}} {FOCUS}'))
     right = col('ts-r', r, cls=['w-50'])
-    return section('s9', row('ts-row', left + right, gap='6%'), css=f'background-image: {GLOW_BLUE};')
+    return section('s9', row('ts-row', left + right, gap='6%'))
 
 
 # ================================================================ 10. Demo form + wordmark
@@ -619,7 +622,7 @@ def demo():
         'align-items: stretch; padding: 36px; border-radius: 16px; background-color: #FFFFFF; '
         'box-shadow: 0px 0px 0px 1px rgba(3,103,161,0.10), 0px 24px 60px 0px rgba(2,40,66,0.10); @media(--mobile){padding: 24px 20px;}'))
     panel = box('d-box', row('d-row', left + card, gap='6%'), css=(
-        f'display: flex; width: 100%; padding: 72px; border-radius: 24px; {GLASS} '
+        f'display: flex; width: 100%; max-width: 1160px; margin: 0px auto; padding: 72px; border-radius: 24px; {GLASS} '
         '@media(--tablet_extra){padding: 48px;} @media(--tablet){padding: 36px 28px;} @media(--mobile){padding: 24px 16px; border-radius: 18px;}'))
     mark = flex('wm', img('wm-logo', 'sophus-mark', css=(
                     'display: block; flex-shrink: 0; width: 160px; height: auto; opacity: 0.22; filter: blur(1.5px); margin-block-start: 62px; '
@@ -632,7 +635,7 @@ def demo():
                 css=('display: flex; flex-direction: row; justify-content: center; align-items: flex-start; gap: 36px; width: 100%; height: 290px; '
                      'padding: 56px 0px 0px 0px; overflow: hidden; pointer-events: none; '
                      '@media(--tablet){height: 200px; gap: 20px;} @media(--mobile){height: 120px; gap: 12px; padding-block-start: 30px;}'))
-    return section('s10', panel + mark, anchor='demo', css=f'background-image: {GLOW_YELLOW}; padding-block-end: 0px;')
+    return section('s10', panel + mark, anchor='demo', css='padding-block-end: 0px;')
 
 
 SECTIONS = [hero, stats, how, speed, manager, seats, performance, marquee, testimonials, demo]
