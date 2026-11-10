@@ -412,7 +412,7 @@ def seats():
     t = b.el('e-tabs', 'st', menu + area, cfg={'default-active-tab': 0}, css=(
         f'display: flex; flex-direction: column; gap: 0px; width: 100%; margin-block-start: 40px; padding: 10px; border-radius: 24px; {GLASS} '
         '@media(--mobile){padding: 8px; border-radius: 18px;}'))
-    return section('s6', box('st-wrap', top + t, css='display: flex; flex-direction: column; width: 100%; max-width: 1160px; margin: 0px auto; padding: 0px;'))
+    return section('s6', top + t)
 
 
 # ================================================================ 7. Performance widgets
@@ -622,7 +622,7 @@ def demo():
         'align-items: stretch; padding: 36px; border-radius: 16px; background-color: #FFFFFF; '
         'box-shadow: 0px 0px 0px 1px rgba(3,103,161,0.10), 0px 24px 60px 0px rgba(2,40,66,0.10); @media(--mobile){padding: 24px 20px;}'))
     panel = box('d-box', row('d-row', left + card, gap='6%'), css=(
-        f'display: flex; width: 100%; max-width: 1160px; margin: 0px auto; padding: 72px; border-radius: 24px; {GLASS} '
+        f'display: flex; width: 100%; padding: 72px; border-radius: 24px; {GLASS} '
         '@media(--tablet_extra){padding: 48px;} @media(--tablet){padding: 36px 28px;} @media(--mobile){padding: 24px 16px; border-radius: 18px;}'))
     mark = flex('wm', img('wm-logo', 'sophus-mark', css=(
                     'display: block; flex-shrink: 0; width: 160px; height: auto; opacity: 0.22; filter: blur(1.5px); margin-block-start: 62px; '

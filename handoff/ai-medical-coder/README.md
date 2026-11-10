@@ -28,7 +28,7 @@ The site header, footer and orange "Schedule a free Demo" band come from the sit
   - the marquee animation (CSS only);
   - the testimonial slider script, marked `nowprocket` so WP Rocket doesn't delay it.
   The widget finds its targets from the page structure, not element or page IDs, so it keeps working when the page is copied to the live site. Don't delete it.
-- The roles section and the demo form panel are capped at 1160px wide. The speed-section lines span the full viewport width.
+- The speed-section lines span the full viewport width.
 - The form emails mkamran@ and fashraf@medcaremso.com from email@medcaremso.com ("MedCare MSO"), the same recipients as the state-page forms, and also saves submissions.
 
 ## Rebuild
