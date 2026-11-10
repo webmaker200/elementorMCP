@@ -28,17 +28,17 @@ GLASS = ('background-image: linear-gradient(145deg, rgba(255,255,255,0.74), rgba
          'box-shadow: 0px 0px 0px 1px rgba(3,103,161,0.10), inset 0px 1px 0px 0px rgba(255,255,255,0.9), 0px 12px 32px 0px rgba(2,40,66,0.07);')
 FOCUS = '&:focus-visible{outline: none; box-shadow: 0px 0px 0px 3px rgba(3,103,161,0.30);}'
 
-TESTIMONIALS = [  # site template 388878 (sub-templates 401927, 401414, 399517, 397921, 396540)
+TESTIMONIALS = [  # site template 388878; photos are the site's ones (401937, 401412, 399532, 397918, 396539) restyled on the design's grey backdrop
     ('I highly recommend MedCare MSO if you are looking for help with your billing and gain some freedom to see more patients or manage your business.',
-     'Dr. Jose Correa', 'Practice Owner, TXEC', 401937),
+     'Dr. Jose Correa', 'Practice Owner, TXEC', 411546),
     ('MedCare MSO has been an excellent organization to work with, I highly recommend them for their quality of service and commitment to excellence.',
-     'Shaunna Mock', 'Back Office Manager, STST', 401412),
+     'Shaunna Mock', 'Back Office Manager, STST', 411545),
     ("We are definitely impressed by the Team's performance. I worked with a lot of different folks from all over the world on different business transactions, and Mark is truly a top notch talent!",
-     'Max Owens', 'Director of Corporate Development, SC & SF', 399532),
+     'Max Owens', 'Director of Corporate Development, SC & SF', 411544),
     ("MedCare MSO's exceptional communication and expertise elevated our RCM experience and my bank accounts!",
-     'Kelly Ballou', 'Owner, R.D.', 397918),
+     'Kelly Ballou', 'Owner, R.D.', 411543),
     ('MedCare MSO did a great job with our billing and helping clean up old AR. Regular updates and good communication were very appreciated.',
-     'Bret', 'Co-Owner, PCP', 396539),
+     'Bret', 'Co-Owner, PCP', 411542),
 ]
 STORIES_URL = 'https://medcaremso.com/testimonial/'
 
