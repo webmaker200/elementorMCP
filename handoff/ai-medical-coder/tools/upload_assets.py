@@ -10,6 +10,7 @@ ALT = {'sophus-coder-dashboard': 'Sophus coder view: claim queue with suggested 
        'sophus-seat-coders': 'Suggested codes for claim CLM-66412 with accepted and review states',
        'sophus-seat-managers': 'Team weekly output chart: claims completed per coder per day against a target of 40',
        'sophus-seat-billing': 'Client volume chart: busiest clients this month by claims',
+       'sophus-manager-dashboard-v2': 'Sophus coder dashboard: next claim, daily progress, quality scores and prioritized worklist',
        'sophus-card-phone': 'Claim CLM-66412: 3 codes suggested with evidence linked and edits passed'}
 TYPES = {'.webp': 'image/webp', '.svg': 'image/svg+xml'}
 reg = json.load(open(REG)) if os.path.exists(REG) else {}

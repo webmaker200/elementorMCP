@@ -213,7 +213,7 @@ def hero():
         'border-radius: 999px; background-color: rgba(255,255,255,0.6); backdrop-filter: blur(20px) saturate(180%); '
         '-webkit-backdrop-filter: blur(20px) saturate(180%); box-shadow: 0px 0px 0px 1px rgba(3,103,161,0.10), 0px 8px 24px 0px rgba(2,40,66,0.06);'))
     views = (('queue', 'sophus-coder-dashboard', 'Coder view: suggested codes with the evidence behind each one. Sample data.'),
-             ('manager', 'sophus-manager-dashboard', 'Manager view: team output, review queue and AI coder performance. Sample data.'))
+             ('manager', 'sophus-manager-dashboard-v2', 'Manager view: team output, review queue and AI coder performance. Sample data.'))
     panels = ''
     for i, (path, image, cap) in enumerate(views):
         c = browser(f'hv-f{i}', path, image, cap.split(':')[0] + ' dashboard, sample data')
