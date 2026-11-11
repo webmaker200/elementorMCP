@@ -27,3 +27,14 @@ Why choose (checklist + image) / 4 steps / FAQ (FAQ schema) / Final CTA bar.
 
 ## Rebuild
 `python3 tools/run_build.py && python3 tools/post_build.py` (replace_children; the editor-added testimonial widget would need re-adding).
+
+## Page size (editor "server error" on save)
+The server rejects request bodies over ~1 MB (ModSecurity `SecRequestBodyNoFilesLimit`, Apache 413), and the Elementor editor
+saves the whole page in one request. `tools/shrink.py` moved every repeated V4 local style (43 groups, 290 elements) into
+global classes `bh-s01`..`bh-s43` (top priority, same look; verified by pixel diff) -> roughly 600 KB smaller save request.
+Backup of the V4 content before the change: `backup/bh_411549_v4content_before-shrink.json`.
+
+## Process section
+`tools/process.py` replaced "How We Take Over Your Behavioral Health Billing" with the Cardiology-style layout: numbered
+timeline (number SVGs copied from the Cardiology page, gradient connector between circles) + cycle diagram
+`assets/bh-takeover-cycle.webp` (media 411635). Repeated parts use classes `bh-proc-*`.

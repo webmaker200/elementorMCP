@@ -2,5 +2,25 @@
  "behavioral-health-billing-services-icon": {
   "id": 411551,
   "source_url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/behavioral-health-billing-services.svg"
+ },
+ "bh-takeover-cycle": {
+  "id": 411635,
+  "source_url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/bh-takeover-cycle.webp"
+ },
+ "bh-step-number-1": {
+  "id": 411636,
+  "source_url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/bh-step-number-1.svg"
+ },
+ "bh-step-number-2": {
+  "id": 411637,
+  "source_url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/bh-step-number-2.svg"
+ },
+ "bh-step-number-3": {
+  "id": 411638,
+  "source_url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/bh-step-number-3.svg"
+ },
+ "bh-step-number-4": {
+  "id": 411639,
+  "source_url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/bh-step-number-4.svg"
  }
 }

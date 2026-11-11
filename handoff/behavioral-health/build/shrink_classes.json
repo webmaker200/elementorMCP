@@ -1,0 +1,550 @@
+{
+ "bh-s01": {
+  "id": "g-27b63a2",
+  "css": "width: 90%;\n@media(--mobile) { width: 80%; }",
+  "elements": [
+   "0cae5a0",
+   "c558d6e",
+   "d4882d8",
+   "959416c"
+  ]
+ },
+ "bh-s02": {
+  "id": "g-f9bcdd4",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 1.75rem; color: var(--PureBlack);\n@media(--laptop) { line-height: 100%; }",
+  "elements": [
+   "32fa57b",
+   "0983500",
+   "6d898ae",
+   "aa011c2"
+  ]
+ },
+ "bh-s03": {
+  "id": "g-f927fb0",
+  "css": "color: var(--PureBlack);",
+  "elements": [
+   "2a3098e",
+   "da55402",
+   "de179d7",
+   "e3ba28a"
+  ]
+ },
+ "bh-s04": {
+  "id": "g-87aaf64",
+  "css": "width: 55px; height: 55px;\n@media(--laptop) { width: 55px; height: 55px; }",
+  "elements": [
+   "227c194",
+   "b74f2c7"
+  ]
+ },
+ "bh-s05": {
+  "id": "g-149fc5b",
+  "css": "color: var(--DarkGray);",
+  "elements": [
+   "07f04bf",
+   "4b6e3f0",
+   "f3272eb",
+   "d089c84",
+   "e827008",
+   "a794c49"
+  ]
+ },
+ "bh-s06": {
+  "id": "g-000ba7f",
+  "css": "font-weight: 300; color: #000000; text-align: center; margin: 0px;",
+  "elements": [
+   "27b5f960",
+   "4e772a4b",
+   "36b718c2",
+   "3bc3f612"
+  ]
+ },
+ "bh-s07": {
+  "id": "g-ef43545",
+  "css": "color: #4F4F4F; text-align: center; margin: 0px;",
+  "elements": [
+   "71d23a6",
+   "57b5d282",
+   "2f9696e3",
+   "8d1fa56"
+  ]
+ },
+ "bh-s08": {
+  "id": "g-50968dd",
+  "css": "&:hover { border-color: rgba(3,103,161,0.3); box-shadow: 0px 10px 24px 0px rgba(3,103,161,0.10); } text-decoration: none; padding: 1.2rem; border-radius: 16px; border-width: 1px; border-color: rgba(3,103,161,0.1); border-style: solid; background-color: #FFFFFF; box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.04) inset; transition: box-shadow 0.25s, border-color 0.25s; display: flex; flex-direction: column; gap: 15px;",
+  "elements": [
+   "78574144",
+   "69f55644",
+   "68b35c72",
+   "743aa2d1",
+   "2237471a",
+   "185f2f82",
+   "55ae7368",
+   "5aee396d"
+  ]
+ },
+ "bh-s09": {
+  "id": "g-6aed67f",
+  "css": "padding: 0px; display: flex; flex-direction: row; gap: 15px; align-items: center;",
+  "elements": [
+   "6a9da739",
+   "514d1ca1",
+   "389749d4",
+   "6e228e1f",
+   "6ee52827",
+   "34b50ad8",
+   "7747d2eb",
+   "1e3126e"
+  ]
+ },
+ "bh-s10": {
+  "id": "g-1baa08b",
+  "css": "width: 42px; height: 42px; object-fit: contain; flex: 0 0 auto;",
+  "elements": [
+   "1612322a",
+   "53112ec",
+   "8333068",
+   "261fefa5",
+   "6ee8006e",
+   "6830a3a7",
+   "74223df2",
+   "fcf67c3"
+  ]
+ },
+ "bh-s11": {
+  "id": "g-52eaa54",
+  "css": "font-family: var(--Poppins); font-weight: 500; font-size: 20px; color: #000000; line-height: 1.3; margin: 0px;",
+  "elements": [
+   "e6c8706",
+   "129df0ca",
+   "c85796d",
+   "14a32320",
+   "1fbd2e39",
+   "272cf5df",
+   "195ffaed",
+   "b0cf54d"
+  ]
+ },
+ "bh-s12": {
+  "id": "g-1e46f0f",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: #4F4F4F; line-height: 22px; margin: 0px;",
+  "elements": [
+   "73ac2298",
+   "742718e",
+   "4b46b3b3",
+   "6d5aeb55",
+   "16964d6f",
+   "5ee111b7",
+   "6259171f",
+   "7b2db29"
+  ]
+ },
+ "bh-s13": {
+  "id": "g-250f845",
+  "css": "width: 44px; height: 44px; object-fit: contain; flex: 0 0 auto;",
+  "elements": [
+   "bd55a3c",
+   "d2c0243",
+   "a98ca69",
+   "bc236d8",
+   "0437a45",
+   "8e2d24b",
+   "cd8039d",
+   "2054bc1",
+   "e4840e0",
+   "a21dae6"
+  ]
+ },
+ "bh-s14": {
+  "id": "g-21a125a",
+  "css": "font-family: var(--Poppins); font-weight: 600; font-size: 24px; color: var(--PureBlack); line-height: 1.3;\n@media(--mobile_extra) { font-size: 22px; }",
+  "elements": [
+   "7f45c0b",
+   "a25cf8f",
+   "325a6a5",
+   "09b758e",
+   "6967392",
+   "4256880",
+   "6a42a4e",
+   "d48e0a6",
+   "d662705"
+  ]
+ },
+ "bh-s15": {
+  "id": "g-494d98e",
+  "css": "color: var(--DarkGray); text-align: start;",
+  "elements": [
+   "55b46e9",
+   "b177e4e",
+   "5859b54",
+   "004e4c8",
+   "8fdc5fc",
+   "638d765",
+   "f29f50d",
+   "f5dbfb5",
+   "a7f4dc7",
+   "e6056dc"
+  ]
+ },
+ "bh-s16": {
+  "id": "g-58899cf",
+  "css": "width: 100%; position: relative; background-color: #FFFFFF; display: flex; flex-direction: column; gap: 16px; align-items: center;",
+  "elements": [
+   "6b8abe28",
+   "2da5a5e9",
+   "35374c94"
+  ]
+ },
+ "bh-s17": {
+  "id": "g-603a0a5",
+  "css": "font-family: var(--Poppins); font-weight: 600; font-size: 16px; color: #FFFFFF; line-height: 24px; padding: 13px; margin: 0px; background-color: #0367A1;",
+  "elements": [
+   "114e114d",
+   "34863430",
+   "31a9ee0c",
+   "3c7c7dd3",
+   "5b14f26e"
+  ]
+ },
+ "bh-s18": {
+  "id": "g-fb40bd3",
+  "css": "height: 100%; font-family: var(--Poppins); font-weight: 500; font-size: 15px; color: #0367A5; line-height: 22.5px; padding-block-start: 16px; padding-block-end: 16px; padding-inline-start: 13px; padding-inline-end: 13px; margin: 0px; background-color: rgba(128,128,128,0.07);",
+  "elements": [
+   "50fa5bc9",
+   "350562a",
+   "43d8e253",
+   "4dff1c84",
+   "524ae6de"
+  ]
+ },
+ "bh-s19": {
+  "id": "g-598d989",
+  "css": "height: 100%; font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: #333333; line-height: 22.5px; padding-block-start: 16px; padding-block-end: 16px; padding-inline-start: 13px; padding-inline-end: 13px; margin: 0px; background-color: rgba(128,128,128,0.07);",
+  "elements": [
+   "627fcddb",
+   "57a2f7b6",
+   "415e8f09",
+   "50076ce0",
+   "1625ea9f",
+   "37a3de7b",
+   "2b6d8871",
+   "6be0ce1d",
+   "120935cb",
+   "133a1470",
+   "1f8049f7",
+   "2e8db846",
+   "2f522811",
+   "46c80db",
+   "183e88a6",
+   "67a55c87",
+   "2a1f899b",
+   "49e6e50f",
+   "ada008",
+   "4a2eb1e0"
+  ]
+ },
+ "bh-s20": {
+  "id": "g-0c3c007",
+  "css": "height: 100%; font-family: var(--Poppins); font-weight: 500; font-size: 15px; color: #0367A5; line-height: 22.5px; padding-block-start: 16px; padding-block-end: 16px; padding-inline-start: 13px; padding-inline-end: 13px; margin: 0px; background-color: #FFFFFF;",
+  "elements": [
+   "366c30e6",
+   "be87f2a",
+   "72472829",
+   "57a5c212",
+   "e1c7464"
+  ]
+ },
+ "bh-s21": {
+  "id": "g-81ed53a",
+  "css": "height: 100%; font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: #333333; line-height: 22.5px; padding-block-start: 16px; padding-block-end: 16px; padding-inline-start: 13px; padding-inline-end: 13px; margin: 0px; background-color: #FFFFFF;",
+  "elements": [
+   "4f00f75c",
+   "27839c2",
+   "453edd3e",
+   "72a80be7",
+   "187969d4",
+   "2c7fec22",
+   "3d4dc109",
+   "6765bb7",
+   "41bac51f",
+   "36393645",
+   "6ebc6eab",
+   "6c7bd16f",
+   "6056237a",
+   "de5b82e",
+   "5b399a02",
+   "7593f436",
+   "4dcfcfad",
+   "64dce8cd",
+   "44432239",
+   "7ba0c78"
+  ]
+ },
+ "bh-s22": {
+  "id": "g-daf597e",
+  "css": "color: var(--DarkGray); line-height: 24px;",
+  "elements": [
+   "36f344a",
+   "c48648f",
+   "e813076",
+   "fa1877d",
+   "e1bf76b",
+   "80ca630",
+   "1613ad5",
+   "6aa0a50"
+  ]
+ },
+ "bh-s23": {
+  "id": "g-7d1bb48",
+  "css": "@media(--mobile_extra) { width: 60%; }\n@media(--mobile) { width: 100%; }",
+  "elements": [
+   "7f7dcb7",
+   "17d7271",
+   "c2b4239"
+  ]
+ },
+ "bh-s24": {
+  "id": "g-87bf82c",
+  "css": "@media(--mobile) { display: none; }",
+  "elements": [
+   "49a6d52",
+   "0a53295",
+   "7583d86"
+  ]
+ },
+ "bh-s25": {
+  "id": "g-0a82201",
+  "css": "display: flex; flex-direction: column; gap: 1.5rem; align-items: start;\n@media(--mobile) { text-align: center; gap: 1rem; justify-content: center; align-self: center; }\n@media(--tablet) { gap: 1rem; }",
+  "elements": [
+   "29f8ba5",
+   "2cf7287"
+  ]
+ },
+ "bh-s26": {
+  "id": "g-8cf2965",
+  "css": "width: 100%; height: auto;",
+  "elements": [
+   "3feb2f3b",
+   "6dbb774e"
+  ]
+ },
+ "bh-s27": {
+  "id": "g-9722686",
+  "css": "&:hover { box-shadow: 0px 12px 24px 0px rgba(3,103,161,0.25); transform: translate3d(0px, -3px, 0px); } padding: 1.2rem; border-radius: 16px; border-width: 1px; border-color: rgba(3,103,161,0.1); border-style: solid; background-color: #0367A1; transition: transform 0.25s, box-shadow 0.25s; display: flex; flex-direction: column; gap: 10px;",
+  "elements": [
+   "c3de405",
+   "35f1eae1",
+   "151260f",
+   "1b795aa8",
+   "15f8526a",
+   "7764990a",
+   "75d6edf9"
+  ]
+ },
+ "bh-s28": {
+  "id": "g-c8c2355",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 1.3rem; color: #FFFFFF; line-height: 1.3; margin: 0px;\n@media(--mobile) { font-size: 1.15rem; }",
+  "elements": [
+   "3e31b6f3",
+   "7534a553",
+   "6d42d413",
+   "3b1ba447",
+   "610e066",
+   "137c117c",
+   "7cccdc8"
+  ]
+ },
+ "bh-s29": {
+  "id": "g-0d1b9c0",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 14px; color: #FFFFFF; line-height: 22px; margin: 0px;",
+  "elements": [
+   "77ca59ee",
+   "1225bc78",
+   "2d7178d8",
+   "49ed4af5",
+   "6ed5d03d",
+   "43cf6472",
+   "2beb11fd"
+  ]
+ },
+ "bh-s30": {
+  "id": "g-89247e4",
+  "css": "padding: 3%; border-radius: 16px; border-width: 1px; border-color: #0367A11A; border-style: solid; background-color: var(--PureWhite); box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.04) inset; display: flex; flex-direction: column; gap: 15px;",
+  "elements": [
+   "512dfc4",
+   "7eef4ad",
+   "8ed0c88",
+   "921641e"
+  ]
+ },
+ "bh-s31": {
+  "id": "g-9fef951",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 14px; color: var(--DarkGray);\n@media(--mobile) { text-align: center; }",
+  "elements": [
+   "9cfd18d",
+   "9df6063",
+   "5da5b0f",
+   "31e0401",
+   "a8e6f32"
+  ]
+ },
+ "bh-s32": {
+  "id": "g-e4ff2ef",
+  "css": "color: #4F4F4F; margin: 0px;",
+  "elements": [
+   "1f6d00b9",
+   "7aefc6dd",
+   "334bfb5",
+   "76d11453",
+   "238e49e4",
+   "4e40b6ec",
+   "2cffd14b",
+   "3ec350c6",
+   "69ae356a",
+   "6cb9d7f6",
+   "4db5ac89",
+   "24726c42",
+   "7e94fdc7",
+   "4639acea"
+  ]
+ },
+ "bh-s33": {
+  "id": "g-210384f",
+  "css": "color: #4F4F4F; padding-inline-start: 26px; margin: 0px; background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/05/check-icon-green.svg\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px auto; background-position: 0% 0%; background-position: left 4px; & strong { color: #000000; font-weight: 500; }",
+  "elements": [
+   "71412d85",
+   "635e5bde",
+   "3fd0e3b1",
+   "6d0ee1b2",
+   "693f4557",
+   "6e8bcb0c",
+   "1171da8d"
+  ]
+ },
+ "bh-s34": {
+  "id": "g-6f711f0",
+  "css": "&:hover { box-shadow: 0px 10px 24px 0px rgba(3,103,161,0.10); transform: translate3d(0px, -3px, 0px); } padding: 2rem; border-radius: 30px; background-color: #EBF6FF; transition: transform 0.25s, box-shadow 0.25s; display: flex; flex-direction: column; gap: 16px;\n@media(--tablet_extra) { padding: 1.5rem; }",
+  "elements": [
+   "73afce5d",
+   "576829a8"
+  ]
+ },
+ "bh-s35": {
+  "id": "g-21745e0",
+  "css": "width: 52px; height: 52px;",
+  "elements": [
+   "22c2aefb",
+   "7e698100",
+   "5a34cbec",
+   "52d70569"
+  ]
+ },
+ "bh-s36": {
+  "id": "g-df9b00e",
+  "css": "font-family: var(--Poppins); font-weight: 500; font-size: 1.3rem; color: #0367A1; line-height: 1.35; margin: 0px;\n@media(--mobile) { font-size: 1.15rem; }",
+  "elements": [
+   "6c6c462e",
+   "56c53b18",
+   "15280af2",
+   "105852a6"
+  ]
+ },
+ "bh-s37": {
+  "id": "g-062e45c",
+  "css": "padding: 0px; &[open] .e-accordion-item-icon-base, &[open] [class*=\"accordion-item-icon\"] { transform: rotate(180deg); }",
+  "elements": [
+   "6ec621f",
+   "4059193a",
+   "79e525f8",
+   "66f6e35e",
+   "4ff5451",
+   "766e3ca2",
+   "4d8e07fc",
+   "651c952e"
+  ]
+ },
+ "bh-s38": {
+  "id": "g-ef7cc3a",
+  "css": "cursor: pointer; padding-block-start: 14px; padding-block-end: 14px; padding-inline-start: 10px; padding-inline-end: 10px; border-block-end-width: 1px; display: flex; flex-direction: row; gap: 10px; justify-content: space-between; align-items: center; border-bottom-style: solid; border-bottom-color: #EEEEEE; &:hover p { color: #0367A1; }",
+  "elements": [
+   "17e40e87",
+   "94835fa",
+   "480c19c",
+   "3d1c34ff",
+   "500834a0",
+   "213b1e02",
+   "50ee243a",
+   "57ee6c09"
+  ]
+ },
+ "bh-s39": {
+  "id": "g-5ad2d8d",
+  "css": "padding: 0px;",
+  "elements": [
+   "14e23ff8",
+   "649f7dc2",
+   "41b8b71",
+   "7338f51d",
+   "1c24b104",
+   "3e2a0a83",
+   "2b7653f4",
+   "2a2344ff"
+  ]
+ },
+ "bh-s40": {
+  "id": "g-e84c401",
+  "css": "font-family: var(--Poppins); font-weight: 500; font-size: 17px; color: #000000; line-height: 1.3; margin: 0px;",
+  "elements": [
+   "778aaad3",
+   "2f0a9609",
+   "38ee72d6",
+   "719a5d8b",
+   "6e272a20",
+   "4b78c17b",
+   "7fb18a60",
+   "bb6b372"
+  ]
+ },
+ "bh-s41": {
+  "id": "g-44ff9ad",
+  "css": "width: 14px; padding: 0px; transition: transform 0.25s; display: flex; flex: 0 0 auto; justify-content: flex-end; align-items: center;",
+  "elements": [
+   "72b8fc27",
+   "5f1250e6",
+   "764d714c",
+   "64791d03",
+   "66842d4a",
+   "248293a4",
+   "49eca4f1",
+   "f63b43f"
+  ]
+ },
+ "bh-s42": {
+  "id": "g-7223c60",
+  "css": "width: 14px; height: auto;",
+  "elements": [
+   "6d815d69",
+   "784b6a00",
+   "2740a5f8",
+   "2d31ea0d",
+   "2f3c3c",
+   "14f5b2c1",
+   "791fff3c",
+   "542591a7"
+  ]
+ },
+ "bh-s43": {
+  "id": "g-519ce0d",
+  "css": "padding-block-start: 20px; padding-block-end: 20px; padding-inline-start: 26px; padding-inline-end: 26px;\n@media(--mobile) { padding-block-start: 16px; padding-block-end: 16px; padding-inline-start: 10px; padding-inline-end: 10px; }",
+  "elements": [
+   "75e1bc0e",
+   "2da4d81a",
+   "52b0e963",
+   "5286641e",
+   "61bf8ea8",
+   "75f1f630",
+   "7c0ec41c",
+   "8552010"
+  ]
+ }
+}
