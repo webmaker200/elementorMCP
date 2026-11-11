@@ -23,16 +23,21 @@ for sec in cur.values():
         st = e.get('styles')
         if isinstance(st, dict) and st.get('css'):
             groups.setdefault(st['css'], []).append(e['id'])
-groups = OrderedDict((k, v) for k, v in groups.items() if len(v) > 1)
+MIN = 1 if '--all' in sys.argv else 2
+START = int(next((a.split('=')[1] for a in sys.argv if a.startswith('--start=')), '1'))
+groups = OrderedDict((k, v) for k, v in groups.items() if len(v) >= MIN)
 print(len(groups), 'repeated styles on', sum(len(v) for v in groups.values()), 'elements')
 
-labels = {css: f'bh-s{i + 1:02d}' for i, css in enumerate(groups)}
-res = mcp.call('elementor-manage-classes', {'operations': [{'action': 'create', 'label': lab, 'css': css} for css, lab in labels.items()]})
-bad = [r for r in res['results'] if r['status'] != 'ok']
-assert not bad, bad
-ids = {r['label']: r['id'] for r in res['results']}
+labels = {css: f'bh-s{i + START:02d}' for i, css in enumerate(groups)}
+allops = [{'action': 'create', 'label': lab, 'css': css} for css, lab in labels.items()]
+ids = {}
+for i in range(0, len(allops), 50):
+    res = mcp.call('elementor-manage-classes', {'operations': allops[i:i + 50]})
+    bad = [r for r in res['results'] if r['status'] != 'ok']
+    assert not bad, bad
+    ids.update({r['label']: r['id'] for r in res['results']})
 json.dump({lab: {'id': ids[lab], 'css': css, 'elements': groups[css]} for css, lab in labels.items()},
-          open(os.path.join(HERE, '..', 'build', 'shrink_classes.json'), 'w'), indent=1)
+          open(os.path.join(HERE, '..', 'build', f'shrink_classes_{START}.json'), 'w'), indent=1)
 # highest priority (earlier = wins), so each class overrides other global classes like the local style did
 print(mcp.call('elementor-reorder-classes', {'order': [ids[l] for l in labels.values()] + [x for x in res['order'] if x not in ids.values()]}).get('status'))
 
