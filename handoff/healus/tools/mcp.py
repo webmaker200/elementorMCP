@@ -44,6 +44,9 @@ def call(name, args):
     if not _sid[0]:
         init()
     d = json.loads(_post({"jsonrpc": "2.0", "id": 9, "method": "tools/call", "params": {"name": name, "arguments": args}}))
+    if 'result' not in d and 'error' not in d:  # stale MCP session: start a new one and retry once
+        init()
+        d = json.loads(_post({"jsonrpc": "2.0", "id": 9, "method": "tools/call", "params": {"name": name, "arguments": args}}))
     if 'error' in d:
         raise RuntimeError(json.dumps(d['error'])[:2000])
     txt = ''.join(c.get('text', '') for c in d['result'].get('content', []))
