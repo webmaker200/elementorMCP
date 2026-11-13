@@ -1,0 +1,756 @@
+{
+ "rad-s01": {
+  "id": "g-56de5a4",
+  "css": "padding-block-start: 20%; padding-block-end: 5%; padding-inline-start: 15%; padding-inline-end: 15%; background-image: linear-gradient(0deg, #00000080 19%,rgba(255, 255, 255, 0) 100%),linear-gradient(#044F9494, #044F9494),url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/11/radiology-banner.webp\"); background-repeat: repeat,repeat,no-repeat; background-attachment: scroll; background-size: auto auto,auto auto,cover; background-position: 0% 0%,0% 0%,center center; flex-direction: column; gap: 20px; justify-content: flex-end; align-items: center;\n@media(--laptop) { padding-block-end: 5%; padding-inline-start: 10%; padding-inline-end: 10%; flex-direction: column; justify-content: flex-end; align-items: center; }\n@media(--tablet) { padding-block-start: 15%; padding-block-end: 5%; padding-inline-start: 5%; padding-inline-end: 5%; }\n@media(--mobile) { padding-block-start: 10%; padding-block-end: 7%; padding-inline-start: 5%; padding-inline-end: 5%; display: flex; flex-direction: column; }",
+  "elements": [
+   "dfb3b28"
+  ]
+ },
+ "rad-s02": {
+  "id": "g-e2eae74",
+  "css": "color: var(--PureWhite);",
+  "elements": [
+   "8a787a9"
+  ]
+ },
+ "rad-s03": {
+  "id": "g-5bd8f2f",
+  "css": "width: 90%; color: var(--PureWhite);\n@media(--laptop) { width: 100%; }",
+  "elements": [
+   "5068e6c"
+  ]
+ },
+ "rad-s04": {
+  "id": "g-b9a841c",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: var(--PureWhite); border-radius: 100px; border-width: 1px; border-color: var(--PureWhite); border-style: solid; background-color: #7cb03e00; display: flex; justify-content: center; align-self: center;",
+  "elements": [
+   "9946a9d"
+  ]
+ },
+ "rad-s05": {
+  "id": "g-2e42ed1",
+  "css": "display: flex; flex-direction: column; gap: 25px; align-items: center;\n@media(--laptop) { justify-content: center; }\n@media(--tablet) { gap: 10px; }",
+  "elements": [
+   "a689bc2"
+  ]
+ },
+ "rad-s06": {
+  "id": "g-1c8c381",
+  "css": "color: var(--PureBlack); line-height: 120%; text-align: center;\n@media(--tablet_extra) { width: 100%; font-size: 2rem; }\n@media(--mobile) { font-size: 1.6rem; text-align: center; }\n@media(--mobile_extra) { width: 100%; }\n@media(--tablet) { width: 100%; }",
+  "elements": [
+   "2c9ee33",
+   "df87bb9"
+  ]
+ },
+ "rad-s07": {
+  "id": "g-ca64fce",
+  "css": "width: 80%; color: var(--DarkGray); text-align: center;\n@media(--laptop) { width: 90%; }\n@media(--tablet_extra) { width: 100%; }",
+  "elements": [
+   "2e5f048"
+  ]
+ },
+ "rad-s08": {
+  "id": "g-0b3ed77",
+  "css": "width: 80%; font-family: var(--Poppins); font-weight: 400; font-size: 1rem; color: var(--PureBlack); line-height: 28px; text-align: center;\n@media(--tablet_extra) { width: 100%; }\n@media(--laptop) { width: 85%; line-height: 24px; }",
+  "elements": [
+   "83f9b37"
+  ]
+ },
+ "rad-s09": {
+  "id": "g-321fafc",
+  "css": "width: 100%; display: flex; flex-direction: column; gap: 15px; justify-content: center; align-items: center;",
+  "elements": [
+   "22cffdc",
+   "dd476c7",
+   "a866ce1",
+   "486ee5c"
+  ]
+ },
+ "rad-s10": {
+  "id": "g-3310735",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 32px; color: var(--PureBlack); text-align: center;",
+  "elements": [
+   "12eec41",
+   "09ea4c3",
+   "d1c277c",
+   "eb8001a"
+  ]
+ },
+ "rad-s11": {
+  "id": "g-a0209b2",
+  "css": "color: var(--DarkGray); text-align: center;",
+  "elements": [
+   "c00582b",
+   "72e7f1a",
+   "a2d2a5f",
+   "d818687"
+  ]
+ },
+ "rad-s12": {
+  "id": "g-f08ba61",
+  "css": "width: 80%; padding: 2%; border-radius: 20px; background-color: var(--DeepSkyBlue); display: flex; flex-direction: row; gap: 30px; align-items: center;\n@media(--laptop) { width: 90%; }\n@media(--tablet_extra) { width: 100%; }\n@media(--tablet) { padding: 3%; flex-direction: column; gap: 20px; }\n@media(--mobile) { padding: 5%; }",
+  "elements": [
+   "45f60fe"
+  ]
+ },
+ "rad-s13": {
+  "id": "g-7b080bb",
+  "css": "width: 75%; padding: 0px; display: flex; flex-direction: column; gap: 10px;\n@media(--laptop) { width: 73%; }\n@media(--tablet) { width: 100%; }",
+  "elements": [
+   "8a1043c"
+  ]
+ },
+ "rad-s14": {
+  "id": "g-d69d659",
+  "css": "font-family: var(--Poppins); font-weight: 300; font-size: 32px; color: var(--PureWhite);\n@media(--laptop) { font-size: 26px; }\n@media(--tablet_extra) { font-size: 24px; }\n@media(--tablet) { text-align: center; }",
+  "elements": [
+   "a52775b"
+  ]
+ },
+ "rad-s15": {
+  "id": "g-1104f46",
+  "css": "color: var(--PureWhite);\n@media(--tablet) { text-align: center; }",
+  "elements": [
+   "abe4af2"
+  ]
+ },
+ "rad-s16": {
+  "id": "g-84e3a73",
+  "css": "width: 25%; padding: 0px; display: flex; justify-content: center;\n@media(--laptop) { width: 27%; }\n@media(--tablet) { width: 100%; display: flex; justify-content: center; }",
+  "elements": [
+   "3fe4f07"
+  ]
+ },
+ "rad-s17": {
+  "id": "g-2da7437",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: var(--PureWhite); border-radius: 100px; border-width: 1px; border-color: var(--HealthGreen); border-style: solid; background-color: var(--HealthGreen); display: flex; justify-content: center; align-self: center;\n@media(--tablet) { justify-content: center; }",
+  "elements": [
+   "3cc0980"
+  ]
+ },
+ "rad-s18": {
+  "id": "g-d2e146a",
+  "css": "background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/07/Cirlce-webinar02.webp\"),linear-gradient(153deg, #a1ddfb66 17%,rgb(255,255,255) 100%); background-repeat: no-repeat,repeat; background-attachment: scroll; background-size: 20% auto,auto auto; background-position: top right,0% 0%; display: flex; flex-direction: column; gap: 20px; align-items: center;",
+  "elements": [
+   "44436de"
+  ]
+ },
+ "rad-s19": {
+  "id": "g-735adb9",
+  "css": "color: var(--PureBlack); line-height: 120%; text-align: center;\n@media(--tablet_extra) { width: 100%; font-size: 2rem; }\n@media(--mobile) { font-size: 1.6rem; }\n@media(--mobile_extra) { width: 100%; }\n@media(--tablet) { width: 100%; }",
+  "elements": [
+   "2660d8a"
+  ]
+ },
+ "rad-s20": {
+  "id": "g-7195d6b",
+  "css": "width: 80%; color: var(--DarkGray); line-height: 24px; text-align: center;\n@media(--tablet) { width: 100%; }\n@media(--laptop) { width: 100%; }\n@media(--tablet_extra) { width: 100%; text-align: center; }",
+  "elements": [
+   "cc36f7d",
+   "b7e0724"
+  ]
+ },
+ "rad-s21": {
+  "id": "g-896e4cb",
+  "css": "width: 100%; margin-block-start: 30px; display: flex; flex-direction: row; gap: 80px; align-items: center;\n@media(--mobile) { margin-block-start: 0px; flex-direction: column; }\n@media(--tablet_extra) { gap: 32px; }\n@media(--mobile_extra) { flex-direction: column-reverse; }",
+  "elements": [
+   "728cc42"
+  ]
+ },
+ "rad-s22": {
+  "id": "g-35c1cfe",
+  "css": "width: 55%; display: flex; flex-direction: column; gap: 1.5rem; align-items: start;\n@media(--mobile) { text-align: center; gap: 1rem; }\n@media(--laptop) { gap: 1rem; }\n@media(--mobile_extra) { width: 100%; gap: 0.7rem; }",
+  "elements": [
+   "4a82f8f"
+  ]
+ },
+ "rad-s23": {
+  "id": "g-a975048",
+  "css": "width: 85%;\n@media(--mobile) { width: 100%; }\n@media(--tablet) { width: 100%; }",
+  "elements": [
+   "15394a0"
+  ]
+ },
+ "rad-s24": {
+  "id": "g-c553fb9",
+  "css": "color: var(--DarkGray); line-height: 24px;",
+  "elements": [
+   "369712e",
+   "7630764",
+   "80b1fe0",
+   "0837157",
+   "93e3542",
+   "5810717",
+   "cd3c910",
+   "efd08a2",
+   "12584b1",
+   "7239ba1"
+  ]
+ },
+ "rad-s25": {
+  "id": "g-2822b31",
+  "css": "width: 45%;\n@media(--mobile) { display: none; }\n@media(--mobile_extra) { width: 100%; }",
+  "elements": [
+   "4d28146"
+  ]
+ },
+ "rad-s26": {
+  "id": "g-7a75f4b",
+  "css": "@media(--mobile_extra) { width: 60%; }\n@media(--mobile) { width: 100%; }",
+  "elements": [
+   "1caed88",
+   "04f74c8",
+   "c912bcc",
+   "347fcd3"
+  ]
+ },
+ "rad-s27": {
+  "id": "g-62fae6f",
+  "css": "background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/07/Cirlce-webinar02.webp\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 18% auto; background-position: top right; background-color: var(--PureWhite); display: flex; flex-direction: row; gap: 6rem; align-items: center;\n@media(--mobile_extra) { flex-direction: column; }\n@media(--mobile) { background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/07/Cirlce-webinar02.webp\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 40% auto; background-position: top right; }",
+  "elements": [
+   "595ada0"
+  ]
+ },
+ "rad-s28": {
+  "id": "g-b7f7531",
+  "css": "@media(--mobile) { display: none; }",
+  "elements": [
+   "4178677",
+   "3cff490",
+   "d73f264"
+  ]
+ },
+ "rad-s29": {
+  "id": "g-14605b5",
+  "css": "display: flex; flex-direction: column; gap: 1.5rem; align-items: start;\n@media(--mobile) { text-align: center; gap: 1rem; justify-content: center; align-self: center; }\n@media(--tablet) { gap: 1rem; }",
+  "elements": [
+   "c2fc2bd",
+   "0f5eb07"
+  ]
+ },
+ "rad-s30": {
+  "id": "g-0cfb24e",
+  "css": "padding-block-start: 0%; flex-direction: column; align-items: center;\n@media(--mobile) { padding-block-start: 3%; }",
+  "elements": [
+   "038368e"
+  ]
+ },
+ "rad-s31": {
+  "id": "g-d3c7e89",
+  "css": "width: 90%; padding: 3%; border-radius: 20px; background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2026/01/left-cirlce-green-gradient.svg\"),url(\"https://medcaredemo.online/medcare/wp-content/uploads/2026/01/left-cirlce-blue-gradient.svg\"); background-repeat: no-repeat; background-attachment: scroll; background-size: contain; background-position: center left,center right; background-color: #F5F5F5; display: flex; flex-direction: column; gap: 10px; justify-content: center; align-items: center;\n@media(--tablet) { width: 100%; background-image: linear-gradient(#f5f5f5, #f5f5f5); background-repeat: repeat; background-attachment: scroll; background-size: auto auto; background-position: 0% 0%; }\n@media(--mobile) { padding: 5%; }",
+  "elements": [
+   "dfde840"
+  ]
+ },
+ "rad-s32": {
+  "id": "g-681dd3c",
+  "css": "font-family: var(--Poppins); font-weight: 300; font-size: 2rem; color: var(--DeepSkyBlue);\n@media(--tablet) { font-size: 1.74rem; }\n@media(--mobile_extra) { text-align: center; }\n@media(--tablet_extra) { font-size: 1.7rem; }\n@media(--mobile) { font-size: 1.3rem; }",
+  "elements": [
+   "ad0d12f"
+  ]
+ },
+ "rad-s33": {
+  "id": "g-4dec1fa",
+  "css": "width: 65%; color: var(--DarkGray); text-align: center;\n@media(--mobile) { width: 100%; }",
+  "elements": [
+   "cc9947e"
+  ]
+ },
+ "rad-s34": {
+  "id": "g-47df80e",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: var(--PureWhite); margin-block-start: 15px; border-radius: 100px; border-width: 1px; border-color: var(--HealthGreen); border-style: solid; background-color: var(--HealthGreen); display: flex; justify-content: center; align-self: center;\n@media(--mobile_extra) { align-self: center; }",
+  "elements": [
+   "9d3c5ec"
+  ]
+ },
+ "rad-s35": {
+  "id": "g-65bbfa7",
+  "css": "background-color: var(--AzureMist); display: flex; flex-direction: column; gap: 30px; align-items: center;",
+  "elements": [
+   "60c2c08"
+  ]
+ },
+ "rad-s36": {
+  "id": "g-dc795ba",
+  "css": "padding: 0px; grid-template-rows: none !important;\n  grid-auto-rows: auto !important;",
+  "elements": [
+   "13f6c39"
+  ]
+ },
+ "rad-s37": {
+  "id": "g-2600ecb",
+  "css": "width: 100%; padding: 5%; border-radius: 30px; background-color: var(--PureWhite); display: flex; flex-direction: column; gap: 15px;",
+  "elements": [
+   "47cc17d",
+   "96a8a85",
+   "8ef8824",
+   "002c7e6",
+   "6ec3dec",
+   "972d09c"
+  ]
+ },
+ "rad-s38": {
+  "id": "g-03868cb",
+  "css": "color: var(--DarkGray);\n@media(--mobile) { text-align: center; }",
+  "elements": [
+   "5114b34",
+   "081d233"
+  ]
+ },
+ "rad-s39": {
+  "id": "g-8d10c18",
+  "css": "color: var(--DarkGray);\n@media(--mobile) { text-align: center; align-self: center; }",
+  "elements": [
+   "9351666",
+   "6daa88b",
+   "5e534a6",
+   "0efd880"
+  ]
+ },
+ "rad-s40": {
+  "id": "g-0a5d627",
+  "css": "flex-direction: column; gap: 15px;",
+  "elements": [
+   "4aa429d"
+  ]
+ },
+ "rad-s41": {
+  "id": "g-00f7ebb",
+  "css": "color: var(--PureBlack); line-height: 120%; text-align: center;\n@media(--tablet_extra) { font-size: 2rem; }\n@media(--mobile) { font-size: 1.6rem; text-align: center; }",
+  "elements": [
+   "dff4e60"
+  ]
+ },
+ "rad-s42": {
+  "id": "g-69040bb",
+  "css": "background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/06/Cirlce-webinar-bg.webp\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 18% auto; background-position: top right; background-color: var(--LightGreenBackground); display: flex; flex-direction: row; gap: 6rem; align-items: center;\n@media(--mobile_extra) { flex-direction: column; }\n@media(--mobile) { background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/07/Cirlce-webinar02.webp\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 40% auto; background-position: top right; }",
+  "elements": [
+   "4324eff"
+  ]
+ },
+ "rad-s43": {
+  "id": "g-84f20b5",
+  "css": "color: var(--PureBlack); line-height: 120%;\n@media(--tablet_extra) { font-size: 2rem; }\n@media(--mobile) { font-size: 1.6rem; }",
+  "elements": [
+   "a1a306f",
+   "fdb1513"
+  ]
+ },
+ "rad-s44": {
+  "id": "g-7bb8ddc",
+  "css": "flex-direction: column; align-items: center;",
+  "elements": [
+   "f5d0046"
+  ]
+ },
+ "rad-s45": {
+  "id": "g-88519d8",
+  "css": "width: 85%; padding-block-start: 3%; padding-block-end: 3%; padding-inline-start: 3%; padding-inline-end: 3%; border-radius: 20px; background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2026/02/icon-green-shadow-Cirlce2.png\"),url(\"https://medcaredemo.online/medcare/wp-content/uploads/2026/02/icon-green-shadow-Cirlce1.png\"); background-repeat: no-repeat; background-attachment: scroll; background-size: contain; background-position: bottom right,bottom left; background-color: var(--DeepSkyBlue); display: flex; flex-direction: column; gap: 1rem; align-items: center;\n@media(--laptop) { width: 95%; }\n@media(--mobile_extra) { background-image: linear-gradient(var(--DeepSkyBlue), var(--DeepSkyBlue)); background-repeat: repeat; background-attachment: scroll; background-size: auto auto; background-position: 0% 0%; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; }\n@media(--mobile) { width: 100%; padding: 5%; gap: 1rem; }\n@media(--tablet) { width: 100%; }",
+  "elements": [
+   "f88dbc2"
+  ]
+ },
+ "rad-s46": {
+  "id": "g-63d9653",
+  "css": "font-family: var(--Poppins); font-weight: 300; font-size: 2rem; color: var(--PureWhite); text-align: center;\n@media(--tablet) { font-size: 1.74rem; }\n@media(--mobile_extra) { text-align: center; }\n@media(--tablet_extra) { font-size: 1.7rem; }\n@media(--mobile) { font-size: 1.3rem; }",
+  "elements": [
+   "c6ad9b2",
+   "7394720"
+  ]
+ },
+ "rad-s47": {
+  "id": "g-a4484b5",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 16px; color: var(--PureWhite); text-align: center;\n@media(--mobile_extra) { text-align: center; }",
+  "elements": [
+   "4f64f4c"
+  ]
+ },
+ "rad-s48": {
+  "id": "g-030032b",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: var(--PureWhite); border-radius: 100px; border-width: 1px; border-color: var(--HealthGreen); border-style: solid; background-color: var(--HealthGreen); display: flex; justify-content: center; align-self: center;\n@media(--mobile_extra) { align-self: center; }",
+  "elements": [
+   "1741582",
+   "f24abb0"
+  ]
+ },
+ "rad-s49": {
+  "id": "g-4042d4d",
+  "css": "background-color: var(--PureWhite); display: flex; flex-direction: column; gap: 30px; align-items: center;",
+  "elements": [
+   "5f0b342"
+  ]
+ },
+ "rad-s50": {
+  "id": "g-be0bb4d",
+  "css": "width: 75%; color: var(--PureBlack); line-height: 120%; text-align: center;\n@media(--tablet_extra) { width: 100%; font-size: 2rem; }\n@media(--mobile) { font-size: 1.6rem; }\n@media(--mobile_extra) { width: 100%; }\n@media(--tablet) { width: 100%; }",
+  "elements": [
+   "133d27d"
+  ]
+ },
+ "rad-s51": {
+  "id": "g-5dd9949",
+  "css": "color: var(--DarkGray); line-height: 24px; text-align: center;",
+  "elements": [
+   "962e5f0",
+   "35df6bf"
+  ]
+ },
+ "rad-s52": {
+  "id": "g-d2ac7a8",
+  "css": "column-gap: 50px; padding: 0px; row-gap: 20px; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(1, 1fr);",
+  "elements": [
+   "85f631f"
+  ]
+ },
+ "rad-s53": {
+  "id": "g-c1a4a11",
+  "css": "width: 100%; padding: 5%; border-radius: 30px; background-color: #E8EFF4; display: flex; flex-direction: column; gap: 15px;",
+  "elements": [
+   "bac13a3",
+   "43f0be8"
+  ]
+ },
+ "rad-s54": {
+  "id": "g-80c7a8e",
+  "css": "color: var(--DarkGray);",
+  "elements": [
+   "c3664b6",
+   "fc66837"
+  ]
+ },
+ "rad-s55": {
+  "id": "g-ffdd825",
+  "css": "background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/07/Cirlce-webinar02.webp\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 18% auto; background-position: top right; background-color: var(--AzureMist); display: flex; flex-direction: column; gap: 1rem;\n@media(--mobile_extra) { flex-direction: column; }\n@media(--mobile) { background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2025/07/top-left-circle.svg\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 40% auto; background-position: top left; }\n@media(--tablet_extra) { gap: 1rem; }",
+  "elements": [
+   "98308c1"
+  ]
+ },
+ "rad-s56": {
+  "id": "g-ac52e76",
+  "css": "color: var(--PureBlack); line-height: 120%; text-align: center;\n@media(--tablet_extra) { width: 100%; font-size: 2rem; }\n@media(--mobile) { font-size: 1.6rem; text-align: center; }\n@media(--mobile_extra) { width: 100%; }\n@media(--tablet) { width: 100%; }\n@media(--laptop) { width: 100%; }",
+  "elements": [
+   "dacc6a8"
+  ]
+ },
+ "rad-s57": {
+  "id": "g-b253275",
+  "css": "margin-block-start: 30px;",
+  "elements": [
+   "aed67ab",
+   "0c7e3cd"
+  ]
+ },
+ "rad-s58": {
+  "id": "g-8a2e910",
+  "css": "padding: 0px; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); grid-template-rows: none !important;\n  grid-auto-rows: auto !important;",
+  "elements": [
+   "405152c"
+  ]
+ },
+ "rad-s59": {
+  "id": "g-88a74ef",
+  "css": "padding: 3%; border-radius: 16px; border-width: 1px; border-color: #0367A11A; border-style: solid; background-color: var(--PureWhite); box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.04) inset; display: flex; flex-direction: column; gap: 15px;",
+  "elements": [
+   "dcee3fa",
+   "3cd0179",
+   "3c6f09d",
+   "444b916",
+   "3985d5d",
+   "59a69db",
+   "dcfd4fc",
+   "c087d7c"
+  ]
+ },
+ "rad-s60": {
+  "id": "g-aee4994",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 14px;\n@media(--mobile) { text-align: center; }",
+  "elements": [
+   "950665b",
+   "3eb5cbd",
+   "623b832",
+   "bad200b"
+  ]
+ },
+ "rad-s61": {
+  "id": "g-d9fae6c",
+  "css": "padding: 0px; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(1, 1fr); grid-template-rows: none !important;\n  grid-auto-rows: auto !important;",
+  "elements": [
+   "678f032"
+  ]
+ },
+ "rad-s62": {
+  "id": "g-f83bfb1",
+  "css": "padding: 5%; border-radius: 16px; border-width: 1px; border-color: #0367A11A; border-style: solid; background-color: var(--DeepSkyBlue); box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.04) inset; display: flex; flex-direction: column; gap: 10px;",
+  "elements": [
+   "5b27bda",
+   "30bf82b",
+   "039fd7e",
+   "fddca5f",
+   "a6153ee"
+  ]
+ },
+ "rad-s63": {
+  "id": "g-e3674d2",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 1.3rem; color: var(--PureWhite);",
+  "elements": [
+   "c3fa560",
+   "d90d88a",
+   "485c57c",
+   "4ca5796",
+   "32620ee"
+  ]
+ },
+ "rad-s64": {
+  "id": "g-c893ff6",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 14px; color: var(--PureWhite);",
+  "elements": [
+   "5850f12",
+   "ca1125b",
+   "3e7ebef",
+   "48fbba5",
+   "f73d1c1"
+  ]
+ },
+ "rad-s65": {
+  "id": "g-988e804",
+  "css": "width: 100%; padding-block-start: 3%; padding-block-end: 3%; padding-inline-start: 3%; padding-inline-end: 3%; border-radius: 20px; background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2026/04/Cirlce-center-right-arc.svg\"); background-repeat: no-repeat; background-attachment: scroll; background-size: auto; background-position: center right; background-color: var(--DeepSkyBlue); display: flex; flex-direction: column; gap: 1rem; align-items: center;\n@media(--laptop) { width: 95%; }\n@media(--mobile_extra) { background-image: linear-gradient(var(--DeepSkyBlue), var(--DeepSkyBlue)); background-repeat: repeat; background-attachment: scroll; background-size: auto auto; background-position: 0% 0%; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; }\n@media(--mobile) { width: 100%; padding: 5%; gap: 1rem; }\n@media(--tablet) { width: 100%; }",
+  "elements": [
+   "a0bfaf2"
+  ]
+ },
+ "rad-s66": {
+  "id": "g-6514222",
+  "css": "width: 80%; font-family: var(--Poppins); font-weight: 400; font-size: 16px; color: var(--PureWhite); text-align: center;\n@media(--mobile_extra) { text-align: center; }\n@media(--mobile) { width: 100%; }",
+  "elements": [
+   "6346cfb"
+  ]
+ },
+ "rad-s67": {
+  "id": "g-04f418a",
+  "css": "background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/06/Cirlce-webinar-bg.webp\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 18% auto; background-position: top right; background-color: var(--BackGround); display: flex; flex-direction: row; gap: 3rem; align-items: center;\n@media(--mobile_extra) { flex-direction: column; }\n@media(--mobile) { background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2024/07/Cirlce-webinar02.webp\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 40% auto; background-position: top right; }",
+  "elements": [
+   "26425af"
+  ]
+ },
+ "rad-s68": {
+  "id": "g-0b99b85",
+  "css": "display: flex; flex-direction: column; gap: 1.5rem; align-items: start;\n@media(--mobile) { text-align: center; gap: 1rem; justify-content: center; align-self: center; }",
+  "elements": [
+   "9308103"
+  ]
+ },
+ "rad-s69": {
+  "id": "g-ea569a8",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: var(--PureWhite); border-radius: 100px; border-width: 1px; border-color: var(--PureBlack); border-style: solid; background-color: var(--PureBlack); display: flex; justify-content: center; align-self: start;\n@media(--mobile) { align-self: center; }",
+  "elements": [
+   "fd54112",
+   "f68833e"
+  ]
+ },
+ "rad-s70": {
+  "id": "g-35e8c2a",
+  "css": "background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2026/07/Cirlce-center-right-arc.svg\"); background-repeat: no-repeat; background-attachment: scroll; background-size: auto auto; background-position: center right; background-color: var(--DeepSkyBlue); flex-direction: column; gap: 15px;\n@media(--mobile) { background-image: linear-gradient(#00000000, #00000000); background-repeat: repeat; background-attachment: scroll; background-size: auto auto; background-position: 0% 0%; }",
+  "elements": [
+   "290b834"
+  ]
+ },
+ "rad-s71": {
+  "id": "g-5a8ddce",
+  "css": "font-size: 2.6rem; color: var(--PureWhite); line-height: 120%; text-align: center;\n@media(--tablet_extra) { font-size: 2rem; }\n@media(--mobile) { font-size: 1.6rem; }\n@media(--laptop) { font-size: 2.3rem; }\n@media(--tablet) { text-align: center; }",
+  "elements": [
+   "6792433"
+  ]
+ },
+ "rad-s72": {
+  "id": "g-ce824b5",
+  "css": "color: var(--PureWhite); line-height: 24px; text-align: center;\n@media(--tablet) { text-align: center; }",
+  "elements": [
+   "af3adbf"
+  ]
+ },
+ "rad-s73": {
+  "id": "g-0a5826a",
+  "css": "padding: 0px; margin-block-start: 30px; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); grid-template-rows: none !important;\n  grid-auto-rows: auto !important;",
+  "elements": [
+   "c99fe64"
+  ]
+ },
+ "rad-s74": {
+  "id": "g-82b3d8f",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 14px; color: var(--DarkGray);\n@media(--mobile) { text-align: center; }",
+  "elements": [
+   "8e8b4ad",
+   "24545e8",
+   "444b96d",
+   "aa08d05"
+  ]
+ },
+ "rad-s75": {
+  "id": "g-d8f80f8",
+  "css": "width: 100%; padding: 2%; border-radius: 20px; background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2026/01/right-cirlce-blue-shaded.svg\"); background-repeat: no-repeat; background-attachment: scroll; background-size: contain; background-position: center right; background-color: #F5F5F5; display: flex; flex-direction: row; gap: 2rem;\n@media(--laptop) { width: 95%; }\n@media(--tablet) { background-image: linear-gradient(#00000000, #00000000); background-repeat: repeat; background-attachment: scroll; background-size: auto auto; background-position: 0% 0%; flex-direction: column; gap: 1rem; }\n@media(--mobile_extra) { width: 100%; }\n@media(--mobile) { padding: 5%; }",
+  "elements": [
+   "19d0d24"
+  ]
+ },
+ "rad-s76": {
+  "id": "g-7ebfa19",
+  "css": "width: 75%; display: flex; flex-direction: column; gap: 10px;\n@media(--tablet_extra) { width: 68%; }\n@media(--tablet) { width: 100%; }",
+  "elements": [
+   "2610224"
+  ]
+ },
+ "rad-s77": {
+  "id": "g-aab034c",
+  "css": "width: 90%; font-family: var(--Poppins); font-weight: 300; font-size: 28px; color: var(--DeepSkyBlue); line-height: 130%; text-align: start;\n@media(--laptop) { font-size: 30px; }\n@media(--tablet) { font-size: 28px; text-align: center; }\n@media(--mobile_extra) { font-size: 24px; }\n@media(--mobile) { font-size: 24px; }",
+  "elements": [
+   "389898b"
+  ]
+ },
+ "rad-s78": {
+  "id": "g-8792fdc",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 16px; color: var(--PureBlack); line-height: 130%; text-align: start;\n@media(--tablet) { text-align: center; }",
+  "elements": [
+   "59444a4"
+  ]
+ },
+ "rad-s79": {
+  "id": "g-def04a0",
+  "css": "width: 25%; display: flex; justify-content: center;\n@media(--tablet_extra) { width: 32%; }\n@media(--tablet) { width: 100%; }",
+  "elements": [
+   "7f956b3"
+  ]
+ },
+ "rad-s80": {
+  "id": "g-4c163b6",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: var(--PureWhite); margin-block-start: 7px; border-radius: 100px; border-width: 1px; border-color: var(--HealthGreen); border-style: solid; background-color: var(--HealthGreen); display: flex; align-self: center;\n@media(--tablet) { justify-content: center; }",
+  "elements": [
+   "fd13b05"
+  ]
+ },
+ "rad-s81": {
+  "id": "g-bfeae25",
+  "css": "background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2025/07/top-left-circle.svg\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 18% auto; background-position: top left; display: flex; flex-direction: column; gap: 4rem; align-items: center; background: linear-gradient(\n      153.17deg,\n      rgba(161, 221, 251, 0.4) 16.8%,\n      rgba(255, 255, 255, 0.4) 117.67%\n  ) !important;\n@media(--mobile_extra) { flex-direction: column-reverse; }\n@media(--mobile) { background-image: url(\"https://medcaredemo.online/medcare/wp-content/uploads/2025/07/top-left-circle.svg\"); background-repeat: no-repeat; background-attachment: scroll; background-size: 40% auto; background-position: top left; }",
+  "elements": [
+   "886f610"
+  ]
+ },
+ "rad-s82": {
+  "id": "g-fe5474c",
+  "css": "width: 100%; display: flex; flex-direction: row; gap: 48px; align-items: center;\n@media(--mobile) { flex-direction: column; }\n@media(--tablet) { flex-direction: column-reverse; gap: 20px; }\n@media(--laptop) { gap: 32px; }",
+  "elements": [
+   "777fcc5"
+  ]
+ },
+ "rad-s83": {
+  "id": "g-b834ef8",
+  "css": "display: flex; flex-direction: column; gap: 1.5rem; align-items: start;\n@media(--mobile) { text-align: center; gap: 1rem; }\n@media(--tablet) { width: 100%; gap: 1rem; }\n@media(--laptop) { gap: 1rem; }",
+  "elements": [
+   "4b65b7a"
+  ]
+ },
+ "rad-s84": {
+  "id": "g-e464e33",
+  "css": "font-size: 2.7rem; color: var(--PureBlack); line-height: 120%;\n@media(--tablet_extra) { font-size: 2rem; }\n@media(--mobile) { font-size: 1.6rem; text-align: center; }",
+  "elements": [
+   "9e55a55"
+  ]
+ },
+ "rad-s85": {
+  "id": "g-3e1e657",
+  "css": "max-width: 100%; padding: 2%; border-radius: 30px; background-color: var(--PureWhite); display: flex; flex-direction: column; gap: 12px;\n@media(--laptop) { padding: 2%; }\n@media(--tablet) { width: 100%; }\n@media(--mobile_extra) { padding: 3%; }",
+  "elements": [
+   "26126e0"
+  ]
+ },
+ "rad-s86": {
+  "id": "g-aeddf5a",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: var(--DeepSkyBlue); padding-block-start: 8px; padding-block-end: 8px; padding-inline-start: 15px; padding-inline-end: 15px; border-radius: 100px; border-width: 1px; border-color: var(--DeepSkyBlue); border-style: solid; background-color: #0367a11a; align-self: start;\n@media(--tablet_extra) { font-size: 14px; }",
+  "elements": [
+   "d0ab974"
+  ]
+ },
+ "rad-s87": {
+  "id": "g-ad47469",
+  "css": "font-family: var(--Poppins); font-weight: 300; font-size: 2rem; color: var(--PureBlack); line-height: 120%;\n@media(--mobile) { font-size: 1.6rem; }\n@media(--laptop) { font-size: 1.6rem; }",
+  "elements": [
+   "58e4c9a",
+   "2089135"
+  ]
+ },
+ "rad-s88": {
+  "id": "g-fdaf7c8",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 16px; color: var(--DeepSkyBlue); border-radius: 100px; border-width: 1px; border-color: var(--DeepSkyBlue); border-style: solid; background-color: #375efa00;",
+  "elements": [
+   "6816e7c"
+  ]
+ },
+ "rad-s89": {
+  "id": "g-645f3ab",
+  "css": "padding: 0px; flex-direction: column;",
+  "elements": [
+   "dad21e7"
+  ]
+ },
+ "rad-s90": {
+  "id": "g-e5a762c",
+  "css": "width: 100%; padding-block-start: 3%; padding-block-end: 3%; padding-inline-start: 10%; padding-inline-end: 10%; display: flex; flex-direction: column; gap: 30px;\n@media(--laptop) { padding-inline-start: 5%; padding-inline-end: 5%; }\n@media(--mobile) { padding-block-start: 7%; padding-block-end: 7%; }",
+  "elements": [
+   "cbe3e9b"
+  ]
+ },
+ "rad-s91": {
+  "id": "g-f9ed988",
+  "css": "font-family: var(--Poppins); font-weight: 600; font-size: 28px; color: var(--PureBlack); line-height: 220%;\n@media(--tablet) { font-size: 26px; }\n@media(--mobile_extra) { font-size: 24px; }\n@media(--mobile) { font-size: 22px; line-height: 130%; text-align: start; }",
+  "elements": [
+   "b6608e5"
+  ]
+ },
+ "rad-s92": {
+  "id": "g-77dd8bb",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 16px; color: var(--DarkGray); line-height: 24px;\n@media(--mobile) { font-size: 15px; line-height: 22px; }",
+  "elements": [
+   "c5964eb",
+   "c00300e",
+   "871cf3e",
+   "08351a9",
+   "0f8de60",
+   "83a0445",
+   "155c1c2"
+  ]
+ },
+ "rad-s93": {
+  "id": "g-1e70558",
+  "css": "padding-block-start: 2%; padding-block-end: 2%; padding-inline-start: 10%; padding-inline-end: 10%; background-color: var(--BackGround); display: flex; flex-direction: row; gap: 30px; align-items: center;\n@media(--tablet) { flex-direction: column; gap: 16px; }",
+  "elements": [
+   "ef1508e"
+  ]
+ },
+ "rad-s94": {
+  "id": "g-2fa1cd6",
+  "css": "width: 80%; display: flex; flex-direction: column; gap: 10px;\n@media(--mobile_extra) { width: 100%; }\n@media(--tablet) { width: 100%; }\n@media(--laptop) { width: 75%; }\n@media(--tablet_extra) { width: 70%; }",
+  "elements": [
+   "5028e10"
+  ]
+ },
+ "rad-s95": {
+  "id": "g-d9a72cb",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 1.3rem; color: var(--PureBlack); line-height: 130%;\n@media(--tablet) { font-size: 1.2rem; text-align: center; }\n@media(--mobile_extra) { text-align: center; }\n@media(--mobile) { font-size: 1.1rem; line-height: 140%; }",
+  "elements": [
+   "cf071ee"
+  ]
+ },
+ "rad-s96": {
+  "id": "g-f88c3bc",
+  "css": "width: 20%; display: flex; justify-content: flex-end;\n@media(--mobile_extra) { width: 100%; justify-content: center; }\n@media(--tablet) { width: 100%; justify-content: center; }\n@media(--laptop) { width: 25%; }\n@media(--tablet_extra) { width: 30%; }",
+  "elements": [
+   "0f0b0a1"
+  ]
+ },
+ "rad-s97": {
+  "id": "g-d8fd7ec",
+  "css": "font-family: var(--Poppins); font-weight: 400; font-size: 15px; color: var(--PureWhite); border-radius: 100px; border-width: 1px; border-color: var(--PureBlack); border-style: solid; background-color: var(--PureBlack); display: flex; justify-content: center; align-self: start;",
+  "elements": [
+   "9c4c4ec"
+  ]
+ }
+}
