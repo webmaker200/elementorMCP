@@ -8,7 +8,7 @@ Built in Elementor V4 from *Case Study Design Brief _ Golden State Case Study v3
 - No new global classes. Sections use `parent-container`, H1 `heading-main`, H2 `specialties-heading`, copy `global-text`; everything else is a local style on the element.
 - Columns use percentage widths (no flex-basis). Card grids use e-grid tracks with tablet/mobile columns. The results table scrolls sideways under 720px.
 - Section anchors are `#summary`, `#challenge`, `#solution`, `#results` and `#contact`. The solution nav links to `#step-01`..`#step-05`; the nav is sticky on desktop and hidden on mobile.
-- "Book a demo" and "Call us" carry `data-class="custom-button"` (site CTA animation).
+- "Book a demo" and "Call us" do not use the site `custom-button` animation (it duplicated the label and hid the arrow); they have a simple hover (tint + shadow).
 - Hover effects:
   - glass cards lift;
   - challenge icons scale;
@@ -25,7 +25,7 @@ Built in Elementor V4 from *Case Study Design Brief _ Golden State Case Study v3
 ## Rebuild
 ```
 python3 tools/run_build.py        # replace_children on 411939 (add "dry" to validate only)
-python3 tools/post_build.py       # CTA data-class attributes
+python3 tools/post_build.py       # clears CTA animation attributes
 ```
 
 ## V4 gotchas handled in gs.py

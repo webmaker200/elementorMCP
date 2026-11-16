@@ -160,8 +160,7 @@ def hero():
         f'display: inline-flex; flex-direction: row; align-items: center; gap: 14px; width: max-content; height: 56px; padding: 0px 6px 0px 26px; '
         f'border-radius: 999px; border: 2px solid {ACC}; background-color: rgba(255,255,255,0.35); text-decoration: none; cursor: pointer; '
         'box-shadow: 0px 12px 30px -16px rgba(47,125,107,0.45); transition: background-color 0.25s ease, box-shadow 0.25s ease; '
-        f'&:hover{{background-color: {ACC}; box-shadow: 0px 16px 34px -14px rgba(47,125,107,0.6);}} '
-        '&:hover p{color: #FFFFFF;} &:hover div{border-color: #FFFFFF;} &:hover img{filter: brightness(0) invert(1);}'))
+        '&:hover{background-color: rgba(47,125,107,0.10); box-shadow: 0px 18px 36px -14px rgba(47,125,107,0.55);}'))
     results = box('hb2', p('hb2t', 'See the results ↓', css=t(15, 1, ACC, 500, None, 'transition: color 0.2s ease;')), link='#results', css=(
         'display: inline-flex; align-items: center; width: max-content; height: 56px; padding: 0px 4px; text-decoration: none; '
         '&:hover p{color: #1F6E8C; text-decoration: underline; text-underline-offset: 4px;}'))
@@ -396,8 +395,8 @@ def contact():
                + arrow_circle('co-bc', ICONS['arrow_white'], '#FFFFFF'), link='tel:8006406409', css=(
         'display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 14px; height: 56px; padding: 0px 6px 0px 26px; '
         'border-radius: 999px; border: 2px solid #FFFFFF; background-color: rgba(255,255,255,0.1); text-decoration: none; cursor: pointer; '
-        'transition: background-color 0.25s ease; &:hover{background-color: #FFFFFF;} '
-        f'&:hover p{{color: {ACC};}} &:hover div{{border-color: {ACC};}} &:hover img{{filter: brightness(0) saturate(100%) invert(38%) sepia(32%) saturate(720%) hue-rotate(117deg);}} '
+        'transition: background-color 0.25s ease, box-shadow 0.25s ease; '
+        '&:hover{background-color: rgba(255,255,255,0.22); box-shadow: 0px 14px 30px -12px rgba(0,20,35,0.45);} '
         '@media(--mobile){padding-left: 18px; gap: 8px;}'))
 
     def line(i, lab, val, url):
