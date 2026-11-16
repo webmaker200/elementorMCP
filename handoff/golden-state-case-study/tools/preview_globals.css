@@ -1,0 +1,6 @@
+.elementor .global-text{font-family:var(--Poppins);font-weight:400;font-size:1rem}
+.elementor .heading-main{font-family:var(--Poppins);font-weight:300;font-size:3rem;line-height:60px}
+.elementor .parent-container{padding-block-start:3%;padding-block-end:3%;padding-inline-start:10%;padding-inline-end:10%}
+.elementor .specialties-heading{font-family:var(--Poppins);font-weight:300;font-size:3rem}
+@media (max-width:1024px){.elementor .parent-container{padding-inline-start:5%;padding-inline-end:5%}}
+@media (max-width:767px){.elementor .parent-container{padding-inline-start:16px;padding-inline-end:16px}}
