@@ -1,0 +1,27 @@
+[
+ {
+  "img": 385138,
+  "title": "Blue Cross and Blue Shield of Kansas",
+  "text": "BCBSKS is headquartered in Topeka and covers 103 of Kansas\u2019s 105 counties. The geography decides the route of the claims. A patient who is a resident of Johnson County carries a Blue KC card, not BCBSKS. We confirm the home plan before the claim is built."
+ },
+ {
+  "img": 379602,
+  "title": "Blue KC in Johnson and Wyandotte Counties",
+  "text": "Blue Cross and Blue Shield of Kansas City covers Johnson and Wyandotte counties plus the Missouri side of the metro. Even in the same city, it is a different payer ID and fee schedule. Claims sent to BCBSKS for a Blue KC member, or the other way round, lead to denials because the plan selected was wrong."
+ },
+ {
+  "img": 385140,
+  "title": "Medicare and Medicare Advantage in Kansas",
+  "text": "Kansas Part A and B claims are sent to WPS Government Health Administrators, the Jurisdiction 5 contractor. DME claims go to Noridian, home health and hospice claims are sent to CGS. Roughly a third of Kansas beneficiaries are in Medicare Advantage. There are 21 western counties that have no Medicare Advantage plan. Medicare Advantage plans have their own rules related to authorization and network. If the patient in the Medicare Advantage plan is treated like a patient in Original Medicare, this increases the risk of denials."
+ },
+ {
+  "img": 5021,
+  "title": "Marketplace Plans: Ambetter, UnitedHealthcare, Oscar, and Medica",
+  "text": "Kansas marketplace plans are sold through HealthCare.gov. For 2026 the issuers are Blue Cross and Blue Shield of Kansas, Ambetter from Sunflower Health Plan, UnitedHealthcare, Oscar, Medica and Blue KC, each in a different set of counties, and Medica leaves after 2026. Every plan is an EPO, so an out-of-network claim is denied rather than paid at a lower rate; we check network status before the visit."
+ },
+ {
+  "img": 379600,
+  "title": "Workers' Comp, SEHP, and TRICARE",
+  "text": "Workers' compensation claims are paid from the Kansas Department of Labor's<a target=\"_blank\" href=\"https://www.dol.ks.gov/workers-compensation/medical-services-fee-schedule\"> <u>Schedule of Medical Fees</u></a>, at the lesser of the charge or the schedule. The State Employee Health Plan covers state workers and their families, concentrated around Topeka and Lawrence. They have their own carriers and plan rules. TRICARE West covers Fort Riley and Fort Leavenworth families, with their specific referral and authorization rules."
+ }
+]

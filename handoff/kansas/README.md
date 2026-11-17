@@ -43,3 +43,12 @@ Same subtle hover as the telehealth page (`scale(1.02)` + soft blue drop shadow,
 - "Kansas Billing Laws and Filing Deadlines We Track for You": e5dbce6, 8087a9d, 0c2c6e8, 1bf1125, bcca53e, 4405aaa (inset shadow kept);
 - "Rural Kansas Billing for Critical Access Hospitals, RHCs, and FQHCs": 3ebce4b, 480be57, 765a6bd.
 Backup before: `backup/kansas_412021_before-hover.json`. Published; diff showed only these 9 style entries changed.
+
+## "Where Revenue Slips With Each Kansas Payer" redesign (Option A, 2026-11-17)
+Three mockups were shown (A: 2 + 3 grouped, B: featured card + 2×2, C: full-width rows); the client picked **A**.
+`tools/payer_redesign.py` appended the new block (`5723af0f`) to section b1a29ab and deleted the old grid 5b5aaf7, then published:
+- row 1: one wide #E8EFF4 card with a DeepSkyBlue strip ("Two Blue plans, one state: check the home plan first"; this strip
+  text is new, not from the doc) and the two Blue plans side by side (BCBSKS | Blue KC, divider between; stacked from 880px);
+- row 2: Medicare, Marketplace, Workers' Comp in 3 columns; tablet 2 + 1 full width; mobile stacked;
+- same card look, icons and copy as before (build/payer_cards.json); same subtle hover.
+Backup before: `backup/kansas_412021_before-payer-redesign.json`; diff showed only section b1a29ab changed.
