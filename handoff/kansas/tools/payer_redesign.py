@@ -1,6 +1,6 @@
 """Redesign of "Where Revenue Slips With Each Kansas Payer" (section b1a29ab on states post 412021): Option A, "2 + 3, grouped".
 
-Row 1: one wide card holding the two Blue plans side by side (BCBSKS | Blue KC) under a blue strip.
+Row 1: one wide card holding the two Blue plans side by side (BCBSKS | Blue KC).
 Row 2: Medicare, Marketplace and Workers' Comp in three columns (tablet: 2 + 1 full-width; mobile: stacked).
 Same look as the page's other cards (#E8EFF4, radius 30, blue 1.3rem titles, global-text copy), no new classes,
 same subtle hover as the rest of the page. Copy and icons come from the existing cards (build/payer_cards.json).
@@ -14,7 +14,6 @@ import mcp  # noqa: E402
 
 PID, SECTION, OLD_GRID = 412021, 'b1a29ab', '5b5aaf7'
 CARDS = json.load(open(os.path.join(HERE, '..', 'build', 'payer_cards.json')))
-STRIP = 'Two Blue plans, one state: check the home plan first'
 
 cfg, style, classes = {}, {}, {}
 
@@ -51,11 +50,7 @@ def build():
             'padding: 28px; min-width: 0px; display: flex; flex-direction: column; gap: 15px; '
             + ('border-right: 1px solid #CFDBE5; ' if i == 0 else '')
             + '@media(--mobile_extra){padding: 24px;' + (' border-right: 0px; border-bottom: 1px solid #CFDBE5;' if i == 0 else '') + '}'))
-    strip = el('e-paragraph', 'py-strip', c={'paragraph': STRIP}, css=(
-        'grid-column: 1 / -1; margin: 0px; padding: 14px 28px; background-color: var(--DeepSkyBlue); color: var(--PureWhite); '
-        'font-family: var(--Poppins); font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: 0.08em; text-transform: uppercase; '
-        '@media(--mobile){font-size: 12px; padding: 12px 20px;}'))
-    blue_card = el('e-grid', 'py-blue', strip + blue, css=(
+    blue_card = el('e-grid', 'py-blue', blue, css=(
         'width: 100%; padding: 0px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; gap: 0px; '
         'border-radius: 30px; overflow: hidden; background-color: #E8EFF4; ' + HOVER.replace('scale(1.02)', 'scale(1.01)') + ' '
         '@media(--mobile_extra){grid-template-columns: 1fr;}'))
