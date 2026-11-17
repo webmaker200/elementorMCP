@@ -37,3 +37,9 @@ screenshots above each heading in the doc (image6 and image10 in the DOCX export
 
 Backup of the page before the change: `backup/kansas_412021_before-new-sections_*.json`.
 To preview a section before publishing, build it on a temporary draft and inject its rendered HTML into the live page with `tools/preview_inject.js`.
+
+## Hover on existing boxes (2026-11-17)
+Same subtle hover as the telehealth page (`scale(1.02)` + soft blue drop shadow, 0.3s), added as a style patch:
+- "Kansas Billing Laws and Filing Deadlines We Track for You": e5dbce6, 8087a9d, 0c2c6e8, 1bf1125, bcca53e, 4405aaa (inset shadow kept);
+- "Rural Kansas Billing for Critical Access Hospitals, RHCs, and FQHCs": 3ebce4b, 480be57, 765a6bd.
+Backup before: `backup/kansas_412021_before-hover.json`. Published; diff showed only these 9 style entries changed.
