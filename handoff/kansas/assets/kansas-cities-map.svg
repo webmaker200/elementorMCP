@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 312" width="700" height="312" role="img" aria-label="Kansas cities served by MedCare MSO medical billing services">
+<polygon points="20.1,20.7 496.3,20.7 512.6,32.4 526.7,40.6 510.4,60.4 521.7,74.9 526.7,92.9 545.8,101.1 545.8,291.5 20.1,291.5" fill="#EAF5FF" stroke="#0367A1" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="524.6,92.9 526.7,92.9 545.8,101.1 545.8,134.5 514.0,134.5 514.0,107.4 524.6,107.4" fill="#7EB13E" fill-opacity="0.85" stroke="#5E8A2C" stroke-width="1.2" stroke-linejoin="round"/>
+<circle cx="544.6" cy="100.7" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="556.6" y="94.7" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="start">Kansas City, KS</text>
+<circle cx="541.5" cy="112.6" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="553.5" y="132.6" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="start">Overland Park</text>
+<circle cx="407.1" cy="94.4" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="407.1" y="120.4" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="middle">Manhattan</text>
+<circle cx="212.5" cy="121.9" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="212.5" y="147.9" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="middle">Hays</text>
+<circle cx="333.7" cy="125.4" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="333.7" y="151.4" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="middle">Salina</text>
+<circle cx="470.3" cy="106.7" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="470.3" y="92.7" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="middle">Topeka</text>
+<circle cx="501.6" cy="113.5" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="499.6" y="139.5" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="end">Lawrence</text>
+<circle cx="353.6" cy="229.5" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="353.6" y="255.5" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="middle">Wichita</text>
+<circle cx="103.3" cy="203.9" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="103.3" y="189.9" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="middle">Garden City</text>
+<circle cx="163.8" cy="223.6" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="163.8" y="249.6" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="middle">Dodge City</text>
+<circle cx="539.0" cy="254.4" r="7" fill="#0367A1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="551.0" y="260.4" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="500" fill="#14212B" text-anchor="start">Pittsburg</text>
+</svg>
