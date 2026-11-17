@@ -1,0 +1,74 @@
+{
+ "lp-about-physician-desk": {
+  "id": 412127,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-about-physician-desk.webp"
+ },
+ "lp-billing-team-report": {
+  "id": 412128,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-billing-team-report.webp"
+ },
+ "lp-icon-claims": {
+  "id": 412129,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-icon-claims.webp"
+ },
+ "lp-icon-invoice": {
+  "id": 412130,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-icon-invoice.webp"
+ },
+ "lp-icon-payment-cycle": {
+  "id": 412131,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-icon-payment-cycle.webp"
+ },
+ "lp-icon-people": {
+  "id": 412133,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-icon-people.webp"
+ },
+ "lp-icon-shield-check": {
+  "id": 412135,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-icon-shield-check.webp"
+ },
+ "lp-icon-stethoscope": {
+  "id": 412137,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-icon-stethoscope.webp"
+ },
+ "lp-logo-aapc": {
+  "id": 412138,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-logo-aapc.webp"
+ },
+ "lp-logo-hipaa": {
+  "id": 412139,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-logo-hipaa.webp"
+ },
+ "lp-specialties-consult": {
+  "id": 412140,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-specialties-consult.webp"
+ },
+ "lp-step-billing-review": {
+  "id": 412141,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-step-billing-review.webp"
+ },
+ "lp-svc-ar-recovery": {
+  "id": 412142,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-svc-ar-recovery.webp"
+ },
+ "lp-svc-billing": {
+  "id": 412143,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-svc-billing.webp"
+ },
+ "lp-svc-coding": {
+  "id": 412144,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-svc-coding.webp"
+ },
+ "lp-svc-credentialing": {
+  "id": 412145,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-svc-credentialing.webp"
+ },
+ "lp-svc-denials": {
+  "id": 412146,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-svc-denials.webp"
+ },
+ "lp-svc-prior-auth": {
+  "id": 412149,
+  "url": "https://medcaredemo.online/medcare/wp-content/uploads/2026/11/lp-svc-prior-auth.webp"
+ }
+}
