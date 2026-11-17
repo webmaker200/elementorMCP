@@ -47,3 +47,8 @@ The style converter strips `%`-escapes from url-encoded SVG data URIs, and a top
 python3 tools/run_build.py      # replace_children on 412115
 python3 tools/helper.py         # adds the scroll helper widget (run after every rebuild)
 ```
+
+## Change log
+- Testimonials: the left heading column (`4fdcf16` on the live page) is now sticky (`top: 120px`, desktop only, static from tablet down),
+  so it stays in view while the testimonial cards scroll. Applied with manage-elements and published; also in `lp.py`.
+  Backup of the published page before this: `build/backup_412115_before-sticky.json`.

@@ -556,7 +556,7 @@ QUOTES = [('JB', 'James Berg', 'Chief Operations Officer, Ion Diagnostics',
 def testimonials():
     left = box('ts-l', eyebrow('ts-e', 'Client stories') + h2('ts-h2', 'Trusted by 1,200+ practices')
                + lead('ts-p', 'Feedback from practice and lab leaders who moved their billing to MedCare MSO.', css='max-width: 420px;'),
-               css='display: flex; flex-direction: column; gap: 16px;')
+               css='display: flex; flex-direction: column; gap: 16px; position: sticky; top: 120px; @media(--tablet){position: static;}')
     figs = ''
     for i, (ini, name, role, quote) in enumerate(QUOTES):
         avatar = p(f'ts{i}-a', ini, css=t(17.6, 1, BLUE, 600, None, (
